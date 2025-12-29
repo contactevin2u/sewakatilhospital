@@ -1,0 +1,67 @@
+# robots.txt for OxygenCare Malaysia
+# https://oxygencare.my
+
+# Allow all crawlers
+User-agent: *
+
+# Allow access to all public content
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /tmp/
+
+# Disallow search results and duplicate content
+Disallow: /search
+Disallow: /*?*
+Disallow: /*&*
+
+# Disallow thank you and confirmation pages
+Disallow: /thank-you/
+Disallow: /order-confirmation/
+
+# Allow CSS, JS, and images for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl delay (optional, be nice to server)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://oxygencare.my/sitemap.xml
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Block AI training bots (optional - based on business preference)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Allow good bots
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+Allow: /
