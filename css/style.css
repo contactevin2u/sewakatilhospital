@@ -1593,3 +1593,355 @@ th {
 .icon-circle .icon-emoji {
     filter: grayscale(100%) brightness(200%);
 }
+
+/* =========================================
+   COMPETITOR-STYLE REDESIGN
+   ========================================= */
+
+/* Hero Badges */
+.hero-badges {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.cert-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.hero-highlight {
+    margin: var(--spacing-lg) 0;
+}
+
+.delivery-badge {
+    display: inline-block;
+    background: #FFD700;
+    color: #000;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.hero-features-simple {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9375rem;
+}
+
+.hero-features-simple span {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+/* Hero Price Tag */
+.hero-price-tag {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-green);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-price-tag .price-label {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.hero-price-tag .price-big {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero-price-tag .price-period {
+    font-size: 0.875rem;
+}
+
+/* Reviews Banner */
+.reviews-banner {
+    background: var(--gray-100);
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.reviews-banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.reviews-count {
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.125rem;
+}
+
+.reviews-text {
+    color: var(--gray-600);
+}
+
+.coverage {
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+/* 3-Product Grid */
+.products-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 1024px) {
+    .products-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Simple Product Card */
+.product-card-simple {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-simple:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.product-card-simple .product-badge {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    background: var(--primary-blue);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.product-card-simple .product-badge.badge-pro {
+    background: #9B59B6;
+}
+
+.product-card-simple .product-badge.badge-travel {
+    background: #E67E22;
+}
+
+.product-card-simple img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.product-card-simple h3 {
+    font-size: 1.5rem;
+    color: var(--gray-800);
+    margin-bottom: var(--spacing-xs);
+}
+
+.product-subtitle {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-md);
+    text-align: left;
+    background: var(--gray-50);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.product-specs li {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.product-specs li:last-child {
+    border-bottom: none;
+}
+
+/* Product Prices */
+.product-prices {
+    background: var(--primary-blue);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xs) 0;
+}
+
+.price-row:first-child {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.price-type {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.price-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.price-value small {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.product-target {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+/* Product Note */
+.product-note {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background: #FFF9E6;
+    border-radius: var(--radius-md);
+    border: 1px solid #FFE082;
+}
+
+.product-note p {
+    margin: 0;
+    color: var(--gray-700);
+}
+
+/* Patient Recommendations */
+.patient-recommendations {
+    padding: var(--spacing-3xl) 0;
+    background: var(--gray-50);
+}
+
+.patient-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+@media (max-width: 1024px) {
+    .patient-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .patient-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.patient-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.patient-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--spacing-md);
+}
+
+.patient-card h3 {
+    color: var(--gray-800);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.patient-card p {
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.patient-card .recommend {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Mobile Hero Adjustments */
+@media (max-width: 768px) {
+    .hero-badges {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-features-simple {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .reviews-banner .container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    .hero-price-tag {
+        position: static;
+        margin-top: var(--spacing-md);
+        display: inline-block;
+    }
+}
