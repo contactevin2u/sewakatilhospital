@@ -2617,437 +2617,491 @@ body {
 }
 
 /* =========================================
-   Hero Section - Nuvica Style
+   Hero Section - Hybrid Style
    ========================================= */
 
-.hero-nuvica {
-    background: linear-gradient(180deg, #e8f4fc 0%, #d4e9f7 50%, #c5dff2 100%);
-    padding: 80px 0 100px;
+.hero-hybrid {
+    background: linear-gradient(135deg, #e8f4fc 0%, #dbeafe 50%, #f0f9ff 100%);
+    padding: 60px 0 80px;
     position: relative;
     overflow: hidden;
-    min-height: 85vh;
 }
 
-/* Decorative background text */
-.hero-nuvica::before {
-    content: 'OXYGEN';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 180px;
-    font-weight: 900;
-    color: rgba(0, 102, 204, 0.03);
-    letter-spacing: 20px;
-    pointer-events: none;
-    white-space: nowrap;
-}
-
-.hero-nuvica-grid {
+/* Hero Hybrid Grid */
+.hero-hybrid-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 0.8fr;
-    gap: 40px;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
     align-items: center;
-    position: relative;
-    z-index: 1;
 }
 
-/* Left Content */
-.hero-nuvica-content {
-    padding-right: 20px;
-}
-
-.hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--gray-700);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    margin-bottom: 30px;
-}
-
-.tag-icon {
-    font-size: 1rem;
-}
-
-.hero-nuvica h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1.05;
-    margin-bottom: 25px;
-    color: var(--secondary-dark);
-}
-
-.hero-line {
-    display: block;
-}
-
-.hero-accent {
-    color: var(--primary-blue);
-    position: relative;
-}
-
-.hero-accent::before {
-    content: '💨';
-    position: absolute;
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-}
-
-.hero-desc {
-    font-size: 1rem;
-    color: var(--gray-600);
-    line-height: 1.7;
-    margin-bottom: 30px;
-    max-width: 320px;
-}
-
-.text-highlight {
-    color: var(--primary-blue);
-    font-weight: 600;
-}
-
-/* Nuvica Button */
-.btn-nuvica {
-    display: inline-flex;
-    align-items: center;
+/* Hero Trust Badges */
+.hero-trust-badges {
+    display: flex;
     gap: 12px;
-    background: var(--secondary-dark);
+    margin-bottom: 20px;
+}
+
+.trust-badge {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
     color: white;
-    padding: 16px 32px;
+    padding: 8px 16px;
     border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Hero Headline */
+.hero-hybrid h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--secondary-dark);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-tagline strong {
+    color: var(--primary-blue);
+}
+
+/* Dual Pricing Cards */
+.hero-dual-pricing {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.price-card {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.price-type {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--gray-500);
+}
+
+.price-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--secondary-dark);
+    line-height: 1;
+}
+
+.price-period {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin-top: 5px;
+}
+
+.price-sewa {
+    border: 2px solid var(--primary-blue);
+    background: linear-gradient(135deg, #EBF5FF 0%, white 100%);
+}
+
+.price-sewa .price-type {
+    color: var(--primary-blue);
+}
+
+.price-sewa .price-value {
+    color: var(--primary-blue);
+}
+
+.price-beli {
+    border: 2px solid var(--primary-green);
+    background: linear-gradient(135deg, #ECFDF5 0%, white 100%);
+}
+
+.price-beli .price-type {
+    color: var(--primary-green);
+}
+
+.price-beli .price-value {
+    color: var(--primary-green);
+}
+
+.price-refill {
+    border: 2px solid #F59E0B;
+    background: linear-gradient(135deg, #FFFBEB 0%, white 100%);
+}
+
+.price-refill .price-type {
+    color: #D97706;
+}
+
+.price-refill .price-value {
+    color: #D97706;
+}
+
+/* CTA Buttons */
+.hero-cta-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 12px;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+}
+
+.btn-phone {
+    background: var(--secondary-dark);
+    color: white;
     box-shadow: 0 8px 25px rgba(26, 54, 93, 0.3);
 }
 
-.btn-nuvica:hover {
+.btn-phone:hover {
     background: var(--primary-blue);
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 102, 204, 0.4);
 }
 
-.btn-arrow {
+.btn-icon {
+    font-size: 1.25rem;
+}
+
+/* Service Icons */
+.hero-services {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    font-size: 0.875rem;
-}
-
-/* Center Image */
-.hero-nuvica-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.hero-nuvica-image img {
-    max-width: 100%;
-    height: auto;
-    max-height: 580px;
-    object-fit: contain;
-    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.15));
-    border-radius: var(--radius-xl);
-}
-
-/* Floating Badges */
-.floating-badge {
+    gap: 10px;
     background: white;
-    padding: 15px 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: transform 0.3s ease;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
-.floating-badge:hover {
-    transform: translateY(-5px);
-}
-
-.badge-icon {
+.service-icon {
     font-size: 1.5rem;
 }
 
-.badge-number {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--secondary-dark);
-    display: block;
-    line-height: 1;
-}
-
-.badge-label {
-    font-size: 0.75rem;
-    color: var(--gray-500);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.badge-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-/* Badge Positions */
-.badge-years {
-    position: absolute;
-    bottom: 60px;
-    left: -30px;
-}
-
-.hero-nuvica-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding-left: 20px;
-}
-
-.badge-reviews {
-    text-align: center;
-    flex-direction: column;
-    gap: 5px;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
-    color: white;
-}
-
-.badge-reviews .badge-number {
-    color: white;
-    font-size: 2rem;
-}
-
-.badge-reviews .badge-label {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.badge-cert {
-    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-    color: white;
-}
-
-.badge-cert .badge-icon {
-    background: rgba(255, 255, 255, 0.2);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-}
-
-.badge-cert .badge-label {
-    color: white;
+.service-text {
     font-size: 0.8rem;
+    color: var(--gray-600);
     line-height: 1.3;
 }
 
-/* Floating Price Tag */
-.hero-price-floating {
-    position: absolute;
-    bottom: 40px;
-    right: 60px;
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-    color: #1a1a1a;
-    padding: 20px 30px;
+.service-text strong {
+    color: var(--secondary-dark);
+}
+
+/* Hero Image */
+.hero-hybrid-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-hybrid-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 550px;
     border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* Floating Reviews Badge */
+.floating-reviews {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(255, 165, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
     animation: float 3s ease-in-out infinite;
-    z-index: 10;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
 }
 
-.hero-price-floating .price-label {
+.reviews-number {
     display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-}
-
-.hero-price-floating .price-amount {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 1.75rem;
+    font-weight: 800;
     line-height: 1;
 }
 
-.hero-price-floating .price-period {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-/* Stats Bar */
-.stats-bar {
-    background: white;
-    padding: 50px 0;
-    border-top: 1px solid var(--gray-200);
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    text-align: center;
-}
-
-.stat-item {
-    padding: 20px;
-}
-
-.stat-number {
+.reviews-label {
     display: block;
-    font-size: 2.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.reviews-stars {
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+/* Floating Experience Badge */
+.floating-experience {
+    position: absolute;
+    bottom: 40px;
+    left: -30px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.exp-number {
+    display: block;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--secondary-dark);
-    margin-bottom: 8px;
+    line-height: 1;
 }
 
-.stat-label {
-    font-size: 0.875rem;
+.exp-label {
+    display: block;
+    font-size: 0.7rem;
     color: var(--gray-500);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-top: 5px;
 }
 
-/* Responsive Nuvica Hero */
-@media (max-width: 1200px) {
-    .hero-nuvica h1 {
-        font-size: 3rem;
+/* Stats Bar Hybrid */
+.stats-bar-hybrid {
+    background: white;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.stats-grid-hybrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: var(--gray-50);
+    border-radius: 16px;
+}
+
+.stat-icon {
+    font-size: 2rem;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-dark);
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    margin-top: 4px;
+}
+
+/* Responsive Hybrid Hero */
+@media (max-width: 1100px) {
+    .hero-hybrid h1 {
+        font-size: 2.25rem;
     }
 
-    .hero-accent::before {
-        left: -40px;
+    .hero-dual-pricing {
+        flex-wrap: wrap;
+    }
+
+    .price-card {
+        padding: 15px 20px;
+    }
+
+    .price-value {
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 992px) {
-    .hero-nuvica-grid {
-        grid-template-columns: 1fr 1fr;
+    .hero-hybrid-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .hero-nuvica-stats {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
+    .hero-hybrid-content {
+        order: 2;
+        text-align: center;
     }
 
-    .hero-nuvica h1 {
-        font-size: 2.5rem;
+    .hero-hybrid-image {
+        order: 1;
     }
 
-    .hero-accent::before {
-        display: none;
+    .hero-trust-badges {
+        justify-content: center;
     }
 
-    .hero-price-floating {
-        right: 30px;
-        bottom: 30px;
+    .hero-dual-pricing {
+        justify-content: center;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .hero-services {
+        justify-content: center;
+    }
+
+    .floating-reviews {
+        right: 10px;
+    }
+
+    .floating-experience {
+        left: 10px;
+    }
+
+    .stats-grid-hybrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .hero-nuvica {
-        padding: 60px 0 80px;
-        min-height: auto;
+    .hero-hybrid {
+        padding: 40px 0 60px;
     }
 
-    .hero-nuvica::before {
-        font-size: 80px;
+    .hero-hybrid h1 {
+        font-size: 1.875rem;
     }
 
-    .hero-nuvica-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
+    .hero-subtitle-text {
+        font-size: 1rem;
     }
 
-    .hero-nuvica-content {
-        padding-right: 0;
-        order: 2;
-    }
-
-    .hero-nuvica-image {
-        order: 1;
-    }
-
-    .hero-nuvica-image img {
+    .hero-hybrid-image img {
         max-height: 400px;
     }
 
-    .hero-nuvica-stats {
-        position: static;
-        transform: none;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .hero-dual-pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-cta {
+        width: 100%;
+        max-width: 280px;
         justify-content: center;
-        order: 3;
-        padding: 0;
     }
 
-    .hero-nuvica h1 {
-        font-size: 2.5rem;
+    .hero-services {
+        gap: 10px;
     }
 
-    .hero-desc {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .service-item {
+        padding: 10px 14px;
     }
 
-    .hero-tag {
-        margin-left: auto;
-        margin-right: auto;
+    .floating-reviews {
+        top: 15px;
+        right: 5px;
+        padding: 12px 15px;
     }
 
-    .badge-years {
-        position: static;
-    }
-
-    .hero-price-floating {
-        position: static;
-        margin: 30px auto 0;
-        display: inline-block;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-
-    .floating-badge {
-        padding: 12px 16px;
-    }
-
-    .badge-number {
+    .reviews-number {
         font-size: 1.25rem;
+    }
+
+    .floating-experience {
+        bottom: 20px;
+        left: 5px;
+        padding: 12px 15px;
+    }
+
+    .exp-number {
+        font-size: 1.25rem;
+    }
+
+    .stats-grid-hybrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .stat-box {
+        padding: 15px;
     }
 }
