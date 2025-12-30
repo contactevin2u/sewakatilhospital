@@ -340,7 +340,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--secondary-light) 0%, var(--white) 100%);
+    background: var(--primary-blue);
     padding: var(--spacing-3xl) 0;
 }
 
