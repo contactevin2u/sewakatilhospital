@@ -3447,3 +3447,489 @@ body {
         padding: 15px;
     }
 }
+
+/* =========================================
+   UI/UX ENHANCEMENTS
+   ========================================= */
+
+/* -----------------------------------------
+   1. SCROLL-TO-TOP BUTTON
+   ----------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 102, 204, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 102, 204, 0.5);
+}
+
+.scroll-to-top:active {
+    transform: scale(0.95);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* -----------------------------------------
+   2. SCROLL REVEAL ANIMATIONS
+   ----------------------------------------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.reveal:nth-child(1) { transition-delay: 0s; }
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.3s; }
+
+/* -----------------------------------------
+   3. MOBILE MENU TOGGLE
+   ----------------------------------------- */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background: var(--gray-100);
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background: var(--gray-700);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.mobile-menu-toggle.active .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 98;
+    backdrop-filter: blur(4px);
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Responsive */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 24px 24px;
+        gap: var(--spacing-sm);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        transition: right 0.3s ease;
+        z-index: 99;
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: var(--spacing-md);
+        border-radius: var(--radius-sm);
+        transition: background-color 0.2s ease;
+    }
+
+    .nav-menu a:hover {
+        background: var(--gray-50);
+    }
+}
+
+/* -----------------------------------------
+   4. FORM VALIDATION STYLES
+   ----------------------------------------- */
+.input-wrapper {
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-wrapper.valid input,
+.input-wrapper.valid select,
+.input-wrapper.valid textarea {
+    border-color: var(--success);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.input-wrapper.invalid input,
+.input-wrapper.invalid select,
+.input-wrapper.invalid textarea {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.input-wrapper.valid .validation-icon::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--success);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") center/contain no-repeat;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.input-wrapper.invalid .validation-icon::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--danger);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") center/contain no-repeat;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.error-message {
+    display: block;
+    color: var(--danger);
+    font-size: 0.8rem;
+    margin-top: 6px;
+    padding-left: 2px;
+    animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -----------------------------------------
+   5. IMAGE LOADING EFFECTS
+   ----------------------------------------- */
+.img-loading {
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.img-loaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.img-error {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+/* Skeleton loading placeholder */
+.skeleton {
+    background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: var(--radius-md);
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* -----------------------------------------
+   6. HEADER SCROLL EFFECTS
+   ----------------------------------------- */
+.header {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header.header-hidden {
+    transform: translateY(-100%);
+}
+
+/* -----------------------------------------
+   7. ENHANCED MICRO-INTERACTIONS
+   ----------------------------------------- */
+
+/* Button ripple effect */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card hover glow */
+.service-card:hover,
+.product-card-simple:hover,
+.patient-card:hover,
+.why-us-item:hover,
+.testimonial-card:hover,
+.blog-card:hover {
+    box-shadow: var(--shadow-xl), 0 0 30px rgba(0, 102, 204, 0.1);
+}
+
+/* Link underline animation */
+.footer a,
+.nav-menu a {
+    position: relative;
+}
+
+.footer-links a::after,
+.footer-products a::after,
+.footer-locations a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after,
+.footer-products a:hover::after,
+.footer-locations a:hover::after {
+    width: 100%;
+}
+
+/* Focus states for accessibility */
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Smooth image hover zoom */
+.blog-card img,
+.product-card-simple img,
+.testimonial-card img {
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover img,
+.product-card-simple:hover img {
+    transform: scale(1.05);
+}
+
+/* Badge pulse animation */
+.pulse-badge {
+    animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* WhatsApp button enhancement */
+.whatsapp-float {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+}
+
+/* Pricing box hover lift */
+.pricing-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* FAQ smooth expand */
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-item[open] {
+    background: var(--gray-50);
+}
+
+.faq-item summary {
+    transition: color 0.2s ease;
+}
+
+.faq-item summary:hover {
+    color: var(--primary-blue);
+}
+
+/* Stats counter glow on hover */
+.stat-box:hover {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    transform: translateY(-3px);
+}
+
+/* Trust badge hover */
+.trust-badge {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trust-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* -----------------------------------------
+   8. PERFORMANCE OPTIMIZATIONS
+   ----------------------------------------- */
+
+/* Enable GPU acceleration for animated elements */
+.scroll-to-top,
+.reveal,
+.nav-menu,
+.header,
+.btn,
+.pricing-box,
+.service-card,
+.product-card-simple,
+.patient-card,
+.why-us-item,
+.testimonial-card,
+.blog-card {
+    will-change: transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
