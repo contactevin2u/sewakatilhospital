@@ -4018,7 +4018,7 @@ button:focus-visible {
    ----------------------------------------- */
 .hero-section {
     padding: 25px 0 0;
-    background: url('../images/hero-bg.jpg') center center / cover no-repeat;
+    background: url('../images/Background Hero.jpg') center center / cover no-repeat;
     background-color: #E8F4FD;
 }
 
@@ -4243,7 +4243,7 @@ button:focus-visible {
    FEATURE STRIP
    ----------------------------------------- */
 .feature-strip {
-    background: url('../images/hero-bg.jpg') center bottom / cover no-repeat;
+    background: url('../images/Background Hero.jpg') center bottom / cover no-repeat;
     background-color: #E8F4FD;
     padding: 45px 0 50px;
 }
