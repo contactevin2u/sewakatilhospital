@@ -4024,52 +4024,68 @@ button:focus-visible {
    ----------------------------------------- */
 .hero-mesin {
     position: relative;
-    background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #E0F2FE 100%);
-    padding: 60px 0 80px;
+    background: linear-gradient(135deg, #A8D8F0 0%, #C5E5F5 100%);
+    padding: 0;
+    min-height: 520px;
     overflow: hidden;
 }
 
-.hero-mesin-bg {
+/* Curved white background on right */
+.hero-curve-bg {
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 32%;
     height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 0%, transparent 100%);
-    border-radius: 0 0 0 50% / 0 0 0 30%;
+    background: white;
+    border-radius: 0 0 0 100% / 0 0 0 60%;
     z-index: 0;
+}
+
+.hero-mesin > .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .hero-mesin-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 0.8fr;
-    gap: 30px;
+    grid-template-columns: 1.1fr 1fr 0.9fr;
+    gap: 25px;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    min-height: 440px;
 }
 
-.hero-mesin-content h1 {
-    font-size: 2.5rem;
+/* Dark Blue Content Card */
+.hero-content-card {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 50%, #0D47A1 100%);
+    padding: 40px 35px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+}
+
+.hero-content-card h1 {
+    font-size: 2.1rem;
     font-weight: 700;
-    line-height: 1.2;
-    color: var(--secondary-dark);
+    line-height: 1.25;
+    color: white;
     margin-bottom: 20px;
 }
 
 .text-cyan {
-    color: #0EA5E9;
+    color: #4DD0E1;
 }
 
 .text-gold {
-    color: #D97706;
+    color: #FFB74D;
 }
 
 .hero-mesin-sub {
-    font-size: 1.1rem;
-    color: var(--gray-700);
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .hero-mesin-sub em {
@@ -4080,24 +4096,27 @@ button:focus-visible {
 .kkm-badge-row {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
 .kkm-icons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 .kkm-icons img {
-    width: 40px;
-    height: auto;
+    width: auto;
+    height: 35px;
     object-fit: contain;
 }
 
 .kkm-text {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 700;
     color: #0066CC;
     line-height: 1.3;
@@ -4187,14 +4206,18 @@ button:focus-visible {
 .hero-mesin-nurse {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-mesin-nurse img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     height: auto;
-    object-fit: cover;
-    border-radius: 0 0 0 40%;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 /* -----------------------------------------
@@ -4283,8 +4306,12 @@ button:focus-visible {
         display: none;
     }
 
-    .hero-mesin-content h1 {
-        font-size: 2rem;
+    .hero-curve-bg {
+        display: none;
+    }
+
+    .hero-content-card h1 {
+        font-size: 1.8rem;
     }
 
     .features-grid {
@@ -4333,20 +4360,27 @@ button:focus-visible {
     }
 
     .hero-mesin {
-        padding: 40px 0 60px;
+        padding: 30px 0;
+        min-height: auto;
     }
 
     .hero-mesin-grid {
         grid-template-columns: 1fr;
         text-align: center;
+        min-height: auto;
     }
 
-    .hero-mesin-content h1 {
-        font-size: 1.75rem;
+    .hero-content-card {
+        padding: 30px 25px;
+        border-radius: 20px;
+    }
+
+    .hero-content-card h1 {
+        font-size: 1.6rem;
     }
 
     .hero-mesin-sub {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .kkm-badge-row {
@@ -4370,7 +4404,7 @@ button:focus-visible {
     }
 
     .product-combo {
-        max-width: 300px;
+        max-width: 280px;
     }
 
     .features-grid {
@@ -4401,8 +4435,12 @@ button:focus-visible {
         font-size: 1.25rem;
     }
 
-    .hero-mesin-content h1 {
-        font-size: 1.5rem;
+    .hero-content-card h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero-content-card {
+        padding: 25px 20px;
     }
 
     .features-grid {
