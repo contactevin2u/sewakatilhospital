@@ -4018,7 +4018,8 @@ button:focus-visible {
    ----------------------------------------- */
 .hero-section {
     padding: 25px 0 0;
-    background: linear-gradient(180deg, #F0F7FF 0%, #E8F4FD 100%);
+    background: url('../images/hero-bg.jpg') center center / cover no-repeat;
+    background-color: #E8F4FD;
 }
 
 /* Large Rounded Rectangle Container */
@@ -4242,7 +4243,8 @@ button:focus-visible {
    FEATURE STRIP
    ----------------------------------------- */
 .feature-strip {
-    background: linear-gradient(180deg, #E8F4FD 0%, #F0F9FF 100%);
+    background: url('../images/hero-bg.jpg') center bottom / cover no-repeat;
+    background-color: #E8F4FD;
     padding: 45px 0 50px;
 }
 
