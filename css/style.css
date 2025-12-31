@@ -4025,9 +4025,9 @@ button:focus-visible {
 .hero-card {
     background: linear-gradient(120deg, #0D47A1 0%, #1565C0 35%, #1976D2 60%, #2196F3 100%);
     border-radius: 32px;
-    padding: 50px 45px;
+    padding: 40px 45px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 25px 80px rgba(13, 71, 161, 0.25);
 }
 
@@ -4150,23 +4150,24 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #42A5F5;
-    color: white;
+    background: white;
+    color: #1565C0;
     padding: 16px 30px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
-    box-shadow: 0 6px 20px rgba(66, 165, 245, 0.35);
+    border: 2px solid #1565C0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-hero-tel:hover {
-    background: #2196F3;
+    background: #E3F2FD;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.45);
+    box-shadow: 0 6px 20px rgba(21, 101, 192, 0.2);
     text-decoration: none;
-    color: white;
+    color: #0D47A1;
 }
 
 .btn-hero-tel svg {
@@ -4190,64 +4191,51 @@ button:focus-visible {
     transform: translateY(-10px);
 }
 
-/* Gold Warranty Badge */
-.warranty-badge {
-    position: absolute;
-    bottom: 0;
-    right: 5px;
-    width: 85px;
-    height: 85px;
-    background: linear-gradient(145deg, #FFD700 0%, #FFA000 50%, #FF8F00 100%);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
-    border: 4px solid white;
-}
-
-.warranty-badge span {
-    font-size: 1.9rem;
-    font-weight: 800;
-    color: #4E342E;
-    line-height: 1;
-}
-
-.warranty-badge small {
-    font-size: 0.55rem;
-    font-weight: 700;
-    color: #5D4037;
-    text-align: center;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-/* Right Column - Nurse Circle */
+/* Right Column - Nurse with Half Circle Background */
 .hero-nurse {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: stretch;
+    margin-right: -45px;
+    margin-top: -40px;
+    margin-bottom: -40px;
 }
 
 .nurse-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #E3F2FD 0%, #BBDEFB 100%);
-    border: 5px solid rgba(255, 255, 255, 0.6);
-    overflow: hidden;
+    position: relative;
+    width: 280px;
+    height: 100%;
+    min-height: 320px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    overflow: visible;
+}
+
+/* Half circle background */
+.nurse-circle::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(180deg, #B3E5FC 0%, #81D4FA 50%, #4FC3F7 100%);
+    border-radius: 50%;
+    z-index: 0;
 }
 
 .nurse-circle img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: top center;
+    position: relative;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    max-height: 340px;
+    object-fit: contain;
+    object-position: bottom center;
 }
 
 /* -----------------------------------------
@@ -4342,15 +4330,6 @@ button:focus-visible {
         max-width: 300px;
     }
 
-    .warranty-badge {
-        width: 70px;
-        height: 70px;
-    }
-
-    .warranty-badge span {
-        font-size: 1.5rem;
-    }
-
     .feature-strip-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -4407,12 +4386,17 @@ button:focus-visible {
     .hero-card {
         padding: 30px 20px;
         border-radius: 20px;
+        overflow: hidden;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 25px;
+    }
+
+    .hero-nurse {
+        display: none;
     }
 
     .hero-content h1 {
@@ -4430,12 +4414,13 @@ button:focus-visible {
 
     .hero-buttons {
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .btn-hero-whatsapp,
     .btn-hero-tel {
-        padding: 14px 22px;
-        font-size: 0.95rem;
+        padding: 14px 20px;
+        font-size: 0.9rem;
     }
 
     .hero-products {
@@ -4496,31 +4481,28 @@ button:focus-visible {
         font-size: 0.9rem;
     }
 
+    .hero-buttons {
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
     .btn-hero-whatsapp,
     .btn-hero-tel {
-        padding: 12px 18px;
-        font-size: 0.9rem;
-        width: 100%;
+        padding: 12px 14px;
+        font-size: 0.8rem;
+        flex: 1;
         justify-content: center;
+        white-space: nowrap;
+    }
+
+    .btn-hero-whatsapp svg,
+    .btn-hero-tel svg {
+        width: 18px;
+        height: 18px;
     }
 
     .hero-products img {
         max-width: 220px;
-    }
-
-    .warranty-badge {
-        width: 60px;
-        height: 60px;
-        right: 0;
-        bottom: 0;
-    }
-
-    .warranty-badge span {
-        font-size: 1.3rem;
-    }
-
-    .warranty-badge small {
-        font-size: 0.45rem;
     }
 
     .feature-strip {
