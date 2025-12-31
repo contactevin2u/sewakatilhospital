@@ -117,7 +117,7 @@
 
         init() {
             this.toggle = document.querySelector('.mobile-menu-toggle, .nav-toggle, .hamburger');
-            this.menu = document.querySelector('.nav-menu, .main-nav, .navigation');
+            this.menu = document.querySelector('.nav-menu-new, .nav-menu, .main-nav, .navigation');
 
             if (!this.menu) return;
 
@@ -383,7 +383,7 @@
         lastScroll: 0,
 
         init() {
-            this.header = document.querySelector('.header');
+            this.header = document.querySelector('.header-new, .header');
             if (!this.header) return;
 
             let ticking = false;
