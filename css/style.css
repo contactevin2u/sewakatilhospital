@@ -4079,12 +4079,8 @@ button:focus-visible {
 }
 
 .cert-icons {
-    background: white;
-    padding: 6px 10px;
-    border-radius: 6px;
     display: flex;
     align-items: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cert-icons img {
