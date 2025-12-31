@@ -4173,19 +4173,18 @@ button:focus-visible {
     z-index: 2;
 }
 
-/* Product Visuals - Positioned in center */
+/* Product Visuals - Centered between left content and nurse */
 .hero-products {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
-    margin-right: 80px;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.15));
