@@ -4014,80 +4014,45 @@ button:focus-visible {
 }
 
 /* -----------------------------------------
-   HERO SECTION - CURVED DIVIDER DESIGN
+   HERO SECTION - ROUNDED CARD DESIGN
    ----------------------------------------- */
 .hero-section {
-    position: relative;
-    min-height: 520px;
-    overflow: hidden;
-}
-
-/* Background layers */
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.hero-bg-blue {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background: linear-gradient(135deg, #0077B5 0%, #4DA8DA 100%);
-    border-radius: 0 0 40px 0;
-}
-
-.hero-bg-curve {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
     background: url('../images/Background Hero.jpg') center center / cover no-repeat;
-    background-color: #B8E0F7;
+    background-color: #D4EDFC;
+    padding: 30px 0 0;
 }
 
-.hero-bg-curve::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150px;
-    width: 300px;
-    height: 100%;
-    background: linear-gradient(135deg, #0077B5 0%, #4DA8DA 100%);
-    border-radius: 0 50% 50% 0 / 0 100% 100% 0;
-}
-
-.hero-section > .container {
+.hero-wrapper {
+    display: flex;
+    align-items: stretch;
     position: relative;
-    z-index: 1;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 0.9fr 0.8fr;
-    gap: 20px;
-    align-items: center;
-    min-height: 480px;
-    padding: 40px 0;
+/* Blue Rounded Card */
+.hero-card {
+    background: linear-gradient(135deg, #0077B5 0%, #2196F3 50%, #4DA8DA 100%);
+    border-radius: 30px;
+    padding: 45px 40px;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    max-width: 75%;
+    position: relative;
+    z-index: 2;
 }
 
-/* Left Column - Text Content */
+/* Text Content */
 .hero-content {
-    padding-right: 20px;
+    flex: 1;
+    max-width: 420px;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .text-green {
@@ -4095,10 +4060,10 @@ button:focus-visible {
 }
 
 .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.7;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-style: italic;
 }
 
@@ -4113,7 +4078,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .cert-icons {
@@ -4126,13 +4091,13 @@ button:focus-visible {
 }
 
 .cert-icons img {
-    height: 36px;
+    height: 35px;
     width: auto;
     object-fit: contain;
 }
 
 .cert-text {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 700;
     color: #FFD700;
     line-height: 1.4;
@@ -4143,7 +4108,7 @@ button:focus-visible {
 /* Hero CTA Buttons */
 .hero-buttons {
     display: flex;
-    gap: 14px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
@@ -4153,10 +4118,10 @@ button:focus-visible {
     gap: 10px;
     background: #25D366;
     color: white;
-    padding: 14px 28px;
+    padding: 14px 26px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.2s ease;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
@@ -4180,10 +4145,10 @@ button:focus-visible {
     gap: 10px;
     background: white;
     color: #1A365D;
-    padding: 14px 28px;
+    padding: 14px 26px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.2s ease;
     border: 2px solid white;
@@ -4201,73 +4166,92 @@ button:focus-visible {
     flex-shrink: 0;
 }
 
-/* Center Column - Product Visuals */
+/* Product Visuals */
 .hero-products {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-shrink: 0;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
 }
 
 /* Gold Warranty Badge */
 .warranty-badge {
     position: absolute;
-    top: 0;
-    left: 10px;
-    width: 75px;
-    height: 75px;
-    background: linear-gradient(145deg, #F5A623 0%, #E09400 100%);
+    top: -10px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(145deg, #F5A623 0%, #D4920F 100%);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
+    box-shadow: 0 4px 15px rgba(245, 166, 35, 0.5);
     border: 3px solid #FFD700;
-    z-index: 2;
+    z-index: 5;
 }
 
 .warranty-label {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .warranty-number {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 800;
     color: white;
     line-height: 1;
 }
 
 .warranty-year {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     font-weight: 600;
     color: white;
     text-transform: lowercase;
 }
 
-/* Right Column - Nurse */
+/* Nurse - Outside card with curved background */
 .hero-nurse {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 320px;
     height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+.nurse-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #B8E4F9 0%, #8DD0F2 100%);
+    border-radius: 0 0 0 50% / 0 0 0 30%;
+    z-index: 0;
 }
 
 .hero-nurse img {
+    position: relative;
+    z-index: 1;
     max-width: 100%;
-    max-height: 450px;
+    max-height: 420px;
     object-fit: contain;
     object-position: bottom center;
 }
@@ -4334,26 +4318,12 @@ button:focus-visible {
    MOBILE RESPONSIVE - NEW DESIGN
    ----------------------------------------- */
 @media (max-width: 1024px) {
-    .hero-section {
-        min-height: auto;
-    }
-
-    .hero-bg-blue {
-        width: 65%;
-    }
-
-    .hero-bg-curve {
-        width: 50%;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        min-height: 400px;
+    .hero-card {
+        max-width: 70%;
     }
 
     .hero-nurse {
-        display: none;
+        width: 280px;
     }
 
     .hero-content h1 {
@@ -4361,16 +4331,16 @@ button:focus-visible {
     }
 
     .hero-products img {
-        max-width: 280px;
+        max-width: 240px;
     }
 
     .warranty-badge {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
     }
 
     .warranty-number {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .feature-strip-grid {
@@ -4422,33 +4392,32 @@ button:focus-visible {
         font-size: 0.85rem;
     }
 
-    .hero-bg-blue {
-        width: 100%;
-        border-radius: 0;
+    .hero-section {
+        padding: 20px 0 0;
     }
 
-    .hero-bg-curve {
-        display: none;
+    .hero-wrapper {
+        flex-direction: column;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
+    .hero-card {
+        max-width: 100%;
+        flex-direction: column;
         text-align: center;
-        gap: 25px;
-        min-height: auto;
-        padding: 30px 0;
+        padding: 30px 25px;
+        border-radius: 20px;
     }
 
     .hero-content {
-        padding-right: 0;
+        max-width: 100%;
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
     }
 
     .hero-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .hero-cert-badge {
@@ -4464,27 +4433,22 @@ button:focus-visible {
     .btn-hero-whatsapp,
     .btn-hero-tel {
         padding: 12px 20px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .hero-products {
         order: -1;
+        margin-bottom: 20px;
     }
 
     .hero-products img {
-        max-width: 260px;
+        max-width: 240px;
     }
 
     .warranty-badge {
-        width: 60px;
-        height: 60px;
         left: 50%;
         transform: translateX(-50%);
-        top: -10px;
-    }
-
-    .warranty-number {
-        font-size: 1.4rem;
+        top: -15px;
     }
 
     .hero-nurse {
