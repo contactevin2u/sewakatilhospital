@@ -2308,14 +2308,6 @@ body {
     }
 }
 
-.hero-content {
-    animation: fadeInUp 0.8s ease-out;
-}
-
-.hero-image {
-    animation: fadeInUp 0.8s ease-out 0.2s both;
-}
-
 /* Scroll Animations (add .animate class via JS) */
 .animate-on-scroll {
     opacity: 0;
@@ -4618,83 +4610,7 @@ button:focus-visible {
     }
 }
 
-/* --- Enhanced Hero Section --- */
-.hero-card {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.hero-content {
-    animation: slideInLeft 0.6s ease-out 0.2s both;
-}
-
-/* Hero products floating animation */
-.hero-products {
-    animation: fadeInUp 0.6s ease-out 0.3s both;
-}
-
-.hero-products img {
-    animation: floatSlow 6s ease-in-out infinite;
-    transition: transform 0.4s ease;
-}
-
-.hero-products img:hover {
-    transform: scale(1.03);
-}
-
-/* Hero nurse animation */
-.hero-nurse {
-    animation: slideInRight 0.6s ease-out 0.4s both;
-}
-
-.nurse-circle {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.nurse-circle:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-}
-
-/* Warranty badge pulse */
-.warranty-badge {
-    animation: pulse-ring 3s ease-in-out infinite;
-}
-
-/* Cert Badge enhancement */
-.cert-icons {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cert-icons:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* CTA button enhancements */
-.btn-hero-whatsapp {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-hero-whatsapp::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s ease;
-}
-
-.btn-hero-whatsapp:hover::before {
-    left: 100%;
-}
-
-.btn-hero-whatsapp:active,
-.btn-hero-tel:active {
-    transform: translateY(-1px) scale(0.98);
-}
+/* --- Hero Section - No Animations --- */
 
 /* --- Enhanced Features Bar --- */
 .features-bar {
@@ -5401,15 +5317,6 @@ button:focus-visible {
         display: flex;
     }
 
-    /* Better mobile hero */
-    .hero-content {
-        animation: fadeInUp 0.6s ease-out;
-    }
-
-    .hero-products img {
-        animation: scaleIn 0.6s ease-out 0.2s both;
-    }
-
     /* Services grid mobile */
     .services-grid {
         grid-template-columns: 1fr;
@@ -5537,10 +5444,6 @@ button:focus-visible {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
-    }
-
-    .hero-products img {
-        animation: none;
     }
 
     .reveal,
