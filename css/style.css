@@ -4022,199 +4022,235 @@ button:focus-visible {
 }
 
 /* -----------------------------------------
-   HERO SECTION - MATCHING REFERENCE
+   HERO SECTION - BLUE GRADIENT CARD
    ----------------------------------------- */
 .hero-section {
-    position: relative;
-    min-height: 480px;
-    overflow: hidden;
-    padding: 0;
+    padding: 30px 0 50px;
+    background: #f8fafc;
 }
 
-/* Background image */
-.hero-bg-image {
+/* Large Rounded Rectangle Container */
+.hero-card {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 50%, #0D47A1 100%);
+    border-radius: 30px;
+    padding: 50px 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(13, 71, 161, 0.3);
+}
+
+/* Subtle gradient overlay */
+.hero-card::before {
+    content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 60%;
     height: 100%;
-    background: url('../images/Background.jpg') center center / cover no-repeat;
-    z-index: 0;
-}
-
-/* White curved background on right for nurse - DISABLED */
-.hero-curve-white {
-    display: none;
-}
-
-.hero-section > .container {
-    position: relative;
-    z-index: 2;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background: radial-gradient(ellipse at right center, rgba(255,255,255,0.1) 0%, transparent 60%);
+    pointer-events: none;
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
     gap: 30px;
     align-items: center;
-    min-height: 380px;
+    position: relative;
+    z-index: 1;
 }
 
-/* Hero Content - Text directly on background */
-.hero-content {
-    padding-right: 20px;
-}
-
+/* Left Column - Text Content */
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
-    line-height: 1.2;
-    color: #1565C0;
+    line-height: 1.15;
+    color: white;
     margin-bottom: 20px;
 }
 
-.text-cyan {
-    color: #00BCD4;
-}
-
 .text-yellow {
-    color: #FFC107;
+    color: #FFD54F;
 }
 
 .hero-subtitle {
     font-size: 1rem;
-    color: #1565C0;
-    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
     margin-bottom: 25px;
 }
 
-.hero-subtitle em {
-    font-style: italic;
+.hero-subtitle strong {
+    color: #FFD54F;
 }
 
-/* KKM Badge Row */
-.kkm-badge-row {
+/* KKM Certification Badge */
+.hero-cert-badge {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.kkm-icons {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+.cert-icons {
     background: white;
     padding: 8px 12px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
 }
 
-.kkm-icons img {
+.cert-icons img {
+    height: 38px;
     width: auto;
-    height: 40px;
     object-fit: contain;
 }
 
-.kkm-text {
-    font-size: 0.65rem;
+.cert-text {
+    font-size: 0.6rem;
     font-weight: 700;
-    color: #0066CC;
-    line-height: 1.3;
+    color: white;
+    line-height: 1.4;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 0.5px;
 }
 
 /* Hero CTA Buttons */
-.hero-cta-buttons {
+.hero-buttons {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.btn-whatsapp-hero {
+.btn-hero-whatsapp {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     background: #25D366;
     color: white;
-    padding: 14px 24px;
-    border-radius: 30px;
+    padding: 16px 28px;
+    border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
 }
 
-.btn-whatsapp-hero:hover {
-    background: #1DA851;
+.btn-hero-whatsapp:hover {
+    background: #1EBE5D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
     text-decoration: none;
     color: white;
 }
 
-.btn-whatsapp-hero svg {
+.btn-hero-whatsapp svg {
     flex-shrink: 0;
 }
 
-.btn-tel-hero {
+.btn-hero-tel {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: white;
-    color: var(--gray-700);
-    padding: 14px 24px;
-    border-radius: 30px;
+    background: #2196F3;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
-    border: 1px solid var(--gray-300);
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
 }
 
-.btn-tel-hero:hover {
-    border-color: var(--primary-blue);
-    color: var(--primary-blue);
+.btn-hero-tel:hover {
+    background: #1E88E5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.5);
     text-decoration: none;
+    color: white;
 }
 
-.btn-tel-hero svg {
+.btn-hero-tel svg {
     flex-shrink: 0;
 }
 
-/* Hero Products */
+/* Center Column - Product Visuals */
 .hero-products {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 2;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 380px;
+    max-width: 350px;
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
 }
 
-/* Hero Nurse */
+/* Gold Warranty Badge */
+.warranty-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA000 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(255, 160, 0, 0.4);
+    border: 3px solid white;
+}
+
+.warranty-badge span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #5D4037;
+    line-height: 1;
+}
+
+.warranty-badge small {
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #5D4037;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Right Column - Nurse Circle */
 .hero-nurse {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 100%;
-    position: relative;
-    z-index: 3;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-nurse img {
+.nurse-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.nurse-circle img {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    object-fit: contain;
-    object-position: bottom;
+    object-fit: cover;
+    object-position: top center;
 }
 
 /* -----------------------------------------
@@ -4294,21 +4330,34 @@ button:focus-visible {
    MOBILE RESPONSIVE - NEW DESIGN
    ----------------------------------------- */
 @media (max-width: 1024px) {
+    .hero-card {
+        padding: 40px 30px;
+    }
+
     .hero-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 25px;
     }
 
     .hero-nurse {
         display: none;
     }
 
-    .hero-curve-white {
-        display: none;
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
 
-    .hero-content h1 {
-        font-size: 2rem;
+    .hero-products img {
+        max-width: 300px;
+    }
+
+    .warranty-badge {
+        width: 70px;
+        height: 70px;
+    }
+
+    .warranty-badge span {
+        font-size: 1.5rem;
     }
 
     .features-grid {
@@ -4357,41 +4406,45 @@ button:focus-visible {
     }
 
     .hero-section {
-        min-height: auto;
+        padding: 20px 0 40px;
+    }
+
+    .hero-card {
+        padding: 30px 20px;
+        border-radius: 20px;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
-        min-height: auto;
+        gap: 25px;
     }
 
     .hero-content h1 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
 
     .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
-    .kkm-badge-row {
+    .hero-cert-badge {
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .hero-cta-buttons {
+    .hero-buttons {
         justify-content: center;
     }
 
-    .btn-whatsapp-hero,
-    .btn-tel-hero {
-        padding: 12px 20px;
-        font-size: 0.9rem;
+    .btn-hero-whatsapp,
+    .btn-hero-tel {
+        padding: 14px 22px;
+        font-size: 0.95rem;
     }
 
     .hero-products {
         order: -1;
-        margin-bottom: 20px;
     }
 
     .hero-products img {
@@ -4426,12 +4479,43 @@ button:focus-visible {
         font-size: 1.2rem;
     }
 
+    .hero-card {
+        padding: 25px 15px;
+    }
+
     .hero-content h1 {
         font-size: 1.5rem;
     }
 
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .btn-hero-whatsapp,
+    .btn-hero-tel {
+        padding: 12px 18px;
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+
     .hero-products img {
-        max-width: 240px;
+        max-width: 220px;
+    }
+
+    .warranty-badge {
+        width: 60px;
+        height: 60px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .warranty-badge span {
+        font-size: 1.3rem;
+    }
+
+    .warranty-badge small {
+        font-size: 0.45rem;
     }
 
     .features-grid {
@@ -4535,61 +4619,64 @@ button:focus-visible {
 }
 
 /* --- Enhanced Hero Section --- */
-.hero-content {
-    animation: slideInLeft 0.6s ease-out;
+.hero-card {
+    animation: fadeInUp 0.6s ease-out;
 }
 
-.hero-content h1 {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.hero-content {
+    animation: slideInLeft 0.6s ease-out 0.2s both;
 }
 
 /* Hero products floating animation */
 .hero-products {
-    animation: fadeInUp 0.6s ease-out 0.2s both;
+    animation: fadeInUp 0.6s ease-out 0.3s both;
 }
 
 .hero-products img {
     animation: floatSlow 6s ease-in-out infinite;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.1));
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .hero-products img:hover {
-    transform: scale(1.02);
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+    transform: scale(1.03);
 }
 
 /* Hero nurse animation */
 .hero-nurse {
-    animation: slideInRight 0.6s ease-out 0.3s both;
+    animation: slideInRight 0.6s ease-out 0.4s both;
 }
 
-.hero-nurse img {
-    transition: transform 0.4s ease;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
+.nurse-circle {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.hero-nurse img:hover {
-    transform: scale(1.02);
+.nurse-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* KKM Badge enhancement */
-.kkm-icons {
+/* Warranty badge pulse */
+.warranty-badge {
+    animation: pulse-ring 3s ease-in-out infinite;
+}
+
+/* Cert Badge enhancement */
+.cert-icons {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.kkm-icons:hover {
+.cert-icons:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* CTA button enhancements */
-.btn-whatsapp-hero {
+.btn-hero-whatsapp {
     position: relative;
     overflow: hidden;
 }
 
-.btn-whatsapp-hero::before {
+.btn-hero-whatsapp::before {
     content: '';
     position: absolute;
     top: 0;
@@ -4600,15 +4687,12 @@ button:focus-visible {
     transition: left 0.5s ease;
 }
 
-.btn-whatsapp-hero:hover::before {
+.btn-hero-whatsapp:hover::before {
     left: 100%;
 }
 
-.btn-whatsapp-hero:active {
-    transform: translateY(-1px) scale(0.98);
-}
-
-.btn-tel-hero:active {
+.btn-hero-whatsapp:active,
+.btn-hero-tel:active {
     transform: translateY(-1px) scale(0.98);
 }
 
