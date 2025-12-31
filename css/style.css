@@ -4027,12 +4027,12 @@ button:focus-visible {
 .hero-container {
     background: linear-gradient(135deg, #0077B5 0%, #1E88E5 50%, #42A5F5 100%);
     border-radius: 28px;
-    padding: 40px;
+    padding: 45px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: visible;
-    min-height: 420px;
+    min-height: 480px;
 }
 
 /* Left Column - Text Content */
@@ -4262,15 +4262,15 @@ button:focus-visible {
 .feature-strip-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 40px;
-    padding-bottom: 50px;
+    gap: 16px;
+    margin-top: 35px;
+    padding-bottom: 40px;
 }
 
 .feature-card {
     background: white;
-    padding: 30px 20px 25px;
-    border-radius: 20px;
+    padding: 18px 15px 15px;
+    border-radius: 16px;
     text-align: center;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -4282,20 +4282,20 @@ button:focus-visible {
 }
 
 .feature-icon {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .feature-icon img,
 .feature-icon svg {
-    width: 55px;
-    height: 55px;
+    width: 42px;
+    height: 42px;
 }
 
 .feature-card h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #0077B5;
-    margin: 0 0 10px;
+    margin: 0 0 6px;
     line-height: 1.3;
 }
 
@@ -4304,9 +4304,9 @@ button:focus-visible {
 }
 
 .feature-card p {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     color: #666;
-    line-height: 1.5;
+    line-height: 1.4;
     margin: 0;
 }
 
