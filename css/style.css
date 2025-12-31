@@ -4231,7 +4231,7 @@ button:focus-visible {
     text-transform: lowercase;
 }
 
-/* White Half-Pill Background - Frame for Nurse */
+/* White Half-Pill Background - Behind Nurse */
 .hero-curve-bg {
     position: absolute;
     right: 0;
@@ -4242,28 +4242,21 @@ button:focus-visible {
     background: white;
     border-radius: 180px 0 0 180px;
     z-index: 1;
-    overflow: hidden;
 }
 
-/* Doctor Image - Inside the pill shape */
+/* Doctor Image - Stands in front of pill shape */
 .hero-doctor {
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 30px;
+    bottom: 0;
     z-index: 2;
-    width: 280px;
-    height: calc(100% - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-doctor img {
-    max-width: 240px;
-    max-height: 100%;
+    max-width: 280px;
+    height: auto;
     object-fit: contain;
-    object-position: center;
+    display: block;
 }
 
 /* -----------------------------------------
