@@ -4244,18 +4244,17 @@ button:focus-visible {
     object-position: bottom center;
 }
 
-/* White Half-Pill Background Behind Nurse */
+/* White Half-Oval Background Behind Nurse */
 .hero-curve-bg {
     position: absolute;
-    right: 20px;
+    right: -150px;
     top: 50%;
     transform: translateY(-50%);
-    width: 220px;
-    height: 380px;
+    width: 450px;
+    height: 420px;
     background: white;
-    border-radius: 110px;
+    border-radius: 50%;
     z-index: 1;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* -----------------------------------------
