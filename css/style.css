@@ -4258,8 +4258,8 @@ button:focus-visible {
 }
 
 .hero-doctor img {
-    width: 100%;
-    max-width: 320px;
+    width: 130%;
+    max-width: none;
     height: auto;
     object-fit: cover;
     object-position: top center;
