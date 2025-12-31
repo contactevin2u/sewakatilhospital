@@ -4042,16 +4042,9 @@ button:focus-visible {
     z-index: 0;
 }
 
-/* White curved background on right for nurse */
+/* White curved background on right for nurse - DISABLED */
 .hero-curve-white {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background: white;
-    border-radius: 0 0 0 50% / 0 0 0 100%;
-    z-index: 1;
+    display: none;
 }
 
 .hero-section > .container {
