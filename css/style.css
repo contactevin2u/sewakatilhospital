@@ -4231,32 +4231,39 @@ button:focus-visible {
     text-transform: lowercase;
 }
 
-/* Doctor Image */
-.hero-doctor {
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-    z-index: 2;
-}
-
-.hero-doctor img {
-    max-width: 260px;
-    max-height: 400px;
-    object-fit: contain;
-    object-position: bottom center;
-}
-
-/* White Half-Pill Background Behind Nurse - Inside Container */
+/* White Half-Pill Background - Frame for Nurse */
 .hero-curve-bg {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 320px;
-    height: calc(100% - 120px);
+    width: 280px;
+    height: calc(100% - 100px);
     background: white;
-    border-radius: 200px 0 0 200px;
+    border-radius: 180px 0 0 180px;
     z-index: 1;
+    overflow: hidden;
+}
+
+/* Doctor Image - Inside the pill shape */
+.hero-doctor {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 280px;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-doctor img {
+    max-width: 240px;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* -----------------------------------------
