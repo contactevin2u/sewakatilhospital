@@ -3933,3 +3933,521 @@ button:focus-visible {
         scroll-behavior: auto;
     }
 }
+
+/* =========================================
+   MESINOKSIGEN.MY NEW DESIGN
+   ========================================= */
+
+/* -----------------------------------------
+   NEW HEADER STYLE
+   ----------------------------------------- */
+.header-new {
+    background-color: var(--white);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-new .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--font-heading);
+}
+
+.logo-mesin {
+    color: var(--gray-800);
+}
+
+.logo-oksigen {
+    color: #10B981;
+}
+
+.nav-menu-new {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-new a {
+    color: var(--gray-700);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+.nav-menu-new a:hover {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.nav-menu-new .current a {
+    color: var(--primary-blue);
+}
+
+.header-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #10B981;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.header-whatsapp-btn:hover {
+    background: #059669;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* -----------------------------------------
+   HERO MESIN SECTION
+   ----------------------------------------- */
+.hero-mesin {
+    position: relative;
+    background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #E0F2FE 100%);
+    padding: 60px 0 80px;
+    overflow: hidden;
+}
+
+.hero-mesin-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 0%, transparent 100%);
+    border-radius: 0 0 0 50% / 0 0 0 30%;
+    z-index: 0;
+}
+
+.hero-mesin-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-mesin-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--secondary-dark);
+    margin-bottom: 20px;
+}
+
+.text-cyan {
+    color: #0EA5E9;
+}
+
+.text-gold {
+    color: #D97706;
+}
+
+.hero-mesin-sub {
+    font-size: 1.1rem;
+    color: var(--gray-700);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-mesin-sub em {
+    font-style: italic;
+}
+
+/* KKM Badge Row */
+.kkm-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.kkm-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.kkm-icons img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.kkm-text {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #0066CC;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* CTA Buttons */
+.hero-mesin-cta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-wa-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.cta-wa-green:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.cta-wa-green svg {
+    flex-shrink: 0;
+}
+
+.cta-tel-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: var(--gray-800);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--gray-300);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cta-tel-white:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.cta-tel-white svg {
+    flex-shrink: 0;
+}
+
+/* Hero Products */
+.hero-mesin-products {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+.hero-mesin-products img {
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-concentrator {
+    width: 200px;
+    height: 280px;
+    z-index: 2;
+}
+
+.product-tank {
+    width: 160px;
+    height: 300px;
+    margin-left: -30px;
+    z-index: 1;
+}
+
+/* Hero Nurse */
+.hero-mesin-nurse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-mesin-nurse img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 0 40%;
+}
+
+/* -----------------------------------------
+   FEATURES BAR
+   ----------------------------------------- */
+.features-bar {
+    background: linear-gradient(180deg, #E0F2FE 0%, #F0F9FF 100%);
+    padding: 50px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-icon-wrap svg {
+    stroke: #0EA5E9;
+    width: 50px;
+    height: 50px;
+}
+
+.fast-badge {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    background: #DC2626;
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transform: rotate(5deg);
+}
+
+.feature-card h3 {
+    font-size: 1rem;
+    color: #0EA5E9;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card h3 em {
+    font-style: italic;
+}
+
+.feature-card p {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* -----------------------------------------
+   MOBILE RESPONSIVE - NEW DESIGN
+   ----------------------------------------- */
+@media (max-width: 1024px) {
+    .hero-mesin-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .hero-mesin-nurse {
+        display: none;
+    }
+
+    .hero-mesin-content h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-new .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu-new {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 24px 24px;
+        gap: 10px;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+
+    .nav-menu-new.active {
+        right: 0;
+    }
+
+    .nav-menu-new a {
+        display: block;
+        padding: 12px 16px;
+        border-radius: 8px;
+    }
+
+    .nav-menu-new a:hover {
+        background: var(--gray-50);
+    }
+
+    .header-whatsapp-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+
+    .hero-mesin {
+        padding: 40px 0 60px;
+    }
+
+    .hero-mesin-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-mesin-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-mesin-sub {
+        font-size: 1rem;
+    }
+
+    .kkm-badge-row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-mesin-cta {
+        justify-content: center;
+    }
+
+    .cta-wa-green,
+    .cta-tel-white {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .hero-mesin-products {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .product-concentrator {
+        width: 140px;
+        height: 200px;
+    }
+
+    .product-tank {
+        width: 120px;
+        height: 220px;
+        margin-left: -20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .feature-card {
+        padding: 20px 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 0.85rem;
+    }
+
+    .feature-card p {
+        font-size: 0.75rem;
+    }
+
+    .fast-badge {
+        right: 5px;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .hero-mesin-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+        padding: 15px 20px;
+    }
+
+    .feature-icon-wrap {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .feature-icon-wrap svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fast-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 5px;
+    }
+}
