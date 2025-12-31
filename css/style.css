@@ -4167,24 +4167,25 @@ button:focus-visible {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 0;
     position: relative;
     z-index: 2;
 }
 
-/* Product Visuals */
+/* Product Visuals - Positioned in center */
 .hero-products {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 3;
+    margin-right: 80px;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 260px;
+    max-width: 280px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.15));
@@ -4232,14 +4233,15 @@ button:focus-visible {
 
 /* Doctor Image */
 .hero-doctor {
-    position: relative;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
     z-index: 2;
-    margin-right: -40px;
 }
 
 .hero-doctor img {
-    max-width: 280px;
-    max-height: 380px;
+    max-width: 260px;
+    max-height: 400px;
     object-fit: contain;
     object-position: bottom center;
 }
