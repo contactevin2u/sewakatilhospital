@@ -4014,45 +4014,41 @@ button:focus-visible {
 }
 
 /* -----------------------------------------
-   HERO SECTION - ROUNDED CARD DESIGN
+   HERO SECTION - ROUNDED CONTAINER
    ----------------------------------------- */
 .hero-section {
     background: url('../images/Background Hero.jpg') center center / cover no-repeat;
     background-color: #D4EDFC;
-    padding: 30px 0 0;
+    padding: 25px 0 0;
 }
 
-.hero-wrapper {
+/* Main Hero Container - Rounded Rectangle */
+.hero-container {
+    background: linear-gradient(135deg, #0077B5 0%, #1E88E5 50%, #42A5F5 100%);
+    border-radius: 28px;
+    padding: 40px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     position: relative;
+    overflow: visible;
+    min-height: 420px;
 }
 
-/* Blue Rounded Card */
-.hero-card {
-    background: linear-gradient(135deg, #0077B5 0%, #2196F3 50%, #4DA8DA 100%);
-    border-radius: 30px;
-    padding: 45px 40px;
-    display: flex;
-    gap: 30px;
-    flex: 1;
-    max-width: 75%;
+/* Left Column - Text Content */
+.hero-left {
+    flex: 0 0 42%;
+    max-width: 42%;
+    padding-right: 20px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
-/* Text Content */
-.hero-content {
-    flex: 1;
-    max-width: 420px;
-}
-
-.hero-content h1 {
-    font-size: 2.4rem;
+.hero-left h1 {
+    font-size: 2.3rem;
     font-weight: 700;
     line-height: 1.15;
     color: white;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .text-green {
@@ -4060,10 +4056,10 @@ button:focus-visible {
 }
 
 .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: rgba(255, 255, 255, 0.95);
-    line-height: 1.7;
-    margin-bottom: 20px;
+    line-height: 1.65;
+    margin-bottom: 18px;
     font-style: italic;
 }
 
@@ -4077,30 +4073,30 @@ button:focus-visible {
 .hero-cert-badge {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 22px;
 }
 
 .cert-icons {
     background: white;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cert-icons img {
-    height: 35px;
+    height: 32px;
     width: auto;
     object-fit: contain;
 }
 
 .cert-text {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     font-weight: 700;
     color: #FFD700;
-    line-height: 1.4;
+    line-height: 1.35;
     text-transform: uppercase;
     margin: 0;
 }
@@ -4108,51 +4104,52 @@ button:focus-visible {
 /* Hero CTA Buttons */
 .hero-buttons {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 .btn-hero-whatsapp {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     background: #25D366;
     color: white;
-    padding: 14px 26px;
+    padding: 12px 22px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
 }
 
 .btn-hero-whatsapp:hover {
     background: #1EBE5D;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
     text-decoration: none;
     color: white;
 }
 
 .btn-hero-whatsapp svg {
     flex-shrink: 0;
+    width: 18px;
+    height: 18px;
 }
 
 .btn-hero-tel {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     background: white;
     color: #1A365D;
-    padding: 14px 26px;
+    padding: 12px 22px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
     transition: all 0.2s ease;
-    border: 2px solid white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-hero-tel:hover {
@@ -4164,6 +4161,19 @@ button:focus-visible {
 
 .btn-hero-tel svg {
     flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+/* Right Column - Products + Doctor */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+    position: relative;
+    z-index: 2;
 }
 
 /* Product Visuals */
@@ -4172,37 +4182,37 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     position: relative;
-    flex-shrink: 0;
+    z-index: 3;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.15));
 }
 
 /* Gold Warranty Badge */
 .warranty-badge {
     position: absolute;
-    top: -10px;
-    left: 0;
-    width: 70px;
-    height: 70px;
+    top: -5px;
+    left: -10px;
+    width: 65px;
+    height: 65px;
     background: linear-gradient(145deg, #F5A623 0%, #D4920F 100%);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(245, 166, 35, 0.5);
+    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.5);
     border: 3px solid #FFD700;
     z-index: 5;
 }
 
 .warranty-label {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
@@ -4210,50 +4220,43 @@ button:focus-visible {
 }
 
 .warranty-number {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: white;
     line-height: 1;
 }
 
 .warranty-year {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     font-weight: 600;
     color: white;
     text-transform: lowercase;
 }
 
-/* Nurse - Outside card with curved background */
-.hero-nurse {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 320px;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 1;
-}
-
-.nurse-bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #B8E4F9 0%, #8DD0F2 100%);
-    border-radius: 0 0 0 50% / 0 0 0 30%;
-    z-index: 0;
-}
-
-.hero-nurse img {
+/* Doctor Image */
+.hero-doctor {
     position: relative;
-    z-index: 1;
-    max-width: 100%;
-    max-height: 420px;
+    z-index: 2;
+    margin-right: -40px;
+}
+
+.hero-doctor img {
+    max-width: 280px;
+    max-height: 380px;
     object-fit: contain;
     object-position: bottom center;
+}
+
+/* Curved Light Blue Background */
+.hero-curve-bg {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: linear-gradient(180deg, #B8E4F9 0%, #7DD3F5 100%);
+    border-radius: 0 28px 28px 50%;
+    z-index: 1;
 }
 
 /* -----------------------------------------
@@ -4318,29 +4321,40 @@ button:focus-visible {
    MOBILE RESPONSIVE - NEW DESIGN
    ----------------------------------------- */
 @media (max-width: 1024px) {
-    .hero-card {
-        max-width: 70%;
+    .hero-container {
+        padding: 35px 30px;
+        min-height: 380px;
     }
 
-    .hero-nurse {
-        width: 280px;
+    .hero-left {
+        flex: 0 0 45%;
+        max-width: 45%;
     }
 
-    .hero-content h1 {
+    .hero-left h1 {
         font-size: 2rem;
     }
 
     .hero-products img {
+        max-width: 220px;
+    }
+
+    .hero-doctor img {
         max-width: 240px;
+        max-height: 340px;
+    }
+
+    .hero-curve-bg {
+        width: 240px;
     }
 
     .warranty-badge {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
     .warranty-number {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .feature-strip-grid {
@@ -4396,23 +4410,23 @@ button:focus-visible {
         padding: 20px 0 0;
     }
 
-    .hero-wrapper {
-        flex-direction: column;
-    }
-
-    .hero-card {
-        max-width: 100%;
+    .hero-container {
         flex-direction: column;
         text-align: center;
         padding: 30px 25px;
         border-radius: 20px;
+        min-height: auto;
+        overflow: hidden;
     }
 
-    .hero-content {
+    .hero-left {
+        flex: none;
         max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 25px;
     }
 
-    .hero-content h1 {
+    .hero-left h1 {
         font-size: 1.75rem;
     }
 
@@ -4436,9 +4450,13 @@ button:focus-visible {
         font-size: 0.85rem;
     }
 
+    .hero-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .hero-products {
         order: -1;
-        margin-bottom: 20px;
     }
 
     .hero-products img {
@@ -4451,7 +4469,16 @@ button:focus-visible {
         top: -15px;
     }
 
-    .hero-nurse {
+    .hero-doctor {
+        margin-right: 0;
+    }
+
+    .hero-doctor img {
+        max-width: 200px;
+        max-height: 280px;
+    }
+
+    .hero-curve-bg {
         display: none;
     }
 
@@ -4482,16 +4509,33 @@ button:focus-visible {
         font-size: 1.2rem;
     }
 
-    .hero-grid {
-        padding: 25px 0;
+    .hero-container {
+        padding: 25px 18px;
+        border-radius: 16px;
     }
 
-    .hero-content h1 {
+    .hero-left {
+        margin-bottom: 20px;
+    }
+
+    .hero-left h1 {
         font-size: 1.4rem;
     }
 
     .hero-subtitle {
         font-size: 0.85rem;
+    }
+
+    .hero-cert-badge {
+        gap: 8px;
+    }
+
+    .cert-icons img {
+        height: 26px;
+    }
+
+    .cert-text {
+        font-size: 0.5rem;
     }
 
     .hero-buttons {
@@ -4514,8 +4558,17 @@ button:focus-visible {
         height: 16px;
     }
 
+    .hero-right {
+        gap: 15px;
+    }
+
     .hero-products img {
         max-width: 200px;
+    }
+
+    .hero-doctor img {
+        max-width: 160px;
+        max-height: 220px;
     }
 
     .warranty-badge {
