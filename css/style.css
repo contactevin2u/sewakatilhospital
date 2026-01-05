@@ -4019,7 +4019,7 @@ button:focus-visible {
 .hero-section {
     background: url('../images/Background Hero.jpg') center center / cover no-repeat;
     background-color: #D4EDFC;
-    padding: 40px 0 0;
+    padding: 50px 0 0;
     padding-bottom: 0;
 }
 
@@ -4027,12 +4027,12 @@ button:focus-visible {
 .hero-container {
     background: linear-gradient(135deg, #0077B5 0%, #1E88E5 50%, #42A5F5 100%);
     border-radius: 28px;
-    padding: 45px;
+    padding: 50px;
     display: flex;
     align-items: center;
     position: relative;
     overflow: visible;
-    min-height: 480px;
+    min-height: 520px;
 }
 
 /* Left Column - Text Content */
@@ -4279,15 +4279,15 @@ button:focus-visible {
 .feature-strip-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 35px;
-    padding-bottom: 40px;
+    gap: 16px;
+    margin-top: 25px;
+    padding-bottom: 30px;
 }
 
 .feature-card {
     background: linear-gradient(135deg, #E8F4FC 0%, #D6EAF8 100%);
-    padding: 28px 20px 24px;
-    border-radius: 50px;
+    padding: 18px 16px 16px;
+    border-radius: 40px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 119, 181, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
