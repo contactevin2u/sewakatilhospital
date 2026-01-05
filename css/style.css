@@ -4283,7 +4283,11 @@ button:focus-visible {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-top: 25px;
-    padding-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 119, 181, 0.15);
 }
 
 .feature-card {
