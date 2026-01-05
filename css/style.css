@@ -3935,13 +3935,13 @@ button:focus-visible {
    NEW HEADER STYLE - COMPACT
    ----------------------------------------- */
 .header-new {
-    background-color: var(--white);
+    background-color: #0077B5;
     padding: 2px 0;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-new .header-inner {
@@ -3960,11 +3960,11 @@ button:focus-visible {
 }
 
 .logo-mesin {
-    color: var(--gray-800);
+    color: white;
 }
 
 .logo-oksigen {
-    color: #10B981;
+    color: #4AE3B5;
 }
 
 .nav-menu-new {
@@ -3976,7 +3976,7 @@ button:focus-visible {
 }
 
 .nav-menu-new a {
-    color: var(--gray-600);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
     font-size: 0.95rem;
     text-decoration: none;
@@ -3985,12 +3985,12 @@ button:focus-visible {
 }
 
 .nav-menu-new a:hover {
-    color: var(--primary-blue);
+    color: white;
     text-decoration: none;
 }
 
 .nav-menu-new .current a {
-    color: var(--primary-blue);
+    color: white;
 }
 
 .header-whatsapp-btn {
@@ -4805,7 +4805,7 @@ button:focus-visible {
 .header-new {
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(0, 119, 181, 0.98);
 }
 
 .header-new.scrolled {
@@ -4822,7 +4822,7 @@ button:focus-visible {
 }
 
 .logo-oksigen {
-    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    background: linear-gradient(135deg, #4AE3B5 0%, #2DD4BF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
