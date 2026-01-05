@@ -3964,7 +3964,7 @@ button:focus-visible {
 }
 
 .logo-oksigen {
-    color: #4AE3B5;
+    color: #90EE90;
 }
 
 .nav-menu-new {
@@ -4083,7 +4083,7 @@ button:focus-visible {
 }
 
 .hero-subtitle .price-highlight {
-    color: #cdff79;
+    color: #90EE90;
     font-weight: 700;
     font-style: italic;
 }
@@ -4845,7 +4845,7 @@ button:focus-visible {
 }
 
 .logo-oksigen {
-    background: linear-gradient(135deg, #4AE3B5 0%, #2DD4BF 100%);
+    background: linear-gradient(135deg, #90EE90 0%, #7CCD7C 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
