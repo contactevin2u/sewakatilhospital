@@ -4996,13 +4996,26 @@ button:focus-visible {
 }
 
 .service-icon {
-    font-size: 3rem;
-    margin-bottom: var(--spacing-lg);
-    transition: transform 0.3s ease;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(30, 74, 158, 0.2);
+}
+
+.service-icon svg {
+    color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(30, 74, 158, 0.35);
 }
 
 .service-price {
