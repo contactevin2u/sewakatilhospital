@@ -4199,7 +4199,7 @@ button:focus-visible {
 /* Product Visuals - Centered between left content and nurse */
 .hero-products {
     position: absolute;
-    left: 32%;
+    left: 28%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
