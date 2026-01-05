@@ -4828,7 +4828,7 @@ button:focus-visible {
 .header-new {
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 119, 181, 0.98);
+    background-color: rgba(30, 74, 158, 0.98);
 }
 
 .header-new.scrolled {
