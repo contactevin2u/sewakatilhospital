@@ -4057,7 +4057,7 @@ button:focus-visible {
 }
 
 .hero-subtitle {
-    font-size: 0.92rem;
+    font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.65;
     margin-bottom: 18px;
@@ -4065,7 +4065,7 @@ button:focus-visible {
 }
 
 .hero-subtitle .price-highlight {
-    color: #FFD700;
+    color: #25D366;
     font-weight: 700;
     font-style: normal;
 }
