@@ -4071,7 +4071,7 @@ button:focus-visible {
 }
 
 .text-green {
-    color: #4AE3B5;
+    color: #cdff79;
 }
 
 .hero-subtitle {
@@ -4083,7 +4083,7 @@ button:focus-visible {
 }
 
 .hero-subtitle .price-highlight {
-    color: #25D366;
+    color: #cdff79;
     font-weight: 700;
     font-style: italic;
 }
