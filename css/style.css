@@ -4272,7 +4272,7 @@ button:focus-visible {
     max-width: none;
     height: auto;
     object-fit: cover;
-    object-position: center center;
+    object-position: 60% center;
 }
 
 /* -----------------------------------------
