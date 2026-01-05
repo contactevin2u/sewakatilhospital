@@ -4268,11 +4268,11 @@ button:focus-visible {
 }
 
 .hero-doctor img {
-    width: 110%;
+    width: 120%;
     max-width: none;
     height: auto;
     object-fit: cover;
-    object-position: top center;
+    object-position: center center;
 }
 
 /* -----------------------------------------
