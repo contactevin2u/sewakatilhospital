@@ -2116,7 +2116,7 @@ body {
 .section-header h2 {
     font-size: 2.25rem;
     font-weight: 700;
-    color: var(--gray-800);
+    color: #1e4a9e;
     margin-bottom: var(--spacing-sm);
     position: relative;
     display: inline-block;
