@@ -4042,7 +4042,7 @@ button:focus-visible {
 
 /* Main Hero Container - Rounded Rectangle */
 .hero-container {
-    background: linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1E88E5 100%);
+    background: linear-gradient(135deg, #265ebb 0%, #2a7ed2 100%);
     border-radius: 28px;
     padding: 50px;
     display: flex;
