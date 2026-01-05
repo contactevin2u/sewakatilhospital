@@ -4045,7 +4045,7 @@ button:focus-visible {
 }
 
 .hero-left h1 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.15;
     color: white;
@@ -4176,15 +4176,15 @@ button:focus-visible {
 /* Product Visuals - Centered between left content and nurse */
 .hero-products {
     position: absolute;
-    left: 50%;
+    left: 38%;
     top: 50%;
-    transform: translate(-60%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 3;
 }
 
 .hero-products img {
     width: 100%;
-    max-width: 340px;
+    max-width: 420px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.18));
