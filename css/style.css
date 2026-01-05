@@ -4336,7 +4336,7 @@ button:focus-visible {
 }
 
 .feature-card h3 em {
-    font-style: italic;
+    font-style: normal;
 }
 
 .feature-card p {
