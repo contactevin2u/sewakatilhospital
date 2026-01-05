@@ -4017,7 +4017,8 @@ button:focus-visible {
    HERO SECTION - ROUNDED CONTAINER
    ----------------------------------------- */
 .hero-section {
-    background: linear-gradient(180deg, #E8F4FC 0%, #ffffff 100%);
+    background: url('../images/Background Hero.jpg') center center / cover no-repeat;
+    background-color: #D4EDFC;
     padding: 50px 0 0;
     padding-bottom: 0;
 }
