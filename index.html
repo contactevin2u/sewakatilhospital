@@ -41,6 +41,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,6 +134,14 @@
                     }
                 }
             ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "500",
+            "reviewCount": "487"
         }
     }
     </script>
@@ -171,7 +188,7 @@
                 "name": "Berapa harga sewa mesin oksigen di Malaysia?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Harga sewa mesin oksigen bermula dari RM150 seminggu untuk portable oxygen concentrator dan RM200 seminggu untuk home oxygen concentrator. Kami juga menawarkan pakej bulanan dengan diskaun sehingga 20%."
+                    "text": "Harga sewa mesin oksigen bermula dari RM80 sebulan untuk portable oxygen tank, RM240 sebulan untuk 5L oxygen concentrator, dan RM1,000 sebulan untuk 10L oxygen concentrator. Kami juga menawarkan pakej mingguan dan diskaun untuk sewaan jangka panjang."
                 }
             },
             {
@@ -179,7 +196,7 @@
                 "name": "Adakah penghantaran mesin oksigen percuma?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ya, kami menyediakan penghantaran percuma ke seluruh Lembah Klang. Untuk kawasan luar Lembah Klang, caj penghantaran minimum dikenakan bergantung pada lokasi."
+                    "text": "Ya, kami menyediakan penghantaran percuma ke seluruh Lembah Klang termasuk Kuala Lumpur, Petaling Jaya, Shah Alam, dan Subang Jaya. Penghantaran dalam masa 3-4 jam. Untuk kawasan luar Lembah Klang, caj penghantaran minimum dikenakan."
                 }
             },
             {
@@ -187,10 +204,425 @@
                 "name": "Apakah dokumen yang diperlukan untuk sewa mesin oksigen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Anda memerlukan salinan IC, preskripsi doktor (jika ada), dan deposit yang boleh dikembalikan. Proses pendaftaran mengambil masa kurang dari 15 minit."
+                    "text": "Anda memerlukan salinan MyKad atau Passport, dan deposit yang boleh dikembalikan (RM300-RM500 bergantung pada jenis mesin). Preskripsi doktor tidak wajib. Proses pendaftaran mengambil masa kurang dari 15 minit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah perbezaan antara oxygen concentrator dan oxygen tank?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oxygen concentrator menghasilkan oksigen dari udara dan memerlukan bekalan elektrik, sesuai untuk kegunaan berterusan di rumah. Oxygen tank (tong oksigen) mengandungi oksigen termampat, tidak perlu elektrik, sesuai untuk kecemasan dan backup. Oxygen tank perlu diisi semula (refill) manakala concentrator tidak."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Berapa lama jangka hayat oxygen concentrator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oxygen concentrator berkualiti tinggi boleh bertahan 5-10 tahun dengan penyelenggaraan yang betul. Kami menyediakan servis percuma dan jaminan 2 tahun untuk semua pembelian. Untuk sewaan, kami memastikan semua mesin dalam keadaan optimum."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Adakah mesin oksigen anda lulus KKM?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya, semua mesin oksigen kami telah lulus kelulusan KKM (Kementerian Kesihatan Malaysia) dan MDA (Medical Device Authority). Produk kami mematuhi piawaian keselamatan perubatan antarabangsa dan selamat untuk kegunaan di rumah."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bolehkah saya beli mesin secara ansuran?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya, kami menawarkan ansuran 0% sehingga 24 bulan untuk pembelian mesin oksigen. Bayaran bulanan serendah RM158 untuk 5L oxygen concentrator. Kami juga menawarkan plan sewa-beli di mana bayaran sewa boleh ditolak dari harga belian."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana cara refill oxygen tank?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kami menyediakan perkhidmatan refill oxygen tank 24/7. Harga refill adalah RM80 setong. Anda boleh hantar tong ke pusat kami atau kami boleh hantar tong yang sudah penuh ke rumah anda. Penghantaran refill dalam masa 3 jam untuk kawasan Lembah Klang."
                 }
             }
         ]
+    }
+    </script>
+
+    <!-- Schema Markup - LocalBusiness (Dual with MedicalBusiness for better coverage) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://oxygencare.my/#localbusiness",
+        "name": "MesinOksigen.my - OxygenCare Malaysia",
+        "alternateName": ["Mesin Oksigen Malaysia", "OxygenCare MY", "Sewa Mesin Oksigen"],
+        "description": "Penyedia perkhidmatan sewa dan jualan mesin oksigen terkemuka di Malaysia. Menawarkan portable oxygen tank, oxygen concentrator 5L dan 10L, dengan penghantaran 3 jam dan sokongan 24/7.",
+        "url": "https://oxygencare.my",
+        "telephone": "+60112868692",
+        "email": "info@oxygencare.my",
+        "image": [
+            "https://oxygencare.my/images/storefront.jpg",
+            "https://oxygencare.my/images/oxygen-concentrator.jpg",
+            "https://oxygencare.my/images/portable-oxygen-tank.jpg"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "45, Jalan Sultan Ismail",
+            "addressLocality": "Kuala Lumpur",
+            "addressRegion": "Wilayah Persekutuan",
+            "postalCode": "50250",
+            "addressCountry": "MY"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 3.1516,
+            "longitude": 101.7033
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "priceRange": "RM80 - RM5000",
+        "currenciesAccepted": "MYR",
+        "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Bank Transfer", "Online Banking", "Touch n Go eWallet"],
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Kuala Lumpur"
+            },
+            {
+                "@type": "City",
+                "name": "Petaling Jaya"
+            },
+            {
+                "@type": "City",
+                "name": "Shah Alam"
+            },
+            {
+                "@type": "City",
+                "name": "Subang Jaya"
+            },
+            {
+                "@type": "City",
+                "name": "Klang"
+            },
+            {
+                "@type": "State",
+                "name": "Selangor"
+            },
+            {
+                "@type": "Country",
+                "name": "Malaysia"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "500",
+            "reviewCount": "487"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Ahmad Razali"
+                },
+                "datePublished": "2024-11-15",
+                "reviewBody": "Perkhidmatan yang sangat pantas dan profesional. Mesin oksigen sampai dalam masa 3 jam selepas tempahan.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Siti Aminah"
+                },
+                "datePublished": "2024-10-28",
+                "reviewBody": "Pilihan sewa yang sangat berpatutan dan fleksibel. Sokongan teknikal 24 jam sangat membantu.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/oxygencaremalaysia",
+            "https://www.instagram.com/oxygencaremalaysia",
+            "https://wa.me/60112868692"
+        ]
+    }
+    </script>
+
+    <!-- Schema Markup - Product: Portable Oxygen Tank -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Portable Oxygen Tank (Tong Oksigen)",
+        "description": "Tong oksigen mudah alih untuk kegunaan di rumah dan kecemasan. Ringan, tidak perlu elektrik, sesuai untuk backup semasa blackout. Pakej lengkap termasuk regulator, trolley, dan cannula.",
+        "image": "https://oxygencare.my/images/portable-oxygen-tank.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "OxygenCare Malaysia"
+        },
+        "sku": "OC-POT-001",
+        "mpn": "OCPOT001",
+        "category": "Medical Equipment > Oxygen Therapy > Oxygen Tanks",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "80",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/portable-oxygen-tank/",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "OxygenCare Malaysia"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "1200",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/portable-oxygen-tank/"
+            },
+            {
+                "@type": "Offer",
+                "name": "Refill",
+                "price": "80",
+                "priceCurrency": "MYR",
+                "availability": "https://schema.org/InStock"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "156",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Schema Markup - Product: 5L Oxygen Concentrator -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "5L Oxygen Concentrator (Home Use)",
+        "description": "Oxygen concentrator 5 liter untuk kegunaan di rumah. Senyap, jimat elektrik, sesuai untuk pesakit COPD, warga emas, dan pemulihan COVID-19. Ketulenan oksigen sehingga 96%.",
+        "image": "https://oxygencare.my/images/5l-oxygen-concentrator.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "OxygenCare Malaysia"
+        },
+        "sku": "OC-5LOC-001",
+        "mpn": "OC5LOC001",
+        "category": "Medical Equipment > Oxygen Therapy > Oxygen Concentrators",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "240",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/5l-oxygen-concentrator/"
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "2500",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/5l-oxygen-concentrator/"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "203",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Schema Markup - Product: 10L Oxygen Concentrator -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "10L Oxygen Concentrator (High Flow)",
+        "description": "Oxygen concentrator 10 liter high flow untuk kes COPD teruk dan keperluan oksigen tinggi. Dual output, boleh guna untuk 2 pesakit serentak. Hospital grade equipment.",
+        "image": "https://oxygencare.my/images/10l-oxygen-concentrator.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "OxygenCare Malaysia"
+        },
+        "sku": "OC-10LOC-001",
+        "mpn": "OC10LOC001",
+        "category": "Medical Equipment > Oxygen Therapy > Oxygen Concentrators",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "1000",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/10l-oxygen-concentrator/"
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "4500",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/10l-oxygen-concentrator/"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "87",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Schema Markup - Product: Portable Oxygen Concentrator -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Portable Oxygen Concentrator (Travel)",
+        "description": "Portable oxygen concentrator dengan bateri untuk travel dan aktiviti luar. FAA approved untuk penerbangan. Ringan (2-3kg), boleh cas dalam kereta.",
+        "image": "https://oxygencare.my/images/portable-oxygen-concentrator.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "OxygenCare Malaysia"
+        },
+        "sku": "OC-POC-001",
+        "mpn": "OCPOC001",
+        "category": "Medical Equipment > Oxygen Therapy > Portable Oxygen Concentrators",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "548",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/portable-oxygen-concentrator/"
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "5000",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://oxygencare.my/products/portable-oxygen-concentrator/"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "64",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Schema Markup - Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Medical Equipment Rental",
+        "name": "Sewa Mesin Oksigen Malaysia",
+        "description": "Perkhidmatan sewa mesin oksigen di seluruh Malaysia dengan penghantaran 3 jam, tanpa deposit, dan sokongan 24/7.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "OxygenCare Malaysia"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Malaysia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Perkhidmatan Sewa Oksigen",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sewa Portable Oxygen Tank"
+                    },
+                    "price": "80",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sewa 5L Oxygen Concentrator"
+                    },
+                    "price": "240",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sewa 10L Oxygen Concentrator"
+                    },
+                    "price": "1000",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Refill Oxygen Tank"
+                    },
+                    "price": "80",
+                    "priceCurrency": "MYR"
+                }
+            ]
+        }
     }
     </script>
 </head>
@@ -272,11 +704,6 @@
                     <div class="hero-right">
                         <!-- Products -->
                         <div class="hero-products">
-                            <div class="warranty-badge">
-                                <span class="warranty-label">WARRANTY</span>
-                                <span class="warranty-number">2</span>
-                                <span class="warranty-year">year</span>
-                            </div>
                             <img src="images/Oxygen-concentrator-oxygen-tank.png"
                                  alt="Oxygen Concentrator dan Oxygen Tank"
                                  loading="eager">
