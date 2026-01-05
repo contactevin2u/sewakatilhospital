@@ -4333,19 +4333,19 @@ button:focus-visible {
     width: 48px;
     height: 48px;
     padding: 10px;
-    background: linear-gradient(135deg, #0077B5 0%, #1E88E5 100%);
+    background: linear-gradient(135deg, #e8f4fc 0%, #d0e8f7 100%);
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+    box-shadow: 0 4px 12px rgba(30, 74, 158, 0.15);
 }
 
 .feature-icon svg {
-    stroke: white;
+    stroke: #1e4a9e;
     fill: none;
 }
 
 .feature-icon img {
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    filter: invert(22%) sepia(85%) saturate(1500%) hue-rotate(205deg) brightness(85%) contrast(95%);
 }
 
 .feature-card h3 {
