@@ -4110,6 +4110,7 @@ button:focus-visible {
 .btn-hero-whatsapp {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: #25D366;
     color: white;
@@ -4120,6 +4121,7 @@ button:focus-visible {
     text-decoration: none;
     transition: all 0.2s ease;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    min-width: 200px;
 }
 
 .btn-hero-whatsapp:hover {
@@ -4139,6 +4141,7 @@ button:focus-visible {
 .btn-hero-tel {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: white;
     color: #1A365D;
@@ -4149,6 +4152,7 @@ button:focus-visible {
     text-decoration: none;
     transition: all 0.2s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
 }
 
 .btn-hero-tel:hover {
