@@ -4247,7 +4247,7 @@ button:focus-visible {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 280px;
+    width: 350px;
     height: calc(100% - 100px);
     background: white;
     border-radius: 180px 0 0 180px;
