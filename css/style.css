@@ -4084,7 +4084,7 @@ button:focus-visible {
 }
 
 .cert-icons img {
-    height: 32px;
+    height: 45px;
     width: auto;
     object-fit: contain;
 }
@@ -4092,7 +4092,7 @@ button:focus-visible {
 .cert-text {
     font-size: 0.55rem;
     font-weight: 700;
-    color: #FFD700;
+    color: #25D366;
     line-height: 1.35;
     text-transform: uppercase;
     margin: 0;
