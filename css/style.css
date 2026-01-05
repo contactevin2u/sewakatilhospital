@@ -4289,7 +4289,7 @@ button:focus-visible {
 .feature-card {
     background: linear-gradient(135deg, #E8F4FC 0%, #D6EAF8 100%);
     padding: 18px 16px 16px;
-    border-radius: 40px;
+    border-radius: 16px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 119, 181, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
