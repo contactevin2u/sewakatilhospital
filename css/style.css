@@ -4250,7 +4250,7 @@ button:focus-visible {
     width: 280px;
     height: calc(100% - 100px);
     background: white;
-    border-radius: 180px 0 0 180px;
+    border-radius: 50% 0 0 50%;
     z-index: 2;
     overflow: hidden;
 }
