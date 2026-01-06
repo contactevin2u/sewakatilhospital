@@ -4123,7 +4123,7 @@ button:focus-visible {
 /* Hero CTA Buttons */
 .hero-buttons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 35px;
 }
@@ -4132,17 +4132,17 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     color: white;
-    padding: 12px 22px;
+    padding: 16px 32px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
-    min-width: 200px;
+    min-width: 220px;
 }
 
 .btn-hero-whatsapp:hover {
@@ -4163,24 +4163,25 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    background: white;
-    color: #0077B5;
-    padding: 12px 22px;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: white;
+    padding: 16px 32px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.35);
+    min-width: 220px;
 }
 
 .btn-hero-tel:hover {
-    background: #F0F7FC;
+    background: linear-gradient(135deg, var(--primary-blue-dark) 0%, #004d73 100%);
     transform: translateY(-2px);
     text-decoration: none;
-    color: #0077B5;
+    color: white;
+    box-shadow: 0 6px 18px rgba(0, 119, 181, 0.45);
 }
 
 .btn-hero-tel svg {
