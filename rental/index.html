@@ -64,9 +64,9 @@
 
         .carousel-track {
             display: grid !important;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            transition: transform 0.4s ease;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .carousel-dots {
@@ -105,15 +105,32 @@
         }
 
         /* Responsive */
-        @media (max-width: 1024px) {
+        @media (min-width: 1025px) {
             .carousel-track {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+
+            .carousel-nav, .carousel-dots {
+                display: none !important;
+            }
+
+            .product-carousel {
+                overflow: visible;
             }
         }
 
-        @media (max-width: 768px) {
+        @media (min-width: 769px) and (max-width: 1024px) {
             .carousel-track {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .carousel-track {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
             }
 
             .product-carousel-wrapper {
@@ -128,11 +145,17 @@
 
         @media (max-width: 480px) {
             .carousel-track {
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: 1fr;
+                gap: 24px;
             }
 
             .product-carousel-wrapper {
                 padding: 0 30px;
+            }
+
+            .service-card {
+                max-width: 400px;
+                margin: 0 auto;
             }
         }
     </style>
@@ -485,38 +508,45 @@
 
             let currentSlide = 0;
             const totalCards = cards.length;
-            let cardsPerView = 2; // Show 2 columns (2x2 grid shows 4 cards at once)
-            let cardsPerSlide = 4; // Total cards visible at once in 2x2 grid
+            let cardsPerView = 4;
 
             // Determine cards per view based on screen size
             function updateCardsPerView() {
-                if (window.innerWidth <= 480) {
-                    cardsPerView = 1;
-                    cardsPerSlide = 1; // Mobile shows 1 card at a time
-                } else if (window.innerWidth <= 768) {
-                    cardsPerView = 2;
-                    cardsPerSlide = 2; // Tablet shows 2 cards (1 row of 2)
+                const width = window.innerWidth;
+
+                if (width > 1024) {
+                    cardsPerView = 4; // Desktop: all 4 visible at once
+                } else if (width > 768) {
+                    cardsPerView = 2; // Tablet: 2 cards at a time
+                } else if (width > 480) {
+                    cardsPerView = 2; // Mobile large: 2 cards
                 } else {
-                    cardsPerView = 2;
-                    cardsPerSlide = 4; // Desktop shows 4 cards (2x2 grid)
+                    cardsPerView = 1; // Mobile: 1 card at a time
                 }
             }
 
             // Update carousel position
             function updateCarousel() {
-                const cardWidth = cards[0].offsetWidth;
-                const gap = 30; // gap between cards
+                updateCardsPerView();
 
-                // Calculate offset based on cards per slide
-                let slideWidth;
-                if (window.innerWidth <= 480) {
-                    slideWidth = cardWidth + gap; // 1 card at a time
-                } else if (window.innerWidth <= 768) {
-                    slideWidth = (cardWidth + gap) * 2; // 2 cards at a time
+                const cardWidth = cards[0].offsetWidth;
+                const gap = parseInt(getComputedStyle(track).gap) || 24;
+
+                // Hide controls on desktop (all 4 cards visible)
+                if (window.innerWidth > 1024) {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                    dots.forEach(dot => dot.parentElement.style.display = 'none');
+                    track.style.transform = 'translateX(0)';
+                    return;
                 } else {
-                    slideWidth = 0; // No sliding on desktop (all 4 cards visible in 2x2)
+                    prevBtn.style.display = 'flex';
+                    nextBtn.style.display = 'flex';
+                    dots.forEach(dot => dot.parentElement.style.display = 'flex');
                 }
 
+                // Calculate slide width based on cards per view
+                const slideWidth = (cardWidth + gap) * cardsPerView;
                 const offset = -(currentSlide * slideWidth);
                 track.style.transform = `translateX(${offset}px)`;
 
@@ -525,27 +555,19 @@
                     dot.classList.toggle('active', index === currentSlide);
                 });
 
-                // Hide/show navigation on desktop (all cards visible)
-                if (window.innerWidth > 768) {
-                    prevBtn.style.display = 'none';
-                    nextBtn.style.display = 'none';
-                } else {
-                    prevBtn.style.display = 'flex';
-                    nextBtn.style.display = 'flex';
+                // Update button states
+                const maxSlide = Math.ceil(totalCards / cardsPerView) - 1;
 
-                    // Update button states
-                    prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
-                    prevBtn.style.cursor = currentSlide === 0 ? 'not-allowed' : 'pointer';
+                prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+                prevBtn.style.cursor = currentSlide === 0 ? 'not-allowed' : 'pointer';
 
-                    const maxSlide = Math.ceil(totalCards / cardsPerSlide) - 1;
-                    nextBtn.style.opacity = currentSlide >= maxSlide ? '0.5' : '1';
-                    nextBtn.style.cursor = currentSlide >= maxSlide ? 'not-allowed' : 'pointer';
-                }
+                nextBtn.style.opacity = currentSlide >= maxSlide ? '0.5' : '1';
+                nextBtn.style.cursor = currentSlide >= maxSlide ? 'not-allowed' : 'pointer';
             }
 
             // Next slide
             nextBtn.addEventListener('click', function() {
-                const maxSlide = Math.ceil(totalCards / cardsPerSlide) - 1;
+                const maxSlide = Math.ceil(totalCards / cardsPerView) - 1;
                 if (currentSlide < maxSlide) {
                     currentSlide++;
                     updateCarousel();
