@@ -1106,8 +1106,8 @@
                                 </div>
                                 <h3>Oxygen Tank</h3>
                                 <div class="service-price">
-                                    <span class="price-amount"><small>Sewa:</small> RM80<small>/bulan</small></span>
-                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> RM1,300</span>
+                                    <span class="price-amount"><small>Sewa:</small> <span>RM80<small>/bulan</small></span></span>
+                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> <span>RM1,300</span></span>
                                 </div>
                                 <p>Mudah alih, tiada elektrik. Sesuai untuk backup & kecemasan.</p>
                                 <a href="https://wa.me/60112868692?text=Saya%20ingin%20sewa%20Portable%20Oxygen%20Tank" class="btn btn-primary btn-block" target="_blank" rel="noopener">Sewa Sekarang</a>
@@ -1121,8 +1121,8 @@
                                 </div>
                                 <h3>Concentrator 5L</h3>
                                 <div class="service-price">
-                                    <span class="price-amount"><small>Sewa:</small> RM240<small>/bulan</small></span>
-                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> RM2,450</span>
+                                    <span class="price-amount"><small>Sewa:</small> <span>RM240<small>/bulan</small></span></span>
+                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> <span>RM2,450</span></span>
                                 </div>
                                 <p>Kegunaan harian di rumah. Senyap, jimat elektrik.</p>
                                 <a href="https://wa.me/60112868692?text=Saya%20ingin%20sewa%205L%20Oxygen%20Concentrator" class="btn btn-primary btn-block" target="_blank" rel="noopener">Sewa Sekarang</a>
@@ -1135,8 +1135,8 @@
                                 </div>
                                 <h3>Concentrator 10L</h3>
                                 <div class="service-price">
-                                    <span class="price-amount"><small>Sewa:</small> RM1,000<small>/bulan</small></span>
-                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> RM6,500</span>
+                                    <span class="price-amount"><small>Sewa:</small> <span>RM1,000<small>/bulan</small></span></span>
+                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> <span>RM6,500</span></span>
                                 </div>
                                 <p>High flow untuk COPD teruk. Dual output untuk 2 pesakit.</p>
                                 <a href="https://wa.me/60112868692?text=Saya%20ingin%20sewa%2010L%20Oxygen%20Concentrator" class="btn btn-primary btn-block" target="_blank" rel="noopener">Sewa Sekarang</a>
@@ -1149,8 +1149,8 @@
                                 </div>
                                 <h3>Portable Concentrator</h3>
                                 <div class="service-price">
-                                    <span class="price-amount"><small>Sewa:</small> RM548<small>/bulan</small></span>
-                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> RM4,800</span>
+                                    <span class="price-amount"><small>Sewa:</small> <span>RM548<small>/bulan</small></span></span>
+                                    <span class="price-amount" style="color: #6b7280;"><small>Beli:</small> <span>RM4,800</span></span>
                                 </div>
                                 <p>Dengan bateri untuk travel. FAA approved untuk flight.</p>
                                 <a href="https://wa.me/60112868692?text=Saya%20ingin%20sewa%20Portable%20Oxygen%20Concentrator" class="btn btn-primary btn-block" target="_blank" rel="noopener">Sewa Sekarang</a>
@@ -1209,7 +1209,12 @@
                 display: flex;
                 flex-direction: column;
                 gap: 0;
-                align-items: flex-start;
+                width: 100%;
+            }
+            .product-carousel-track .service-price .price-amount {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
             }
             .carousel-nav {
                 background: var(--primary-blue);
