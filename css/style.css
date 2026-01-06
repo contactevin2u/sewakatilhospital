@@ -4123,7 +4123,7 @@ button:focus-visible {
 /* Hero CTA Buttons */
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     margin-top: 35px;
 }
