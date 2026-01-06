@@ -57,6 +57,308 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Comparison Section Styles -->
+    <style>
+        /* Product Comparison Section */
+        .product-comparison {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .comparison-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+        }
+
+        .comparison-card-header {
+            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .comparison-card-header img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .comparison-card-header h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+        }
+
+        .comparison-card-body {
+            padding: 35px;
+        }
+
+        .scenario-section,
+        .features-section,
+        .considerations-section {
+            margin-bottom: 30px;
+        }
+
+        .comparison-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e4a9e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .scenario-list,
+        .features-list,
+        .considerations-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .scenario-list li,
+        .features-list li,
+        .considerations-list li {
+            padding: 10px 0 10px 28px;
+            position: relative;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        .scenario-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e4a9e;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .considerations-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #F59E0B;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .pricing-section {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .price-row.highlight {
+            background: #fff3cd;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .price-label {
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .price-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e4a9e;
+        }
+
+        /* Comparison Table */
+        .comparison-table-wrapper {
+            margin: 60px 0;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .table-heading {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1e4a9e;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table thead {
+            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+            color: white;
+        }
+
+        .comparison-table th {
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .comparison-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .comparison-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* CTA Box */
+        .comparison-cta {
+            margin-top: 60px;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 32px rgba(30, 74, 158, 0.3);
+        }
+
+        .cta-box h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .cta-box p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-box .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-note {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .comparison-cards {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .comparison-card-header {
+                padding: 25px 20px;
+            }
+
+            .comparison-card-body {
+                padding: 25px 20px;
+            }
+
+            .comparison-table-wrapper {
+                padding: 25px 15px;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px 10px;
+            }
+
+            .cta-box {
+                padding: 35px 25px;
+            }
+
+            .cta-box h3 {
+                font-size: 1.5rem;
+            }
+
+            .cta-box .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-large {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-comparison {
+                padding: 50px 0;
+            }
+
+            .comparison-card-header h3 {
+                font-size: 1.4rem;
+            }
+
+            .table-heading {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+
     <!-- Schema Markup - Organization -->
     <script type="application/ld+json">
     {
@@ -865,61 +1167,223 @@
             </div>
         </section>
 
-        <!-- HERO PRODUCT - Portable Oxygen Tank -->
-        <section class="hero-product" aria-labelledby="products-heading">
+        <!-- Product Comparison Section -->
+        <section class="product-comparison" aria-labelledby="comparison-heading">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="products-heading">Portable Oxygen Tank</h2>
-                    <p>Ringan, Mudah Alih & Harga Mampu Milik</p>
+                    <h2 id="comparison-heading">Oxygen Tank vs Oxygen Concentrator</h2>
+                    <p>Mana Yang Sesuai Untuk Anda? Pilih berdasarkan situasi dan keperluan anda</p>
                 </header>
 
-                <div class="hero-product-card">
-                    <div class="hero-product-image">
-                        <img src="images/Elderly in wheelchair using oxygen tank.png"
-                             alt="Warga emas menggunakan Portable Oxygen Tank - tong oksigen mudah alih untuk kegunaan di rumah"
-                             width="500" height="400" loading="lazy">
-                        <div class="hero-product-badge">⭐ Produk Pilihan</div>
+                <!-- Scenario-Based Comparison Cards -->
+                <div class="comparison-cards">
+                    <!-- Oxygen Tank Card -->
+                    <article class="comparison-card">
+                        <div class="comparison-card-header">
+                            <img src="images/Oxygen Tank.png"
+                                 alt="Portable Oxygen Tank - Tong Oksigen Mudah Alih"
+                                 width="300" height="200" loading="lazy">
+                            <h3>Oxygen Tank (Tong Oksigen)</h3>
+                        </div>
+
+                        <div class="comparison-card-body">
+                            <div class="scenario-section">
+                                <h4>💡 Pilih Oxygen Tank Jika:</h4>
+                                <ul class="scenario-list">
+                                    <li>Anda perlukan backup semasa <strong>blackout/elektrik terputus</strong></li>
+                                    <li>Kegunaan <strong>sekali-sekala</strong> atau tidak kerap</li>
+                                    <li>Untuk <strong>kecemasan</strong> atau situasi temporary</li>
+                                    <li>Bajet terhad - <strong>kos permulaan rendah</strong></li>
+                                    <li>Perlu mudah <strong>dibawa keluar</strong> (hospital, klinik)</li>
+                                    <li>Tiada akses elektrik yang stabil</li>
+                                </ul>
+                            </div>
+
+                            <div class="features-section">
+                                <h4>✓ Kelebihan:</h4>
+                                <ul class="features-list">
+                                    <li><strong>Tiada elektrik:</strong> Berfungsi tanpa kuasa</li>
+                                    <li><strong>Ringan:</strong> Mudah dibawa (portable dengan trolley)</li>
+                                    <li><strong>Harga mampu milik:</strong> Kos sewa rendah</li>
+                                    <li><strong>Mudah guna:</strong> Pasang dan guna terus</li>
+                                    <li><strong>Refill 24/7:</strong> Service tersedia bila-bila masa</li>
+                                </ul>
+                            </div>
+
+                            <div class="considerations-section">
+                                <h4>⚠️ Pertimbangan:</h4>
+                                <ul class="considerations-list">
+                                    <li>Perlu refill berkala (kos berulang RM80/tong)</li>
+                                    <li>Tempoh guna terhad (3-6 jam per tong)</li>
+                                    <li>Perlu pantau tahap oksigen</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing-section">
+                                <div class="price-row">
+                                    <span class="price-label">Sewa:</span>
+                                    <span class="price-value">RM80/bulan</span>
+                                </div>
+                                <div class="price-row">
+                                    <span class="price-label">Beli:</span>
+                                    <span class="price-value">RM1,200</span>
+                                </div>
+                                <div class="price-row highlight">
+                                    <span class="price-label">Refill:</span>
+                                    <span class="price-value">RM80/tong</span>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Oxygen%20Tank"
+                               class="btn btn-primary btn-block" target="_blank">
+                                Tanya Tentang Oxygen Tank
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Oxygen Concentrator Card -->
+                    <article class="comparison-card">
+                        <div class="comparison-card-header">
+                            <img src="images/Oxygen Concentrator 5L.png"
+                                 alt="Oxygen Concentrator - Mesin Oksigen untuk Rumah"
+                                 width="300" height="200" loading="lazy">
+                            <h3>Oxygen Concentrator</h3>
+                        </div>
+
+                        <div class="comparison-card-body">
+                            <div class="scenario-section">
+                                <h4>💡 Pilih Oxygen Concentrator Jika:</h4>
+                                <ul class="scenario-list">
+                                    <li>Perlukan oksigen <strong>setiap hari</strong> (24/7)</li>
+                                    <li>Untuk kegunaan <strong>jangka panjang</strong> di rumah</li>
+                                    <li>Pesakit <strong>COPD, asma teruk, fibrosis</strong></li>
+                                    <li>Elektrik stabil di rumah</li>
+                                    <li>Ingin <strong>jimat kos jangka panjang</strong> (tiada refill)</li>
+                                    <li>Perlukan <strong>bekalan oksigen berterusan</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="features-section">
+                                <h4>✓ Kelebihan:</h4>
+                                <ul class="features-list">
+                                    <li><strong>Unlimited oxygen:</strong> Tiada perlu refill</li>
+                                    <li><strong>Jimat jangka panjang:</strong> Kos elektrik RM30-40/bulan sahaja</li>
+                                    <li><strong>Senyap:</strong> Tidak ganggu tidur</li>
+                                    <li><strong>Hospital grade:</strong> Ketulenan 93-96%</li>
+                                    <li><strong>Low maintenance:</strong> Minimal upkeep</li>
+                                </ul>
+                            </div>
+
+                            <div class="considerations-section">
+                                <h4>⚠️ Pertimbangan:</h4>
+                                <ul class="considerations-list">
+                                    <li>Perlu bekalan elektrik (tidak boleh guna tanpa kuasa)</li>
+                                    <li>Lebih berat (tidak mudah dibawa keluar)</li>
+                                    <li>Kos sewa/beli lebih tinggi</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing-section">
+                                <div class="price-row">
+                                    <span class="price-label">Sewa 5L:</span>
+                                    <span class="price-value">RM240/bulan</span>
+                                </div>
+                                <div class="price-row">
+                                    <span class="price-label">Sewa 10L:</span>
+                                    <span class="price-value">RM1,000/bulan</span>
+                                </div>
+                                <div class="price-row">
+                                    <span class="price-label">Beli 5L:</span>
+                                    <span class="price-value">RM2,500</span>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Oxygen%20Concentrator"
+                               class="btn btn-primary btn-block" target="_blank">
+                                Tanya Tentang Concentrator
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Detailed Comparison Table -->
+                <div class="comparison-table-wrapper">
+                    <h3 class="table-heading">Perbandingan Teknikal Terperinci</h3>
+                    <div class="table-responsive">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Kriteria</th>
+                                    <th>Oxygen Tank</th>
+                                    <th>Oxygen Concentrator</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Sumber Kuasa</strong></td>
+                                    <td>❌ Tiada elektrik diperlukan</td>
+                                    <td>⚡ Perlu bekalan elektrik (240V)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mudah Alih (Portability)</strong></td>
+                                    <td>✅ Sangat mudah dibawa keluar</td>
+                                    <td>❌ Berat, sukar dibawa (home use)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tempoh Penggunaan</strong></td>
+                                    <td>⏱️ 3-6 jam per tong (bergantung flow)</td>
+                                    <td>♾️ Unlimited (selagi ada elektrik)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Kos Operasi Bulanan</strong></td>
+                                    <td>💰 RM80 sewa + RM80-240 refill</td>
+                                    <td>💡 RM240 sewa + RM30-40 elektrik</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Maintenance</strong></td>
+                                    <td>✅ Minimal (hanya refill)</td>
+                                    <td>🔧 Filter cleaning setiap 6 bulan</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Bunyi</strong></td>
+                                    <td>🔇 Senyap (tiada bunyi)</td>
+                                    <td>🔊 40-50dB (bunyi lembut seperti peti sejuk)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ketulenan Oksigen</strong></td>
+                                    <td>✨ 99.5% (medical grade)</td>
+                                    <td>✨ 93-96% (hospital grade)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sesuai Untuk</strong></td>
+                                    <td>📌 Kecemasan, backup, sekali-sekala</td>
+                                    <td>🏠 Kegunaan harian, jangka panjang, COPD</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Jimat Kos Jangka Panjang</strong></td>
+                                    <td>❌ Kos refill berterusan</td>
+                                    <td>✅ Jimat selepas 3-4 bulan</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
 
-                    <div class="hero-product-info">
-                        <h3>Tong Oksigen Portable</h3>
-                        <p class="hero-product-desc">Penyelesaian oksigen paling praktikal dan mampu milik. Sesuai untuk kegunaan di rumah, kecemasan, atau backup semasa blackout. Ringan dan mudah dibawa ke mana-mana.</p>
-
-                        <ul class="hero-product-features">
-                            <li>✓ Ringan & mudah alih</li>
-                            <li>✓ Tiada elektrik diperlukan</li>
-                            <li>✓ Sesuai untuk kecemasan</li>
-                            <li>✓ Refill service tersedia 24/7</li>
-                            <li>✓ Pakej lengkap (regulator + trolley + cannula)</li>
-                        </ul>
-
-                        <div class="hero-product-pricing">
-                            <div class="price-box">
-                                <span class="price-label">Sewa</span>
-                                <span class="price-amount">RM80</span>
-                                <span class="price-period">/bulan</span>
-                            </div>
-                            <div class="price-box">
-                                <span class="price-label">Beli</span>
-                                <span class="price-amount">RM1,200</span>
-                            </div>
-                            <div class="price-box price-refill">
-                                <span class="price-label">Refill</span>
-                                <span class="price-amount">RM80</span>
-                                <span class="price-period">/tong</span>
-                            </div>
-                        </div>
-
-                        <div class="hero-product-cta">
-                            <a href="https://wa.me/60123456789?text=Saya%20berminat%20dengan%20Portable%20Oxygen%20Tank" class="btn btn-whatsapp btn-large" target="_blank">
-                                📱 WhatsApp Sekarang
+                <!-- Consultation CTA -->
+                <div class="comparison-cta">
+                    <div class="cta-box">
+                        <h3>🤔 Masih Keliru Nak Pilih Yang Mana?</h3>
+                        <p>Takpe! Hubungi kami untuk <strong>konsultasi PERCUMA</strong>. Kami akan bantu anda pilih berdasarkan keperluan sebenar dan bajet anda.</p>
+                        <div class="cta-buttons">
+                            <a href="https://wa.me/60112868692?text=Saya%20keliru%20nak%20pilih%20oxygen%20tank%20atau%20concentrator.%20Boleh%20tolong%20advice?"
+                               class="btn btn-whatsapp btn-large" target="_blank">
+                                📱 WhatsApp untuk Konsultasi Percuma
                             </a>
-                            <a href="tel:+60123456789" class="btn btn-primary btn-large">
-                                📞 Hubungi Kami
+                            <a href="tel:+60112868692" class="btn btn-secondary btn-large">
+                                📞 Tel: 011-2868 6592
                             </a>
                         </div>
-
-                        <p class="hero-product-note">🚚 Penghantaran 3 jam ke KL & Selangor</p>
+                        <p class="cta-note">✓ Konsultasi percuma ✓ Tiada komitmen ✓ Respons dalam 5 minit</p>
                     </div>
                 </div>
             </div>
