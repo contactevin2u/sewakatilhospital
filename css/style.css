@@ -2026,7 +2026,7 @@ body {
 
 .services {
     background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-xl) 0 var(--spacing-3xl) 0;
     position: relative;
 }
 
