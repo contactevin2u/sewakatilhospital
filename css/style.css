@@ -472,6 +472,16 @@ section {
     padding: var(--spacing-xl);
     text-align: center;
     transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card .service-benefits {
+    flex-grow: 1;
+}
+
+.service-card .btn {
+    margin-top: auto;
 }
 
 .service-card:hover {
