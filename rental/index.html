@@ -19,6 +19,123 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Carousel Styles -->
+    <style>
+        .product-carousel-wrapper {
+            position: relative;
+            padding: 0 50px;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-nav:hover {
+            background: linear-gradient(135deg, #3a92e8 0%, #1e4a9e 100%);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-nav svg {
+            color: white;
+        }
+
+        .carousel-prev {
+            left: 0;
+        }
+
+        .carousel-next {
+            right: 0;
+        }
+
+        .carousel-track {
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            transition: transform 0.4s ease;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #1e4a9e;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        .dot:hover {
+            background: #3a92e8;
+        }
+
+        .product-image img {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .product-carousel-wrapper {
+                padding: 0 40px;
+            }
+
+            .carousel-nav {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .product-carousel-wrapper {
+                padding: 0 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
@@ -71,20 +188,24 @@
                     </p>
                 </div>
 
-                <!-- Rental Plans Grid -->
-                <div class="services-grid" style="max-width: 1100px; margin: 0 auto;">
+                <!-- Rental Plans Carousel -->
+                <div class="product-carousel-wrapper" style="max-width: 1100px; margin: 0 auto; position: relative;">
+                    <button class="carousel-nav carousel-prev" aria-label="Previous">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
 
-                    <!-- Portable Oxygen Tank -->
-                    <article class="service-card service-popular">
-                        <div class="service-badge">Paling Mampu Milik</div>
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="8" y="2" width="8" height="18" rx="2"/>
-                                <path d="M12 6v8M10 10h4"/>
-                                <circle cx="12" cy="22" r="1" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <h3>Portable Oxygen Tank</h3>
+                    <div class="product-carousel" style="overflow: hidden;">
+                        <div class="services-grid carousel-track" style="max-width: none; transition: transform 0.3s ease;">
+
+                            <!-- Portable Oxygen Tank -->
+                            <article class="service-card service-popular">
+                                <div class="service-badge">Paling Mampu Milik</div>
+                                <div class="product-image" style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+                                    <img src="/images/Oxygen Tank.png" alt="Portable Oxygen Tank" style="width: 100%; height: 100%; object-fit: contain; background: #f8fafc;">
+                                </div>
+                                <h3>Portable Oxygen Tank</h3>
                         <div class="service-price">
                             <span class="price-amount">RM80<small>/bulan</small></span>
                         </div>
@@ -99,17 +220,13 @@
                         <p class="service-note">Penghantaran dalam 3 jam (Lembah Klang)</p>
                     </article>
 
-                    <!-- 5L Oxygen Concentrator -->
-                    <article class="service-card service-popular">
-                        <div class="service-badge">Paling Popular</div>
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="6" y="4" width="12" height="16" rx="2"/>
-                                <circle cx="12" cy="12" r="3"/>
-                                <path d="M12 9v6M9 12h6"/>
-                            </svg>
-                        </div>
-                        <h3>5L Oxygen Concentrator</h3>
+                            <!-- 5L Oxygen Concentrator -->
+                            <article class="service-card service-popular">
+                                <div class="service-badge">Paling Popular</div>
+                                <div class="product-image" style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+                                    <img src="/images/Oxygen Concentrator 5L.png" alt="5L Oxygen Concentrator" style="width: 100%; height: 100%; object-fit: contain; background: #f8fafc;">
+                                </div>
+                                <h3>5L Oxygen Concentrator</h3>
                         <div class="service-price">
                             <span class="price-amount">RM240<small>/bulan</small></span>
                         </div>
@@ -124,16 +241,12 @@
                         <p class="service-note">Free delivery & demo di rumah</p>
                     </article>
 
-                    <!-- 10L Oxygen Concentrator -->
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="5" y="3" width="14" height="18" rx="2"/>
-                                <circle cx="12" cy="11" r="4"/>
-                                <path d="M8 20h8"/>
-                            </svg>
-                        </div>
-                        <h3>10L Oxygen Concentrator</h3>
+                            <!-- 10L Oxygen Concentrator -->
+                            <article class="service-card">
+                                <div class="product-image" style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+                                    <img src="/images/Oxygen Concentrator 10L.png" alt="10L Oxygen Concentrator" style="width: 100%; height: 100%; object-fit: contain; background: #f8fafc;">
+                                </div>
+                                <h3>10L Oxygen Concentrator</h3>
                         <div class="service-price">
                             <span class="price-amount">RM1,000<small>/bulan</small></span>
                         </div>
@@ -148,17 +261,12 @@
                         <p class="service-note">Konsultasi percuma dengan pakar kami</p>
                     </article>
 
-                    <!-- Portable Oxygen Concentrator -->
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="7" y="6" width="10" height="14" rx="2"/>
-                                <path d="M9 3h6"/>
-                                <circle cx="12" cy="13" r="2"/>
-                                <path d="M12 11v4"/>
-                            </svg>
-                        </div>
-                        <h3>Portable Concentrator</h3>
+                            <!-- Portable Oxygen Concentrator -->
+                            <article class="service-card">
+                                <div class="product-image" style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+                                    <img src="/images/Portable Oxygen Concentrator.png" alt="Portable Oxygen Concentrator" style="width: 100%; height: 100%; object-fit: contain; background: #f8fafc;">
+                                </div>
+                                <h3>Portable Concentrator</h3>
                         <div class="service-price">
                             <span class="price-amount">RM548<small>/bulan</small></span>
                         </div>
@@ -171,8 +279,22 @@
                         </ul>
                         <a href="https://wa.me/60112868692?text=Saya%20ingin%20sewa%20Portable%20Oxygen%20Concentrator" class="btn btn-outline btn-block" target="_blank" rel="noopener">Tanya Harga</a>
                         <p class="service-note">Perfect untuk lifestyle aktif</p>
-                    </article>
+                            </article>
 
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav carousel-next" aria-label="Next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Carousel Dots -->
+                <div class="carousel-dots" style="display: flex; justify-content: center; gap: 10px; margin-top: 30px;">
+                    <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Slide 2"></button>
                 </div>
             </div>
         </section>
@@ -351,5 +473,118 @@
 
     <!-- JavaScript -->
     <script src="/js/main.js" defer></script>
+
+    <!-- Carousel Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            const dots = document.querySelectorAll('.dot');
+            const cards = document.querySelectorAll('.service-card');
+
+            let currentSlide = 0;
+            const totalCards = cards.length;
+            let cardsPerView = 3;
+
+            // Determine cards per view based on screen size
+            function updateCardsPerView() {
+                if (window.innerWidth <= 480) {
+                    cardsPerView = 1;
+                } else if (window.innerWidth <= 768) {
+                    cardsPerView = 2;
+                } else {
+                    cardsPerView = 3;
+                }
+            }
+
+            // Update carousel position
+            function updateCarousel() {
+                const cardWidth = cards[0].offsetWidth;
+                const gap = 30; // gap between cards
+                const offset = -(currentSlide * (cardWidth + gap));
+                track.style.transform = `translateX(${offset}px)`;
+
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+
+                // Update button states
+                prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+                prevBtn.style.cursor = currentSlide === 0 ? 'not-allowed' : 'pointer';
+
+                const maxSlide = totalCards - cardsPerView;
+                nextBtn.style.opacity = currentSlide >= maxSlide ? '0.5' : '1';
+                nextBtn.style.cursor = currentSlide >= maxSlide ? 'not-allowed' : 'pointer';
+            }
+
+            // Next slide
+            nextBtn.addEventListener('click', function() {
+                const maxSlide = totalCards - cardsPerView;
+                if (currentSlide < maxSlide) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+
+            // Previous slide
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            });
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            });
+
+            // Touch/swipe support
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            track.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            track.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                if (touchEndX < touchStartX - 50) {
+                    nextBtn.click(); // Swipe left
+                }
+                if (touchEndX > touchStartX + 50) {
+                    prevBtn.click(); // Swipe right
+                }
+            }
+
+            // Update on window resize
+            window.addEventListener('resize', function() {
+                updateCardsPerView();
+                updateCarousel();
+            });
+
+            // Initial setup
+            updateCardsPerView();
+            updateCarousel();
+        });
+    </script>
 </body>
 </html>
