@@ -493,6 +493,9 @@ section {
 }
 
 .service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
     margin-bottom: var(--spacing-sm);
 }
 
