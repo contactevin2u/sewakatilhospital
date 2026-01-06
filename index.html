@@ -59,302 +59,237 @@
 
     <!-- Comparison Section Styles -->
     <style>
-        /* Product Comparison Section */
+        /* Product Comparison Section - Compact */
         .product-comparison {
-            padding: 80px 0;
+            padding: 60px 0;
             background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
         }
 
+        /* Quick Summary */
+        .comparison-summary {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .summary-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .summary-icon {
+            font-size: 2.5rem;
+        }
+
+        /* Comparison Cards - Compact */
         .comparison-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .comparison-card {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .comparison-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
         }
 
         .comparison-card-header {
             background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
-            padding: 30px;
+            padding: 25px;
             text-align: center;
             color: white;
         }
 
         .comparison-card-header img {
             width: 100%;
-            max-width: 250px;
+            max-width: 180px;
             height: auto;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+            margin-bottom: 15px;
         }
 
         .comparison-card-header h3 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin: 0;
+            font-size: 1.4rem;
+            margin: 0 0 8px 0;
             color: white;
+        }
+
+        .card-tagline {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin: 0;
         }
 
         .comparison-card-body {
-            padding: 35px;
+            padding: 25px;
         }
 
-        .scenario-section,
-        .features-section,
-        .considerations-section {
-            margin-bottom: 30px;
+        .use-cases {
+            margin-bottom: 20px;
         }
 
-        .comparison-card h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
+        .use-cases h4 {
+            font-size: 1rem;
             color: #1e4a9e;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            margin-bottom: 12px;
         }
 
-        .scenario-list,
-        .features-list,
-        .considerations-list {
+        .use-cases ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
-        .scenario-list li,
-        .features-list li,
-        .considerations-list li {
-            padding: 10px 0 10px 28px;
-            position: relative;
-            line-height: 1.6;
+        .use-cases li {
+            padding: 6px 0;
+            font-size: 0.9rem;
             color: #475569;
         }
 
-        .scenario-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #1e4a9e;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .features-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #10B981;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .considerations-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #F59E0B;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .pricing-section {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-        }
-
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .price-row:last-child {
-            border-bottom: none;
-        }
-
-        .price-row.highlight {
-            background: #fff3cd;
-            padding: 12px 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .price-label {
-            font-weight: 600;
-            color: #475569;
-        }
-
-        .price-value {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #1e4a9e;
-        }
-
-        /* Comparison Table */
-        .comparison-table-wrapper {
-            margin: 60px 0;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-        }
-
-        .table-heading {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #1e4a9e;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .table-responsive {
-            overflow-x: auto;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-
-        .comparison-table thead {
-            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
-            color: white;
-        }
-
-        .comparison-table th {
-            padding: 18px 20px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.05rem;
-        }
-
-        .comparison-table td {
-            padding: 16px 20px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .comparison-table tbody tr:hover {
-            background: #f8fafc;
-        }
-
-        .comparison-table tbody tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* CTA Box */
-        .comparison-cta {
-            margin-top: 60px;
-        }
-
-        .cta-box {
-            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
-            padding: 50px;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-            box-shadow: 0 8px 32px rgba(30, 74, 158, 0.3);
-        }
-
-        .cta-box h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: white;
-        }
-
-        .cta-box p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .cta-box .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
+        /* Key Specs */
+        .key-specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
             margin-bottom: 20px;
+        }
+
+        .spec-item {
+            text-align: center;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .spec-icon {
+            font-size: 1.8rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .spec-item strong {
+            display: block;
+            font-size: 0.85rem;
+            color: #1e4a9e;
+            margin-bottom: 4px;
+        }
+
+        .spec-item p {
+            font-size: 0.8rem;
+            margin: 0;
+            color: #64748b;
+        }
+
+        /* Quick Comparison */
+        .quick-comparison {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .quick-comparison h3 {
+            font-size: 1.4rem;
+            color: #1e4a9e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .comparison-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 15px;
+            padding: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        .criteria {
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .tank-col,
+        .concentrator-col {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        /* CTA - Simplified */
+        .comparison-cta {
+            text-align: center;
+            background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%);
+            padding: 35px;
+            border-radius: 16px;
+            color: white;
+        }
+
+        .comparison-cta h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .comparison-cta p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .comparison-cta .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
-        .cta-note {
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 768px) {
+            .comparison-summary,
             .comparison-cards {
                 grid-template-columns: 1fr;
-                gap: 30px;
             }
 
-            .comparison-card-header {
-                padding: 25px 20px;
+            .key-specs {
+                grid-template-columns: 1fr;
             }
 
-            .comparison-card-body {
-                padding: 25px 20px;
+            .comparison-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 8px;
             }
 
-            .comparison-table-wrapper {
-                padding: 25px 15px;
-            }
-
-            .comparison-table {
-                font-size: 0.85rem;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
-                padding: 12px 10px;
-            }
-
-            .cta-box {
-                padding: 35px 25px;
-            }
-
-            .cta-box h3 {
-                font-size: 1.5rem;
-            }
-
-            .cta-box .cta-buttons {
+            .cta-buttons {
                 flex-direction: column;
             }
 
             .btn-large {
                 width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .product-comparison {
-                padding: 50px 0;
-            }
-
-            .comparison-card-header h3 {
-                font-size: 1.4rem;
-            }
-
-            .table-heading {
-                font-size: 1.4rem;
             }
         }
     </style>
@@ -1232,11 +1167,76 @@
                                     <span class="price-label">Refill:</span>
                                     <span class="price-value">RM80/tong</span>
                                 </div>
+        <!-- Product Comparison Section -->
+        <section class="product-comparison" aria-labelledby="comparison-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="comparison-heading">Tank vs Concentrator: Mana Satu?</h2>
+                    <p>Pilih berdasarkan keperluan anda</p>
+                </header>
+
+                <!-- Quick Summary -->
+                <div class="comparison-summary">
+                    <div class="summary-item">
+                        <span class="summary-icon">🔋</span>
+                        <strong>Oxygen Tank:</strong> Portable, murah, untuk backup & kecemasan
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-icon">🏠</span>
+                        <strong>Oxygen Concentrator:</strong> Unlimited oxygen, untuk kegunaan harian di rumah
+                    </div>
+                </div>
+
+                <!-- Scenario-Based Comparison Cards -->
+                <div class="comparison-cards">
+                    <!-- Oxygen Tank Card -->
+                    <article class="comparison-card">
+                        <div class="comparison-card-header">
+                            <img src="images/Oxygen Tank.png"
+                                 alt="Portable Oxygen Tank"
+                                 width="200" height="150" loading="lazy">
+                            <h3>Oxygen Tank</h3>
+                            <p class="card-tagline">Mudah Alih & Tiada Elektrik</p>
+                        </div>
+
+                        <div class="comparison-card-body">
+                            <div class="use-cases">
+                                <h4>Sesuai Untuk:</h4>
+                                <ul>
+                                    <li>🚨 Backup semasa blackout</li>
+                                    <li>🏥 Pergi hospital/klinik</li>
+                                    <li>📅 Kegunaan sekali-sekala</li>
+                                    <li>💰 Bajet terhad (RM80/bln)</li>
+                                </ul>
                             </div>
 
-                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Oxygen%20Tank"
+                            <div class="key-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <div>
+                                        <strong>Kuasa</strong>
+                                        <p>Tiada elektrik</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⏱️</span>
+                                    <div>
+                                        <strong>Tempoh</strong>
+                                        <p>3-6 jam/tong</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">💵</span>
+                                    <div>
+                                        <strong>Kos Bulanan</strong>
+                                        <p>RM80 + refill</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20tentang%20Oxygen%20Tank"
                                class="btn btn-primary btn-block" target="_blank">
-                                Tanya Tentang Oxygen Tank
+                                Tanya Tentang Tank
                             </a>
                         </div>
                     </article>
@@ -1245,60 +1245,48 @@
                     <article class="comparison-card">
                         <div class="comparison-card-header">
                             <img src="images/Oxygen Concentrator 5L.png"
-                                 alt="Oxygen Concentrator - Mesin Oksigen untuk Rumah"
-                                 width="300" height="200" loading="lazy">
+                                 alt="Oxygen Concentrator"
+                                 width="200" height="150" loading="lazy">
                             <h3>Oxygen Concentrator</h3>
+                            <p class="card-tagline">Unlimited Oxygen, Kegunaan Harian</p>
                         </div>
 
                         <div class="comparison-card-body">
-                            <div class="scenario-section">
-                                <h4>💡 Pilih Oxygen Concentrator Jika:</h4>
-                                <ul class="scenario-list">
-                                    <li>Perlukan oksigen <strong>setiap hari</strong> (24/7)</li>
-                                    <li>Untuk kegunaan <strong>jangka panjang</strong> di rumah</li>
-                                    <li>Pesakit <strong>COPD, asma teruk, fibrosis</strong></li>
-                                    <li>Elektrik stabil di rumah</li>
-                                    <li>Ingin <strong>jimat kos jangka panjang</strong> (tiada refill)</li>
-                                    <li>Perlukan <strong>bekalan oksigen berterusan</strong></li>
+                            <div class="use-cases">
+                                <h4>Sesuai Untuk:</h4>
+                                <ul>
+                                    <li>🏠 Kegunaan 24/7 di rumah</li>
+                                    <li>🫁 COPD, asma teruk</li>
+                                    <li>📆 Jangka panjang (>3 bulan)</li>
+                                    <li>💡 Ada elektrik stabil</li>
                                 </ul>
                             </div>
 
-                            <div class="features-section">
-                                <h4>✓ Kelebihan:</h4>
-                                <ul class="features-list">
-                                    <li><strong>Unlimited oxygen:</strong> Tiada perlu refill</li>
-                                    <li><strong>Jimat jangka panjang:</strong> Kos elektrik RM30-40/bulan sahaja</li>
-                                    <li><strong>Senyap:</strong> Tidak ganggu tidur</li>
-                                    <li><strong>Hospital grade:</strong> Ketulenan 93-96%</li>
-                                    <li><strong>Low maintenance:</strong> Minimal upkeep</li>
-                                </ul>
-                            </div>
-
-                            <div class="considerations-section">
-                                <h4>⚠️ Pertimbangan:</h4>
-                                <ul class="considerations-list">
-                                    <li>Perlu bekalan elektrik (tidak boleh guna tanpa kuasa)</li>
-                                    <li>Lebih berat (tidak mudah dibawa keluar)</li>
-                                    <li>Kos sewa/beli lebih tinggi</li>
-                                </ul>
-                            </div>
-
-                            <div class="pricing-section">
-                                <div class="price-row">
-                                    <span class="price-label">Sewa 5L:</span>
-                                    <span class="price-value">RM240/bulan</span>
+                            <div class="key-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">⚡</span>
+                                    <div>
+                                        <strong>Kuasa</strong>
+                                        <p>Perlu elektrik</p>
+                                    </div>
                                 </div>
-                                <div class="price-row">
-                                    <span class="price-label">Sewa 10L:</span>
-                                    <span class="price-value">RM1,000/bulan</span>
+                                <div class="spec-item">
+                                    <span class="spec-icon">♾️</span>
+                                    <div>
+                                        <strong>Tempoh</strong>
+                                        <p>Unlimited</p>
+                                    </div>
                                 </div>
-                                <div class="price-row">
-                                    <span class="price-label">Beli 5L:</span>
-                                    <span class="price-value">RM2,500</span>
+                                <div class="spec-item">
+                                    <span class="spec-icon">💵</span>
+                                    <div>
+                                        <strong>Kos Bulanan</strong>
+                                        <p>RM240 + RM30 bil</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Oxygen%20Concentrator"
+                            <a href="https://wa.me/60112868692?text=Saya%20ingin%20tahu%20tentang%20Oxygen%20Concentrator"
                                class="btn btn-primary btn-block" target="_blank">
                                 Tanya Tentang Concentrator
                             </a>
@@ -1306,153 +1294,44 @@
                     </article>
                 </div>
 
-                <!-- Detailed Comparison Table -->
-                <div class="comparison-table-wrapper">
-                    <h3 class="table-heading">Perbandingan Teknikal Terperinci</h3>
-                    <div class="table-responsive">
-                        <table class="comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>Kriteria</th>
-                                    <th>Oxygen Tank</th>
-                                    <th>Oxygen Concentrator</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Sumber Kuasa</strong></td>
-                                    <td>❌ Tiada elektrik diperlukan</td>
-                                    <td>⚡ Perlu bekalan elektrik (240V)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Mudah Alih (Portability)</strong></td>
-                                    <td>✅ Sangat mudah dibawa keluar</td>
-                                    <td>❌ Berat, sukar dibawa (home use)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Tempoh Penggunaan</strong></td>
-                                    <td>⏱️ 3-6 jam per tong (bergantung flow)</td>
-                                    <td>♾️ Unlimited (selagi ada elektrik)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Kos Operasi Bulanan</strong></td>
-                                    <td>💰 RM80 sewa + RM80-240 refill</td>
-                                    <td>💡 RM240 sewa + RM30-40 elektrik</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Maintenance</strong></td>
-                                    <td>✅ Minimal (hanya refill)</td>
-                                    <td>🔧 Filter cleaning setiap 6 bulan</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Bunyi</strong></td>
-                                    <td>🔇 Senyap (tiada bunyi)</td>
-                                    <td>🔊 40-50dB (bunyi lembut seperti peti sejuk)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Ketulenan Oksigen</strong></td>
-                                    <td>✨ 99.5% (medical grade)</td>
-                                    <td>✨ 93-96% (hospital grade)</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Sesuai Untuk</strong></td>
-                                    <td>📌 Kecemasan, backup, sekali-sekala</td>
-                                    <td>🏠 Kegunaan harian, jangka panjang, COPD</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Jimat Kos Jangka Panjang</strong></td>
-                                    <td>❌ Kos refill berterusan</td>
-                                    <td>✅ Jimat selepas 3-4 bulan</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <!-- Quick Comparison Table -->
+                <div class="quick-comparison">
+                    <h3>Perbandingan Pantas</h3>
+                    <div class="comparison-grid">
+                        <div class="comparison-row">
+                            <div class="criteria">Portable?</div>
+                            <div class="tank-col">✅ Ya</div>
+                            <div class="concentrator-col">❌ Tidak</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="criteria">Unlimited?</div>
+                            <div class="tank-col">❌ Perlu refill</div>
+                            <div class="concentrator-col">✅ Ya</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="criteria">Jimat jangka panjang?</div>
+                            <div class="tank-col">❌ Kos refill</div>
+                            <div class="concentrator-col">✅ Jimat selepas 3 bulan</div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Consultation CTA -->
                 <div class="comparison-cta">
-                    <div class="cta-box">
-                        <h3>🤔 Masih Keliru Nak Pilih Yang Mana?</h3>
-                        <p>Takpe! Hubungi kami untuk <strong>konsultasi PERCUMA</strong>. Kami akan bantu anda pilih berdasarkan keperluan sebenar dan bajet anda.</p>
-                        <div class="cta-buttons">
-                            <a href="https://wa.me/60112868692?text=Saya%20keliru%20nak%20pilih%20oxygen%20tank%20atau%20concentrator.%20Boleh%20tolong%20advice?"
-                               class="btn btn-whatsapp btn-large" target="_blank">
-                                📱 WhatsApp untuk Konsultasi Percuma
-                            </a>
-                            <a href="tel:+60112868692" class="btn btn-secondary btn-large">
-                                📞 Tel: 011-2868 6592
-                            </a>
-                        </div>
-                        <p class="cta-note">✓ Konsultasi percuma ✓ Tiada komitmen ✓ Respons dalam 5 minit</p>
+                    <h3>🤔 Masih Keliru?</h3>
+                    <p>Hubungi kami untuk <strong>konsultasi PERCUMA</strong></p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/60112868692?text=Keliru%20nak%20pilih%20tank%20atau%20concentrator"
+                           class="btn btn-whatsapp btn-large" target="_blank">
+                            📱 WhatsApp Sekarang
+                        </a>
+                        <a href="tel:+60112868692" class="btn btn-secondary btn-large">
+                            📞 011-2868 6592
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Other Products Section -->
-        <section class="other-products" aria-labelledby="other-products-heading">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="other-products-heading">Produk Lain Yang Kami Tawarkan</h2>
-                    <p>Oxygen Concentrator untuk keperluan berbeza</p>
-                </header>
-
-                <div class="other-products-grid">
-                    <!-- 5 Liter -->
-                    <article class="other-product-card">
-                        <img src="https://images.pexels.com/photos/7089392/pexels-photo-7089392.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop"
-                             alt="5 Liter Oxygen Concentrator" width="200" height="150" loading="lazy">
-                        <div class="other-product-info">
-                            <h4>5L Oxygen Concentrator</h4>
-                            <p>Home use, senyap, jimat elektrik</p>
-                            <div class="other-product-price">
-                                <span>Sewa: <strong>RM240/bln</strong></span>
-                                <span>Beli: <strong>RM2,500</strong></span>
-                            </div>
-                            <a href="https://wa.me/60123456789?text=Saya%20berminat%20dengan%205L%20Oxygen%20Concentrator" class="btn btn-outline btn-sm" target="_blank">Tanya Harga</a>
-                        </div>
-                    </article>
-
-                    <!-- 10 Liter -->
-                    <article class="other-product-card">
-                        <img src="https://images.pexels.com/photos/7088530/pexels-photo-7088530.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop"
-                             alt="10 Liter Oxygen Concentrator" width="200" height="150" loading="lazy">
-                        <div class="other-product-info">
-                            <h4>10L Oxygen Concentrator</h4>
-                            <p>High flow, dual output, COPD teruk</p>
-                            <div class="other-product-price">
-                                <span>Sewa: <strong>RM1,000/bln</strong></span>
-                                <span>Beli: <strong>RM4,500</strong></span>
-                            </div>
-                            <a href="https://wa.me/60123456789?text=Saya%20berminat%20dengan%2010L%20Oxygen%20Concentrator" class="btn btn-outline btn-sm" target="_blank">Tanya Harga</a>
-                        </div>
-                    </article>
-
-                    <!-- Portable Concentrator -->
-                    <article class="other-product-card">
-                        <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop"
-                             alt="Portable Oxygen Concentrator" width="200" height="150" loading="lazy">
-                        <div class="other-product-info">
-                            <h4>Portable Concentrator</h4>
-                            <p>Bateri, travel-ready, FAA approved</p>
-                            <div class="other-product-price">
-                                <span>Sewa: <strong>RM548/bln</strong></span>
-                                <span>Beli: <strong>RM5,000</strong></span>
-                            </div>
-                            <a href="https://wa.me/60123456789?text=Saya%20berminat%20dengan%20Portable%20Oxygen%20Concentrator" class="btn btn-outline btn-sm" target="_blank">Tanya Harga</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Patient Recommendations Section -->
-        <section class="patient-recommendations" aria-labelledby="patient-heading">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="patient-heading">Siapa Perlukan Oxygen Concentrator?</h2>
-                </header>
-
                 <div class="patient-grid">
                     <div class="patient-card">
                         <span class="patient-icon">🫁</span>
