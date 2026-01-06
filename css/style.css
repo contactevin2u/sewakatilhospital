@@ -4155,8 +4155,8 @@ button:focus-visible {
 
 .btn-hero-whatsapp svg {
     flex-shrink: 0;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
 }
 
 .btn-hero-tel {
@@ -4186,8 +4186,8 @@ button:focus-visible {
 
 .btn-hero-tel svg {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
 }
 
 /* Right Column - Products + Doctor */
