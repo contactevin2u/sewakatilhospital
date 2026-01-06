@@ -65,7 +65,7 @@
         .carousel-track {
             display: grid !important;
             grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
+            gap: 30px;
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -108,28 +108,20 @@
         @media (min-width: 1025px) {
             .carousel-track {
                 grid-template-columns: repeat(4, 1fr);
-                gap: 24px;
-            }
-
-            .carousel-nav, .carousel-dots {
-                display: none !important;
-            }
-
-            .product-carousel {
-                overflow: visible;
+                gap: 30px;
             }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
             .carousel-track {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 gap: 30px;
             }
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
             .carousel-track {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 gap: 20px;
             }
 
@@ -145,17 +137,12 @@
 
         @media (max-width: 480px) {
             .carousel-track {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(4, 1fr);
                 gap: 24px;
             }
 
             .product-carousel-wrapper {
                 padding: 0 30px;
-            }
-
-            .service-card {
-                max-width: 400px;
-                margin: 0 auto;
             }
         }
     </style>
@@ -508,14 +495,14 @@
 
             let currentSlide = 0;
             const totalCards = cards.length;
-            let cardsPerView = 4;
+            let cardsPerView = 3;
 
             // Determine cards per view based on screen size
             function updateCardsPerView() {
                 const width = window.innerWidth;
 
                 if (width > 1024) {
-                    cardsPerView = 4; // Desktop: all 4 visible at once
+                    cardsPerView = 3; // Desktop: 3 cards per view
                 } else if (width > 768) {
                     cardsPerView = 2; // Tablet: 2 cards at a time
                 } else if (width > 480) {
@@ -530,23 +517,15 @@
                 updateCardsPerView();
 
                 const cardWidth = cards[0].offsetWidth;
-                const gap = parseInt(getComputedStyle(track).gap) || 24;
+                const gap = parseInt(getComputedStyle(track).gap) || 30;
 
-                // Hide controls on desktop (all 4 cards visible)
-                if (window.innerWidth > 1024) {
-                    prevBtn.style.display = 'none';
-                    nextBtn.style.display = 'none';
-                    dots.forEach(dot => dot.parentElement.style.display = 'none');
-                    track.style.transform = 'translateX(0)';
-                    return;
-                } else {
-                    prevBtn.style.display = 'flex';
-                    nextBtn.style.display = 'flex';
-                    dots.forEach(dot => dot.parentElement.style.display = 'flex');
-                }
+                // Show carousel controls (we have 4 products, more than 3 per view on desktop)
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+                dots.forEach(dot => dot.parentElement.style.display = 'flex');
 
-                // Calculate slide width based on cards per view
-                const slideWidth = (cardWidth + gap) * cardsPerView;
+                // Calculate slide width - move by 1 card at a time
+                const slideWidth = cardWidth + gap;
                 const offset = -(currentSlide * slideWidth);
                 track.style.transform = `translateX(${offset}px)`;
 
@@ -556,7 +535,8 @@
                 });
 
                 // Update button states
-                const maxSlide = Math.ceil(totalCards / cardsPerView) - 1;
+                // Max slide is when we can't slide anymore (last card visible)
+                const maxSlide = totalCards - cardsPerView;
 
                 prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
                 prevBtn.style.cursor = currentSlide === 0 ? 'not-allowed' : 'pointer';
@@ -567,7 +547,7 @@
 
             // Next slide
             nextBtn.addEventListener('click', function() {
-                const maxSlide = Math.ceil(totalCards / cardsPerView) - 1;
+                const maxSlide = totalCards - cardsPerView;
                 if (currentSlide < maxSlide) {
                     currentSlide++;
                     updateCarousel();
