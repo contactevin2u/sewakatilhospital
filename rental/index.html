@@ -98,6 +98,133 @@
         .service-card:hover .product-image img {
             transform: scale(1.05);
         }
+
+        /* Carousel Styles */
+        .product-carousel-wrapper {
+            position: relative;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .product-carousel {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 2px solid #1e4a9e;
+            color: #1e4a9e;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-btn:hover {
+            background: #1e4a9e;
+            color: white;
+            box-shadow: 0 6px 16px rgba(30, 74, 158, 0.3);
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .carousel-btn:disabled:hover {
+            background: white;
+            color: #1e4a9e;
+        }
+
+        .carousel-btn-prev {
+            left: -24px;
+        }
+
+        .carousel-btn-next {
+            right: -24px;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: #1e4a9e;
+            width: 32px;
+            border-radius: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .carousel-btn-prev {
+                left: -20px;
+            }
+
+            .carousel-btn-next {
+                right: -20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-track {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .service-card {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -151,11 +278,16 @@
                     </p>
                 </div>
 
-                <!-- Rental Plans Grid -->
-                <div class="services-grid" style="max-width: 1100px; margin: 0 auto;">
+                <!-- Rental Plans Carousel -->
+                <div class="product-carousel-wrapper">
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Previous products">‹</button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Next products">›</button>
 
-                    <!-- Portable Oxygen Tank -->
-                    <article class="service-card service-popular">
+                    <div class="product-carousel">
+                        <div class="carousel-track">
+
+                            <!-- Portable Oxygen Tank -->
+                            <article class="service-card service-popular">
                         <div class="service-badge">Paling Mampu Milik</div>
                         <div class="product-image" style="width: 100%; height: 140px; overflow: hidden; border-radius: 12px;">
                             <img src="/images/Oxygen Tank.png" alt="Portable Oxygen Tank" style="width: 100%; height: 100%; object-fit: contain; background: #f8fafc;">
@@ -236,6 +368,14 @@
                         <p class="service-note">Perfect untuk lifestyle aktif</p>
                     </article>
 
+                        </div>
+                    </div>
+
+                    <!-- Carousel Dots -->
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active" aria-label="Go to slide 1"></button>
+                        <button class="carousel-dot" aria-label="Go to slide 2"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -414,5 +554,69 @@
 
     <!-- JavaScript -->
     <script src="/js/main.js" defer></script>
+
+    <!-- Carousel Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const prevBtn = document.querySelector('.carousel-btn-prev');
+            const nextBtn = document.querySelector('.carousel-btn-next');
+            const dots = document.querySelectorAll('.carousel-dot');
+
+            let currentSlide = 0;
+            const totalCards = 4;
+            const cardsPerView = 3;
+            const maxSlide = totalCards - cardsPerView;
+
+            function updateCarousel() {
+                // Calculate the percentage to move
+                const cardWidth = 100 / cardsPerView;
+                const movePercentage = -(currentSlide * cardWidth);
+                track.style.transform = `translateX(${movePercentage}%)`;
+
+                // Update buttons
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide >= maxSlide;
+
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < maxSlide) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            });
+
+            // Initialize
+            updateCarousel();
+        });
+    </script>
 </body>
 </html>
