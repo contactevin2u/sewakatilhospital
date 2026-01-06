@@ -469,7 +469,7 @@ section {
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     text-align: center;
     transition: box-shadow 0.2s ease;
     display: flex;
@@ -499,11 +499,11 @@ section {
 .service-benefits {
     list-style: none;
     text-align: left;
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-md) 0;
 }
 
 .service-benefits li {
-    padding: var(--spacing-xs) 0;
+    padding: 0.25rem 0;
     padding-left: 1.5rem;
     position: relative;
 }
