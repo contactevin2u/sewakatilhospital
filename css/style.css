@@ -2330,16 +2330,6 @@ body {
     transform: translateY(0);
 }
 
-/* Decorative Dots Pattern */
-.section-header::after {
-    content: '• • •';
-    display: block;
-    margin-top: var(--spacing-md);
-    color: var(--primary-blue);
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
-    opacity: 0.5;
-}
 
 /* =========================================
    HERO PRODUCT SECTION
