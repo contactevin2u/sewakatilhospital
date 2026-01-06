@@ -112,10 +112,14 @@
         }
 
         .carousel-track {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
             gap: 30px;
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .carousel-track .service-card {
+            flex: 0 0 calc((100% - 60px) / 3);
+            min-width: calc((100% - 60px) / 3);
         }
 
         .carousel-btn {
@@ -189,15 +193,23 @@
         /* Responsive */
         @media (max-width: 1024px) {
             .carousel-track {
-                grid-template-columns: repeat(4, 1fr);
                 gap: 24px;
+            }
+
+            .carousel-track .service-card {
+                flex: 0 0 calc((100% - 48px) / 3);
+                min-width: calc((100% - 48px) / 3);
             }
         }
 
         @media (max-width: 768px) {
             .carousel-track {
-                grid-template-columns: repeat(4, 1fr);
                 gap: 20px;
+            }
+
+            .carousel-track .service-card {
+                flex: 0 0 calc((100% - 20px) / 2);
+                min-width: calc((100% - 20px) / 2);
             }
 
             .carousel-btn {
@@ -216,13 +228,10 @@
         }
 
         @media (max-width: 480px) {
-            .carousel-track {
-                grid-template-columns: repeat(4, 1fr);
-            }
-
-            .service-card {
+            .carousel-track .service-card {
+                flex: 0 0 100%;
+                min-width: 100%;
                 max-width: 400px;
-                margin: 0 auto;
             }
         }
     </style>
@@ -558,10 +567,12 @@
     <!-- Carousel Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.product-carousel');
             const track = document.querySelector('.carousel-track');
             const prevBtn = document.querySelector('.carousel-btn-prev');
             const nextBtn = document.querySelector('.carousel-btn-next');
             const dots = document.querySelectorAll('.carousel-dot');
+            const cards = document.querySelectorAll('.carousel-track .service-card');
 
             let currentSlide = 0;
             const totalCards = 4;
@@ -569,10 +580,12 @@
             const maxSlide = totalCards - cardsPerView;
 
             function updateCarousel() {
-                // Calculate the percentage to move
-                const cardWidth = 100 / cardsPerView;
-                const movePercentage = -(currentSlide * cardWidth);
-                track.style.transform = `translateX(${movePercentage}%)`;
+                // Get the width of one card plus gap
+                const cardWidth = cards[0].offsetWidth;
+                const gap = 30;
+                const slideDistance = (cardWidth + gap) * currentSlide;
+
+                track.style.transform = `translateX(-${slideDistance}px)`;
 
                 // Update buttons
                 prevBtn.disabled = currentSlide === 0;
@@ -614,8 +627,14 @@
                 }
             });
 
-            // Initialize
+            // Initialize and handle window resize
             updateCarousel();
+
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateCarousel, 250);
+            });
         });
     </script>
 </body>
