@@ -1482,6 +1482,107 @@
             </div>
         </section>
 
+        <!-- Google Reviews Section -->
+        <section class="testimonials" aria-labelledby="testimonials-heading" style="background: #f8fafc; padding: 60px 0;">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-heading" style="color: #1e4a9e;">Ulasan Pelanggan Kami</h2>
+                    <p style="color: #64748b;">Ulasan sebenar dari Google Reviews</p>
+                </header>
+
+                <style>
+                    .google-reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
+                    .google-review-card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+                    .google-review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+                    .google-review-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #0052cc, #00a3ff); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
+                    .google-review-info { flex: 1; }
+                    .google-review-name { font-weight: 600; color: #333; font-size: 0.95rem; }
+                    .google-review-date { font-size: 12px; color: #888; }
+                    .google-review-stars { display: flex; gap: 2px; margin-bottom: 12px; }
+                    .google-review-stars svg { width: 16px; height: 16px; }
+                    .google-review-text { color: #555; line-height: 1.6; font-size: 0.95rem; }
+                    .google-summary { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 40px; padding: 20px 30px; flex-wrap: wrap; }
+                    .google-logo { display: flex; align-items: center; gap: 8px; }
+                    .google-logo span { font-size: 1.5rem; font-weight: 500; }
+                    .google-rating { display: flex; align-items: center; gap: 8px; }
+                    .google-rating-number { font-size: 2rem; font-weight: 700; color: #333; }
+                    .google-rating-info { text-align: left; }
+                    .google-rating-stars { color: #FBBC05; font-size: 1.1rem; }
+                    .google-rating-count { font-size: 0.85rem; color: #666; }
+                </style>
+
+                <div class="google-reviews-grid">
+                    <!-- Review 1 -->
+                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="google-review-header">
+                            <div class="google-review-avatar">A</div>
+                            <div class="google-review-info">
+                                <div class="google-review-name" itemprop="author">Ahmad Razali</div>
+                                <div class="google-review-date">2 minggu lalu</div>
+                            </div>
+                        </div>
+                        <div class="google-review-stars">
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="google-review-text" itemprop="reviewBody">"Perkhidmatan yang sangat pantas dan profesional. Mesin oksigen sampai dalam masa 3 jam selepas tempahan. Staff sangat helpful dalam mengajar cara penggunaan yang betul. Terima kasih OxygenCare!"</p>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="google-review-header">
+                            <div class="google-review-avatar">S</div>
+                            <div class="google-review-info">
+                                <div class="google-review-name" itemprop="author">Siti Aminah</div>
+                                <div class="google-review-date">1 bulan lalu</div>
+                            </div>
+                        </div>
+                        <div class="google-review-stars">
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="google-review-text" itemprop="reviewBody">"Mak saya memerlukan oxygen concentrator untuk rawatan di rumah. OxygenCare menyediakan pilihan sewa yang sangat berpatutan dan fleksibel. Sokongan teknikal 24 jam juga sangat membantu."</p>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="google-review-header">
+                            <div class="google-review-avatar">L</div>
+                            <div class="google-review-info">
+                                <div class="google-review-name" itemprop="author">Lim Wei Seng</div>
+                                <div class="google-review-date">2 bulan lalu</div>
+                            </div>
+                        </div>
+                        <div class="google-review-stars">
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="google-review-text" itemprop="reviewBody">"Saya beli portable oxygen concentrator untuk ayah yang suka travel. Kualiti produk sangat bagus dan harga lebih murah berbanding kedai lain. Highly recommended!"</p>
+                    </article>
+                </div>
+
+                <!-- Google Summary -->
+                <div style="display: flex; justify-content: center; margin-top: 40px;">
+                    <a href="https://share.google/hBmGVugG4LxFv54ok" target="_blank" style="display: inline-flex; align-items: center; gap: 16px; background: white; padding: 16px 28px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.1); transition: box-shadow 0.2s;">
+                        <span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">G</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #FBBC05; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">g</span><span style="color: #34A853; font-size: 1.3rem; font-weight: 500;">l</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">e</span>
+                        <span style="color: #333; font-size: 1.1rem; font-weight: 600;">4.9</span>
+                        <span style="color: #FBBC05; font-size: 1rem;">★★★★★</span>
+                        <span style="color: #666; font-size: 0.9rem;">500+ ulasan</span>
+                        <span style="background: #1a73e8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 500; font-size: 0.9rem;">Lihat Semua</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Service Areas Section -->
         <section class="service-areas" aria-labelledby="areas-heading" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%); padding: 60px 0;">
             <div class="container">
@@ -1792,107 +1893,6 @@
                         button.textContent = isHidden ? 'Sembunyikan Lokasi' : 'Lihat Semua 187 Lokasi';
                     }
                 </script>
-            </div>
-        </section>
-
-        <!-- Google Reviews Section -->
-        <section class="testimonials" aria-labelledby="testimonials-heading" style="background: #f8fafc; padding: 60px 0;">
-            <div class="container">
-                <header class="section-header">
-                    <h2 id="testimonials-heading" style="color: #1e4a9e;">Ulasan Pelanggan Kami</h2>
-                    <p style="color: #64748b;">Ulasan sebenar dari Google Reviews</p>
-                </header>
-
-                <style>
-                    .google-reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px; }
-                    .google-review-card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-                    .google-review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-                    .google-review-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #0052cc, #00a3ff); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1rem; flex-shrink: 0; }
-                    .google-review-info { flex: 1; }
-                    .google-review-name { font-weight: 600; color: #333; font-size: 0.95rem; }
-                    .google-review-date { font-size: 12px; color: #888; }
-                    .google-review-stars { display: flex; gap: 2px; margin-bottom: 12px; }
-                    .google-review-stars svg { width: 16px; height: 16px; }
-                    .google-review-text { color: #555; line-height: 1.6; font-size: 0.95rem; }
-                    .google-summary { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 40px; padding: 20px 30px; flex-wrap: wrap; }
-                    .google-logo { display: flex; align-items: center; gap: 8px; }
-                    .google-logo span { font-size: 1.5rem; font-weight: 500; }
-                    .google-rating { display: flex; align-items: center; gap: 8px; }
-                    .google-rating-number { font-size: 2rem; font-weight: 700; color: #333; }
-                    .google-rating-info { text-align: left; }
-                    .google-rating-stars { color: #FBBC05; font-size: 1.1rem; }
-                    .google-rating-count { font-size: 0.85rem; color: #666; }
-                </style>
-
-                <div class="google-reviews-grid">
-                    <!-- Review 1 -->
-                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="google-review-header">
-                            <div class="google-review-avatar">A</div>
-                            <div class="google-review-info">
-                                <div class="google-review-name" itemprop="author">Ahmad Razali</div>
-                                <div class="google-review-date">2 minggu lalu</div>
-                            </div>
-                        </div>
-                        <div class="google-review-stars">
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                        </div>
-                        <p class="google-review-text" itemprop="reviewBody">"Perkhidmatan yang sangat pantas dan profesional. Mesin oksigen sampai dalam masa 3 jam selepas tempahan. Staff sangat helpful dalam mengajar cara penggunaan yang betul. Terima kasih OxygenCare!"</p>
-                    </article>
-
-                    <!-- Review 2 -->
-                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="google-review-header">
-                            <div class="google-review-avatar">S</div>
-                            <div class="google-review-info">
-                                <div class="google-review-name" itemprop="author">Siti Aminah</div>
-                                <div class="google-review-date">1 bulan lalu</div>
-                            </div>
-                        </div>
-                        <div class="google-review-stars">
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                        </div>
-                        <p class="google-review-text" itemprop="reviewBody">"Mak saya memerlukan oxygen concentrator untuk rawatan di rumah. OxygenCare menyediakan pilihan sewa yang sangat berpatutan dan fleksibel. Sokongan teknikal 24 jam juga sangat membantu."</p>
-                    </article>
-
-                    <!-- Review 3 -->
-                    <article class="google-review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="google-review-header">
-                            <div class="google-review-avatar">L</div>
-                            <div class="google-review-info">
-                                <div class="google-review-name" itemprop="author">Lim Wei Seng</div>
-                                <div class="google-review-date">2 bulan lalu</div>
-                            </div>
-                        </div>
-                        <div class="google-review-stars">
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                        </div>
-                        <p class="google-review-text" itemprop="reviewBody">"Saya beli portable oxygen concentrator untuk ayah yang suka travel. Kualiti produk sangat bagus dan harga lebih murah berbanding kedai lain. Highly recommended!"</p>
-                    </article>
-                </div>
-
-                <!-- Google Summary -->
-                <div style="display: flex; justify-content: center; margin-top: 40px;">
-                    <a href="https://share.google/hBmGVugG4LxFv54ok" target="_blank" style="display: inline-flex; align-items: center; gap: 16px; background: white; padding: 16px 28px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.1); transition: box-shadow 0.2s;">
-                        <span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">G</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #FBBC05; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">g</span><span style="color: #34A853; font-size: 1.3rem; font-weight: 500;">l</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">e</span>
-                        <span style="color: #333; font-size: 1.1rem; font-weight: 600;">4.9</span>
-                        <span style="color: #FBBC05; font-size: 1rem;">★★★★★</span>
-                        <span style="color: #666; font-size: 0.9rem;">500+ ulasan</span>
-                        <span style="background: #1a73e8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 500; font-size: 0.9rem;">Lihat Semua</span>
-                    </a>
-                </div>
             </div>
         </section>
 
