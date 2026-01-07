@@ -1886,6 +1886,12 @@
                     <p>Jawapan kepada soalan yang sering ditanya</p>
                 </header>
 
+                <style>
+                    .faq-item summary { display: flex; align-items: center; justify-content: space-between; }
+                    .faq-item summary::after { content: '+'; display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: #1e4a9e; color: white; border-radius: 50%; font-size: 1.2rem; font-weight: bold; flex-shrink: 0; margin-left: 16px; }
+                    .faq-item[open] summary::after { content: '−'; }
+                    .faq-item summary h3 { margin: 0; flex: 1; }
+                </style>
                 <div class="faq-accordion">
                     <details class="faq-item" open>
                         <summary>
