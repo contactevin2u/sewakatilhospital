@@ -1667,7 +1667,7 @@
                     </div>
 
                     <!-- Pahang -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/pahang.html" class="state-link">Pahang</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/kuantan.html" class="location-link">Kuantan</a></li>
@@ -1686,7 +1686,7 @@
                     </div>
 
                     <!-- Terengganu -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/terengganu.html" class="state-link">Terengganu</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/kuala-terengganu.html" class="location-link">Kuala Terengganu</a></li>
@@ -1703,7 +1703,7 @@
                     </div>
 
                     <!-- Kelantan -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/kelantan.html" class="state-link">Kelantan</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/kota-bharu.html" class="location-link">Kota Bharu</a></li>
@@ -1720,7 +1720,7 @@
                     </div>
 
                     <!-- Perlis -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/perlis.html" class="state-link">Perlis</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/kangar.html" class="location-link">Kangar</a></li>
@@ -1736,7 +1736,7 @@
                     </div>
 
                     <!-- Sabah -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/sabah.html" class="state-link">Sabah</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/kota-kinabalu.html" class="location-link">Kota Kinabalu</a></li>
@@ -1757,7 +1757,7 @@
                     </div>
 
                     <!-- Labuan -->
-                    <div class="state-card">
+                    <div class="state-card hidden-state" style="display: none;">
                         <div class="state-title"><a href="locations/labuan.html" class="state-link">Labuan</a></div>
                         <ul class="city-list" style="list-style: none; padding: 0; margin: 0;">
                             <li><a href="locations/labuan-town.html" class="location-link">Bandar Labuan</a></li>
@@ -1771,6 +1771,23 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Show More Button -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <button id="showMoreLocations" onclick="showAllLocations()" style="background: white; color: var(--primary-blue); border: 2px solid white; padding: 12px 30px; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;">
+                        Lihat Semua 14 Negeri
+                    </button>
+                </div>
+
+                <script>
+                    function showAllLocations() {
+                        var hiddenStates = document.querySelectorAll('.hidden-state');
+                        hiddenStates.forEach(function(state) {
+                            state.style.display = 'block';
+                        });
+                        document.getElementById('showMoreLocations').style.display = 'none';
+                    }
+                </script>
             </div>
         </section>
 
