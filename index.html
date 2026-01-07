@@ -1775,17 +1775,21 @@
                 <!-- Show More Button -->
                 <div style="text-align: center; margin-top: 30px;">
                     <button id="showMoreLocations" onclick="showAllLocations()" style="background: white; color: var(--primary-blue); border: 2px solid white; padding: 12px 30px; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;">
-                        Lihat Semua 14 Negeri
+                        Lihat Semua 187 Lokasi
                     </button>
                 </div>
 
                 <script>
                     function showAllLocations() {
                         var hiddenStates = document.querySelectorAll('.hidden-state');
+                        var button = document.getElementById('showMoreLocations');
+                        var isHidden = hiddenStates[0].style.display === 'none';
+
                         hiddenStates.forEach(function(state) {
-                            state.style.display = 'block';
+                            state.style.display = isHidden ? 'block' : 'none';
                         });
-                        document.getElementById('showMoreLocations').style.display = 'none';
+
+                        button.textContent = isHidden ? 'Sembunyikan Lokasi' : 'Lihat Semua 187 Lokasi';
                     }
                 </script>
             </div>
