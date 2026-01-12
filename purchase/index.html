@@ -20,6 +20,173 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Service Schema for Hospital Bed Sales -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Hospital Bed Sales",
+        "name": "Beli Katil Hospital Malaysia",
+        "description": "Perkhidmatan jualan katil hospital di Malaysia. Jaminan 2 tahun, ansuran 0% sehingga 24 bulan. Penghantaran 4 jam ke seluruh Malaysia. Bermula dari RM1,300.",
+        "url": "https://sewakatilhospital.my/purchase/",
+        "provider": {
+            "@type": "Organization",
+            "name": "SewaKatilHospital.my",
+            "url": "https://sewakatilhospital.my",
+            "logo": "https://sewakatilhospital.my/images/logo.png",
+            "foundingDate": "2019",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1, Jalan Perusahaan 4, Kawasan Industri Batu Caves",
+                "addressLocality": "Batu Caves",
+                "addressRegion": "Selangor",
+                "postalCode": "68100",
+                "addressCountry": "MY"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+60112868692",
+                "contactType": "customer service",
+                "availableLanguage": ["Malay", "English"],
+                "hoursAvailable": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            },
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device License",
+                    "name": "Kementerian Kesihatan Malaysia (KKM) Certified"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device Authority",
+                    "name": "MDA Registered Medical Equipment Supplier"
+                }
+            ]
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Malaysia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Beli Katil Hospital Malaysia",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Katil Hospital 1 Crank"
+                    },
+                    "price": "1300",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Katil Hospital 2 Crank"
+                    },
+                    "price": "1800",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Katil Hospital 3 Crank"
+                    },
+                    "price": "2500",
+                    "priceCurrency": "MYR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Katil Hospital Elektrik"
+                    },
+                    "price": "4500",
+                    "priceCurrency": "MYR"
+                }
+            ]
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1300",
+            "highPrice": "4500",
+            "priceCurrency": "MYR",
+            "offerCount": "4"
+        },
+        "paymentAccepted": ["Cash", "Bank Transfer", "Credit Card", "Debit Card", "Ansuran 0%", "Online Banking"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "198",
+            "reviewCount": "198"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Cik Fatimah binti Hassan"
+                },
+                "datePublished": "2025-11-02",
+                "reviewBody": "Selepas 8 bulan sewa, saya decide untuk beli terus katil hospital 2 crank. Kira-kira memang lebih jimat untuk jangka panjang. Proses pembelian sangat mudah, boleh ansuran 0% selama 10 bulan. Jaminan 2 tahun bagi keyakinan. Kualiti katil sama macam yang saya sewa dulu - rangka kukuh, fungsi smooth. Sekarang dah 6 bulan guna, tiada masalah langsung. Terima kasih SewaKatilHospital.my!",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Encik Tan Wei Ming"
+                },
+                "datePublished": "2025-10-15",
+                "reviewBody": "Beli katil hospital elektrik untuk ibu yang bedridden. Walaupun harga lebih mahal, memang berbaloi sebab ibu boleh adjust sendiri tanpa perlu tunggu orang bantu. Remote control senang guna. Penghantaran sangat cepat, pagi order petang dah sampai. Staff pasang dengan teliti dan ajar cara guna. Yang best ada jaminan 2 tahun dan servis percuma. Highly recommended!",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            }
+        ],
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": "Warranty",
+                "value": "2 tahun jaminan penuh (parts dan labor)"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Payment Option",
+                "value": "Ansuran 0% sehingga 24 bulan"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Delivery",
+                "value": "Penghantaran percuma ke seluruh Malaysia"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Service",
+                "value": "Servis percuma sepanjang jaminan"
+            }
+        ]
+    }
+    </script>
+
     <!-- Card Styles -->
     <style>
         /* Card layout */

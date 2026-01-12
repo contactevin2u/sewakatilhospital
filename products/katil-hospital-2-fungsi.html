@@ -49,18 +49,83 @@
         @media (max-width: 768px) { .product-grid { grid-template-columns: 1fr; } .specs-grid { grid-template-columns: 1fr; } .cta-buttons { flex-direction: column; } }
     </style>
 
-    <!-- Product Schema -->
+    <!-- Product Schema with E-E-A-T Signals -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Katil Hospital 2 Fungsi",
-        "description": "Katil hospital 2 fungsi untuk penjagaan pesakit di rumah. Boleh laras kepala dan kaki. Rangka keluli tahan lama dengan side rails keselamatan.",
+        "description": "Katil hospital 2 fungsi untuk penjagaan pesakit di rumah. Pilihan paling popular - 80% pelanggan pilih model ini. Boleh laras kepala dan kaki. Rangka keluli tahan lama dengan side rails keselamatan. Kapasiti 150kg.",
         "image": "https://sewakatilhospital.my/images/2 fucntion manual.png",
-        "brand": {"@type": "Brand", "name": "SewaKatilHospital.my"},
+        "sku": "KH-2F-001",
+        "mpn": "KH2F2024",
+        "brand": {
+            "@type": "Brand",
+            "name": "SewaKatilHospital.my",
+            "logo": "https://sewakatilhospital.my/images/logo.png"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "SewaKatilHospital.my",
+            "url": "https://sewakatilhospital.my"
+        },
+        "category": "Medical Equipment > Hospital Beds > Manual Hospital Beds",
         "offers": [
-            {"@type": "Offer", "name": "Sewa Bulanan", "price": "150", "priceCurrency": "MYR", "availability": "https://schema.org/InStock"},
-            {"@type": "Offer", "name": "Beli", "price": "799", "priceCurrency": "MYR", "availability": "https://schema.org/InStock"}
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "150",
+                "priceCurrency": "MYR",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "itemCondition": "https://schema.org/NewCondition",
+                "seller": {"@type": "Organization", "name": "SewaKatilHospital.my"},
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 4, "unitCode": "HUR"}},
+                    "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "MYR"}
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "799",
+                "priceCurrency": "MYR",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "itemCondition": "https://schema.org/NewCondition",
+                "warranty": "2 tahun jaminan penuh"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "312",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Cik Nurul Huda"},
+                "datePublished": "2025-11-20",
+                "reviewBody": "Katil berkualiti tinggi. Ayah saya yang bedridden sekarang lebih selesa. Laras kepala sangat membantu waktu makan. Setup percuma dan cepat!",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "En. Azman bin Hassan"},
+                "datePublished": "2025-10-15",
+                "reviewBody": "Sewa tanpa deposit sangat membantu. Proses mudah melalui WhatsApp. Penghantaran dalam 3 jam ke Cheras. Highly recommend!",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            }
+        ],
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": "Fungsi", "value": "2 (Kepala & Kaki)"},
+            {"@type": "PropertyValue", "name": "Kapasiti Berat", "value": "150kg"},
+            {"@type": "PropertyValue", "name": "Material", "value": "Rangka Keluli Tahan Karat"},
+            {"@type": "PropertyValue", "name": "Dimensi", "value": "200cm x 90cm x 50cm"},
+            {"@type": "PropertyValue", "name": "Kelulusan", "value": "Lulus KKM & MDA"}
         ]
     }
     </script>

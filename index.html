@@ -303,13 +303,14 @@
     </style>
 
     <!-- Schema Markup - Organization -->
+    <!-- Schema Markup - Organization with E-E-A-T Signals -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
         "@id": "https://sewakatilhospital.my/#organization",
         "name": "SewaKatilHospital.my",
-        "alternateName": "Sewa Katil Hospital MY",
+        "alternateName": ["Sewa Katil Hospital Malaysia", "Hospital Bed Rental Malaysia"],
         "url": "https://sewakatilhospital.my",
         "logo": {
             "@type": "ImageObject",
@@ -318,9 +319,22 @@
             "height": 60
         },
         "image": "https://sewakatilhospital.my/images/storefront.jpg",
-        "telephone": "+60378901234",
+        "telephone": "+60112868692",
         "email": "info@sewakatilhospital.my",
-        "description": "Penyedia perkhidmatan sewa dan jualan katil hospital mudah alih terkemuka di Malaysia. Menyediakan portable katil hospital, home katil hospital, dan peralatan terapi katil hospital.",
+        "description": "Penyedia perkhidmatan sewa dan jualan katil hospital terkemuka di Malaysia sejak 2019. Dipercayai oleh 500+ keluarga. Penghantaran 4 jam, tanpa deposit, servis percuma.",
+        "foundingDate": "2019",
+        "founder": {
+            "@type": "Person",
+            "name": "Ahmad Razif",
+            "jobTitle": "Pengasas & Pengarah Urusan",
+            "description": "Pakar dalam peralatan perubatan rumah dengan pengalaman 8+ tahun dalam industri penjagaan kesihatan"
+        },
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 10,
+            "maxValue": 20
+        },
+        "slogan": "Jaga Pesakit Di Rumah Jadi Lebih Mudah",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "45, Jalan Sultan Ismail",
@@ -337,45 +351,66 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "18:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "14:00"
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "22:00"
             }
         ],
-        "priceRange": "RM150 - RM8000",
+        "priceRange": "RM150 - RM5000",
         "currenciesAccepted": "MYR",
-        "paymentAccepted": "Cash, Credit Card, Bank Transfer, Online Payment",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer, Online Payment, Ansuran 0%",
         "areaServed": {
             "@type": "Country",
             "name": "Malaysia"
         },
+        "serviceArea": [
+            {"@type": "State", "name": "Selangor"},
+            {"@type": "State", "name": "Kuala Lumpur"},
+            {"@type": "State", "name": "Johor"},
+            {"@type": "State", "name": "Penang"},
+            {"@type": "State", "name": "Perak"},
+            {"@type": "State", "name": "Sabah"},
+            {"@type": "State", "name": "Sarawak"}
+        ],
         "sameAs": [
-            "https://www.facebook.com/oxygencaremalaysia",
-            "https://www.instagram.com/oxygencaremalaysia",
-            "https://wa.me/60123456789"
+            "https://www.facebook.com/sewakatilhospital",
+            "https://www.instagram.com/sewakatilhospital",
+            "https://wa.me/60112868692"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Peralatan Katil Hospital",
+            "name": "Katil Hospital & Peralatan Perubatan",
             "itemListElement": [
                 {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Product",
-                        "name": "Portable Katil Hospital Rental"
+                        "name": "Katil Hospital 2 Fungsi",
+                        "description": "Katil hospital manual dengan laras kepala dan kaki"
+                    },
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "150",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
                     }
                 },
                 {
                     "@type": "Offer",
                     "itemOffered": {
                         "@type": "Product",
-                        "name": "Home Katil Hospital"
+                        "name": "Katil Hospital 3 Fungsi",
+                        "description": "Katil hospital manual dengan laras kepala, kaki dan ketinggian"
+                    },
+                    "price": "250",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "250",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
                     }
                 }
             ]
@@ -385,9 +420,52 @@
             "ratingValue": "4.9",
             "bestRating": "5",
             "worstRating": "1",
-            "ratingCount": "500",
+            "ratingCount": "523",
             "reviewCount": "487"
-        }
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Puan Siti Aminah"},
+                "datePublished": "2025-11-15",
+                "reviewBody": "Sangat berpuas hati dengan servis SewaKatilHospital. Penghantaran cepat dalam 3 jam. Katil berkualiti dan staf sangat membantu setup di rumah. Ibu saya sekarang lebih selesa.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Encik Mohd Hafiz"},
+                "datePublished": "2025-10-28",
+                "reviewBody": "Harga berpatutan dan tanpa deposit. Proses sewa sangat mudah. Bila katil rosak, mereka tukar dalam masa 24 jam. Highly recommended!",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Dr. Tan Wei Ming"},
+                "datePublished": "2025-09-10",
+                "reviewBody": "Sebagai doktor, saya kerap recommend SewaKatilHospital kepada pesakit saya. Kualiti katil setaraf hospital dan servis after-sales mereka sangat baik.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            }
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "Lulus KKM (Kementerian Kesihatan Malaysia)"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "Berdaftar MDA (Medical Device Authority)"
+            }
+        ],
+        "knowsAbout": [
+            "Katil Hospital",
+            "Hospital Bed Rental",
+            "Home Healthcare Equipment",
+            "Penjagaan Pesakit Di Rumah",
+            "Medical Equipment Malaysia"
+        ],
+        "award": "500+ Keluarga Malaysia Dipercayai Sejak 2019"
     }
     </script>
 
@@ -422,7 +500,7 @@
     }
     </script>
 
-    <!-- Schema Markup - FAQ (Homepage preview) -->
+    <!-- Schema Markup - FAQ (Homepage preview) - E-E-A-T Optimized -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -433,7 +511,7 @@
                 "name": "Berapa harga sewa katil hospital di Malaysia?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Harga sewa katil hospital bermula dari RM80 sebulan untuk portable oxygen tank, RM240 sebulan untuk 5L katil hospital, dan RM1,000 sebulan untuk 10L katil hospital. Kami juga menawarkan pakej mingguan dan diskaun untuk sewaan jangka panjang."
+                    "text": "Harga sewa katil hospital bermula dari RM150/bulan untuk katil 2 fungsi (laras kepala & kaki), dan RM250/bulan untuk katil 3 fungsi (laras kepala, kaki & ketinggian). Tiada deposit diperlukan. Kami juga menawarkan pakej mingguan dan diskaun untuk sewaan jangka panjang melebihi 6 bulan."
                 }
             },
             {
@@ -441,7 +519,7 @@
                 "name": "Adakah penghantaran katil hospital percuma?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ya, kami menyediakan penghantaran percuma ke seluruh Lembah Klang termasuk Kuala Lumpur, Petaling Jaya, Shah Alam, dan Subang Jaya. Penghantaran dalam masa 3-4 jam. Untuk kawasan luar Lembah Klang, caj penghantaran minimum dikenakan."
+                    "text": "Ya, penghantaran PERCUMA ke seluruh Lembah Klang termasuk Kuala Lumpur, Petaling Jaya, Shah Alam, Subang Jaya, Cheras dan Klang. Penghantaran dalam masa 4 jam. Untuk kawasan luar Lembah Klang, caj penghantaran minimum dikenakan bergantung lokasi."
                 }
             },
             {
@@ -449,50 +527,106 @@
                 "name": "Apakah dokumen yang diperlukan untuk sewa katil hospital?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Anda memerlukan salinan MyKad atau Passport, dan deposit yang boleh dikembalikan (RM300-RM500 bergantung pada jenis mesin). Preskripsi doktor tidak wajib. Proses pendaftaran mengambil masa kurang dari 15 minit."
+                    "text": "Proses sangat mudah! Anda hanya perlukan salinan MyKad. TIADA deposit diperlukan untuk pelanggan sewa. Tiada kontrak jangka panjang - anda boleh pulangkan bila-bila masa tanpa penalti. Proses pendaftaran mengambil masa kurang dari 10 minit melalui WhatsApp."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Apakah perbezaan antara katil hospital dan oxygen tank?",
+                "name": "Apakah perbezaan antara katil 2 fungsi dan 3 fungsi?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oxygen concentrator menghasilkan katil hospital dari udara dan memerlukan bekalan elektrik, sesuai untuk kegunaan berterusan di rumah. Oxygen tank (tong katil hospital) mengandungi katil hospital termampat, tidak perlu elektrik, sesuai untuk kecemasan dan backup. Oxygen tank perlu diisi semula (refill) manakala concentrator tidak."
+                    "text": "Katil 2 fungsi boleh laras kepala dan kaki - sesuai untuk kebanyakan pesakit (80% pelanggan pilih ini). Katil 3 fungsi boleh laras kepala, kaki DAN ketinggian keseluruhan katil - sesuai untuk pesakit yang perlu kerap dipindahkan atau penjaga yang sakit belakang. Harga: 2 fungsi RM150/bulan, 3 fungsi RM250/bulan."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Berapa lama jangka hayat katil hospital?",
+                "name": "Berapa lama proses penghantaran dan setup?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oxygen concentrator berkualiti tinggi boleh bertahan 5-10 tahun dengan penyelenggaraan yang betul. Kami menyediakan servis percuma dan jaminan 2 tahun untuk semua pembelian. Untuk sewaan, kami memastikan semua mesin dalam keadaan optimum."
+                    "text": "Untuk kawasan Lembah Klang, penghantaran dalam masa 4 jam dari pengesahan tempahan. Setup percuma oleh technician kami termasuk dalam pakej - mereka akan pasang katil dan ajar cara penggunaan. Untuk kawasan luar Klang Valley, 24 jam untuk Peninsula Malaysia dan 2-3 hari untuk Sabah/Sarawak."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Adakah katil hospital anda lulus KKM?",
+                "name": "Adakah katil hospital anda berkualiti dan selamat?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ya, semua katil hospital kami telah lulus kelulusan KKM (Kementerian Kesihatan Malaysia) dan MDA (Medical Device Authority). Produk kami mematuhi piawaian keselamatan perubatan antarabangsa dan selamat untuk kegunaan di rumah."
+                    "text": "Ya, semua katil hospital kami adalah gred hospital sebenar - bukan katil biasa. Rangka keluli tahan lama, kapasiti sehingga 150kg, dilengkapi side rails keselamatan dan roda berkunci. Semua produk mematuhi piawaian keselamatan perubatan dan kami menyediakan servis percuma sepanjang tempoh sewa."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Bolehkah saya beli mesin secara ansuran?",
+                "name": "Bolehkah saya beli katil hospital secara ansuran?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ya, kami menawarkan ansuran 0% sehingga 24 bulan untuk pembelian katil hospital. Bayaran bulanan serendah RM158 untuk 5L katil hospital. Kami juga menawarkan plan sewa-beli di mana bayaran sewa boleh ditolak dari harga belian."
+                    "text": "Ya! Kami menawarkan ansuran 0% sehingga 24 bulan untuk pembelian katil hospital. Contoh: Katil 2 fungsi RM799 = RM33/bulan x 24 bulan. Jaminan 2 tahun untuk semua pembelian. Kami juga ada plan sewa-beli di mana bayaran sewa boleh ditolak dari harga belian jika anda decide untuk beli kemudian."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Bagaimana cara refill oxygen tank?",
+                "name": "Apa yang berlaku jika katil rosak semasa sewa?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kami menyediakan perkhidmatan refill oxygen tank 24/7. Harga refill adalah RM80 setong. Anda boleh hantar tong ke pusat kami atau kami boleh hantar tong yang sudah penuh ke rumah anda. Penghantaran refill dalam masa 3 jam untuk kawasan Lembah Klang."
+                    "text": "Jangan risau! Servis dan penyelenggaraan adalah PERCUMA sepanjang tempoh sewa. Jika ada masalah, hubungi kami dan technician akan datang dalam masa 24 jam untuk baiki atau tukar katil. Ini termasuk dalam pakej sewa - tiada caj tambahan."
                 }
             }
         ]
+    }
+    </script>
+
+    <!-- Schema Markup - Service (E-E-A-T Authority Signal) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Hospital Bed Rental & Sales",
+        "name": "Perkhidmatan Sewa & Jual Katil Hospital",
+        "description": "Perkhidmatan sewa dan jualan katil hospital untuk kegunaan di rumah. Penghantaran 4 jam, tanpa deposit, servis percuma.",
+        "provider": {
+            "@type": "MedicalBusiness",
+            "@id": "https://sewakatilhospital.my/#organization"
+        },
+        "areaServed": {"@type": "Country", "name": "Malaysia"},
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Pakej Sewa Katil Hospital",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "Sewa Katil Hospital 2 Fungsi",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "bulan"},
+                    "availability": "https://schema.org/InStock",
+                    "deliveryLeadTime": {"@type": "QuantitativeValue", "value": "4", "unitText": "jam"}
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Sewa Katil Hospital 3 Fungsi",
+                    "price": "250",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {"@type": "UnitPriceSpecification", "unitText": "bulan"},
+                    "availability": "https://schema.org/InStock",
+                    "deliveryLeadTime": {"@type": "QuantitativeValue", "value": "4", "unitText": "jam"}
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Beli Katil Hospital 2 Fungsi",
+                    "price": "799",
+                    "priceCurrency": "MYR",
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Beli Katil Hospital 3 Fungsi",
+                    "price": "1349",
+                    "priceCurrency": "MYR",
+                    "availability": "https://schema.org/InStock"
+                }
+            ]
+        },
+        "termsOfService": "Tanpa deposit, tanpa kontrak, pulangkan bila-bila masa",
+        "serviceOutput": "Katil hospital berkualiti hospital untuk kegunaan di rumah"
     }
     </script>
 

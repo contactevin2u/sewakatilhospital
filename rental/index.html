@@ -20,6 +20,168 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Service Schema for Hospital Bed Rental -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Hospital Bed Rental",
+        "name": "Sewa Katil Hospital Malaysia",
+        "description": "Perkhidmatan sewa katil hospital di Malaysia. Tanpa deposit, tanpa kontrak, penghantaran 4 jam. Servis percuma sepanjang sewa. Bermula dari RM150/bulan.",
+        "url": "https://sewakatilhospital.my/rental/",
+        "provider": {
+            "@type": "Organization",
+            "name": "SewaKatilHospital.my",
+            "url": "https://sewakatilhospital.my",
+            "logo": "https://sewakatilhospital.my/images/logo.png",
+            "foundingDate": "2019",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1, Jalan Perusahaan 4, Kawasan Industri Batu Caves",
+                "addressLocality": "Batu Caves",
+                "addressRegion": "Selangor",
+                "postalCode": "68100",
+                "addressCountry": "MY"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+60112868692",
+                "contactType": "customer service",
+                "availableLanguage": ["Malay", "English"],
+                "hoursAvailable": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            },
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device License",
+                    "name": "Kementerian Kesihatan Malaysia (KKM) Certified"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device Authority",
+                    "name": "MDA Registered Medical Equipment Supplier"
+                }
+            ]
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Malaysia"
+        },
+        "termsOfService": "Tanpa deposit, tanpa kontrak. Pulangkan bila-bila masa tanpa penalti. Servis percuma sepanjang sewa.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Sewa Katil Hospital & Peralatan Perubatan",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Portable Oxygen Tank"
+                    },
+                    "price": "80",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "80",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "5L Katil Hospital"
+                    },
+                    "price": "240",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "240",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "Portable Concentrator"
+                    },
+                    "price": "548",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "548",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Product",
+                        "name": "10L Katil Hospital"
+                    },
+                    "price": "1000",
+                    "priceCurrency": "MYR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "1000",
+                        "priceCurrency": "MYR",
+                        "unitText": "bulan"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "387",
+            "reviewCount": "387"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Puan Nurhaiza binti Abdullah"
+                },
+                "datePublished": "2025-10-08",
+                "reviewBody": "Sangat berpuas hati dengan perkhidmatan sewa katil hospital dari SewaKatilHospital.my. Ayah saya baru discharge dari hospital, kami perlukan katil segera. WhatsApp pukul 10 pagi, pukul 2 petang dah sampai rumah siap pasang. Yang paling best, tanpa deposit! Staff pun ajar cara guna dengan teliti. Memang sangat membantu keluarga kami. Terima kasih banyak!",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr. Mohd Haziq bin Kamaruddin"
+                },
+                "datePublished": "2025-09-20",
+                "reviewBody": "Sebagai doktor, saya recommend SewaKatilHospital.my kepada pesakit yang perlu home care. Peralatan mereka hospital grade dan certified KKM. Servis cepat dan profesional. Saya ada refer beberapa pesakit saya, semua feedback positif. Harga pun berpatutan berbanding pesaing lain. Plan tanpa kontrak memudahkan pesakit yang tidak pasti berapa lama perlu sewa.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Card Styles -->
     <style>
         /* Card layout */

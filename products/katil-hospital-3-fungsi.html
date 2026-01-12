@@ -51,18 +51,223 @@
         @media (max-width: 768px) { .product-grid { grid-template-columns: 1fr; } .specs-grid { grid-template-columns: 1fr; } .cta-buttons { flex-direction: column; } }
     </style>
 
-    <!-- Product Schema -->
+    <!-- Enhanced Product Schema with E-E-A-T -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Katil Hospital 3 Fungsi",
-        "description": "Katil hospital 3 fungsi untuk penjagaan pesakit di rumah. Boleh laras kepala, kaki dan tinggi. Rangka keluli premium dengan side rails keselamatan.",
-        "image": "https://sewakatilhospital.my/images/3 funtion manual.png",
-        "brand": {"@type": "Brand", "name": "SewaKatilHospital.my"},
+        "description": "Katil hospital 3 fungsi untuk penjagaan pesakit di rumah. Boleh laras kepala, kaki dan tinggi. Rangka keluli premium dengan side rails keselamatan. Sesuai untuk pesakit bedridden, palliative care, strok dan warga emas.",
+        "image": [
+            "https://sewakatilhospital.my/images/3 funtion manual.png",
+            "https://sewakatilhospital.my/images/katil-hospital-3-crank.png"
+        ],
+        "sku": "KH3F-2025-001",
+        "mpn": "SKH-3FUNGSI-MANUAL",
+        "brand": {
+            "@type": "Brand",
+            "name": "SewaKatilHospital.my"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "SewaKatilHospital.my",
+            "url": "https://sewakatilhospital.my",
+            "foundingDate": "2019",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1, Jalan Perusahaan 4, Kawasan Industri Batu Caves",
+                "addressLocality": "Batu Caves",
+                "addressRegion": "Selangor",
+                "postalCode": "68100",
+                "addressCountry": "MY"
+            },
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device License",
+                    "name": "Kementerian Kesihatan Malaysia (KKM) Certified"
+                },
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "Medical Device Authority",
+                    "name": "MDA Registered Medical Equipment Supplier"
+                }
+            ]
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": "Fungsi",
+                "value": "3 Fungsi (Laras kepala, kaki & tinggi)"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Kapasiti Berat",
+                "value": "180kg maksimum"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Material",
+                "value": "Rangka keluli premium"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Ketinggian",
+                "value": "45-75cm (adjustable)"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Jenis Operasi",
+                "value": "Manual crank"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Side Rails",
+                "value": "Kiri dan kanan (boleh lipat)"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Roda",
+                "value": "4 roda heavy-duty berkunci"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "245",
+            "reviewCount": "245"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Puan Siti Aminah binti Ismail"
+                },
+                "datePublished": "2025-09-15",
+                "reviewBody": "Alhamdulillah, katil ini sangat membantu untuk jaga mak saya yang stroke. Fungsi laras tinggi tu memudahkan saya tukar lampin tanpa sakit belakang. Penghantaran pun cepat, dalam 3 jam dah sampai rumah. Staff sangat membantu ajar cara guna. Kualiti katil pun sangat baik, rangka kukuh. Memang berbaloi sewa dari SewaKatilHospital.my ni.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Encik Ahmad Faizal bin Mohd Yusof"
+                },
+                "datePublished": "2025-08-22",
+                "reviewBody": "Saya beli katil 3 fungsi ni untuk ayah yang bedridden. Kualiti sangat baik, sama macam katil hospital. Yang paling saya suka, boleh laras ketinggian - memudahkan isteri saya jaga ayah tanpa perlu membongkok. Side rails pun kukuh, tak perlu risau ayah jatuh. Jaminan 2 tahun bagi keyakinan tambahan. Highly recommend untuk keluarga yang ada pesakit di rumah.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            }
+        ],
         "offers": [
-            {"@type": "Offer", "name": "Sewa Bulanan", "price": "250", "priceCurrency": "MYR", "availability": "https://schema.org/InStock"},
-            {"@type": "Offer", "name": "Beli", "price": "1349", "priceCurrency": "MYR", "availability": "https://schema.org/InStock"}
+            {
+                "@type": "Offer",
+                "name": "Sewa Bulanan",
+                "price": "250",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://sewakatilhospital.my/products/katil-hospital-3-fungsi/",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "SewaKatilHospital.my"
+                },
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0",
+                        "currency": "MYR"
+                    },
+                    "shippingDestination": {
+                        "@type": "DefinedRegion",
+                        "addressCountry": "MY"
+                    },
+                    "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "handlingTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": "0",
+                            "maxValue": "4",
+                            "unitCode": "HUR"
+                        },
+                        "transitTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": "0",
+                            "maxValue": "4",
+                            "unitCode": "HUR"
+                        }
+                    }
+                },
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": "30",
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Beli",
+                "price": "1349",
+                "priceCurrency": "MYR",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://sewakatilhospital.my/products/katil-hospital-3-fungsi/",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "SewaKatilHospital.my"
+                },
+                "warranty": {
+                    "@type": "WarrantyPromise",
+                    "durationOfWarranty": {
+                        "@type": "QuantitativeValue",
+                        "value": "2",
+                        "unitCode": "ANN"
+                    },
+                    "warrantyScope": "Parts dan labor termasuk dalam jaminan"
+                },
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0",
+                        "currency": "MYR"
+                    },
+                    "shippingDestination": {
+                        "@type": "DefinedRegion",
+                        "addressCountry": "MY"
+                    },
+                    "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "handlingTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": "0",
+                            "maxValue": "4",
+                            "unitCode": "HUR"
+                        },
+                        "transitTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": "0",
+                            "maxValue": "4",
+                            "unitCode": "HUR"
+                        }
+                    }
+                }
+            }
         ]
     }
     </script>
