@@ -3949,6 +3949,10 @@ button:focus-visible {
     color: #90EE90;
 }
 
+.logo-katil {
+    color: #22c55e;
+}
+
 .nav-menu-new {
     display: flex;
     list-style: none;
