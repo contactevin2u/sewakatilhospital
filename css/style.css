@@ -4049,9 +4049,9 @@ button:focus-visible {
 }
 
 .hero-left h1 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     color: white;
     margin-bottom: 16px;
 }
