@@ -87,6 +87,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -95,6 +96,7 @@ body {
     line-height: 1.6;
     color: var(--gray-700);
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 /* Typography */
