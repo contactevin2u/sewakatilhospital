@@ -4523,6 +4523,10 @@ button:focus-visible {
         background: #128C7E;
     }
 
+    .hero-product-mobile {
+        display: block !important;
+    }
+
     .hero-section {
         padding: 20px 0 0;
     }
