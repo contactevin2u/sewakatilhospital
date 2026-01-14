@@ -4417,6 +4417,11 @@ button:focus-visible {
     }
 }
 
+/* Hide mobile WhatsApp button on desktop */
+.mobile-whatsapp-btn {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .header-new .header-inner {
         flex-wrap: wrap;
@@ -4452,8 +4457,22 @@ button:focus-visible {
     }
 
     .header-whatsapp-btn {
-        padding: 8px 16px;
-        font-size: 0.85rem;
+        display: none;
+    }
+
+    .mobile-whatsapp-btn {
+        display: block;
+        background: #25D366;
+        color: white !important;
+        padding: 14px 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .mobile-whatsapp-btn:hover {
+        background: #128C7E;
     }
 
     .hero-section {
