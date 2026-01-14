@@ -4551,6 +4551,10 @@ button:focus-visible {
         font-size: 2.8rem;
     }
 
+    .hero-subheading {
+        font-size: 1.15rem !important;
+    }
+
     .hero-subtitle {
         font-size: 0.9rem;
     }
