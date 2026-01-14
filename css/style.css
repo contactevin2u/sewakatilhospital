@@ -4591,8 +4591,8 @@ button:focus-visible {
 
     .btn-hero-whatsapp,
     .btn-hero-tel {
-        padding: 18px 20px;
-        font-size: 1rem;
+        padding: 22px 20px;
+        font-size: 1.1rem;
         width: 100%;
         justify-content: center;
     }
