@@ -3512,13 +3512,13 @@ body {
 }
 
 .mobile-menu-toggle:hover {
-    background: var(--gray-100);
+    background: transparent;
 }
 
 .hamburger-line {
     width: 24px;
     height: 2px;
-    background: var(--gray-700);
+    background: white;
     border-radius: 2px;
     transition: all 0.3s ease;
     transform-origin: center;
@@ -5409,21 +5409,20 @@ button:focus-visible {
     display: none;
     align-items: center;
     justify-content: center;
-    background: var(--gray-50);
+    background: transparent;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .mobile-menu-toggle:hover {
-    background: var(--gray-100);
+    background: transparent;
 }
 
 .hamburger {
     width: 22px;
     height: 2px;
-    background: var(--gray-700);
+    background: white;
     position: relative;
     transition: background 0.3s ease;
 }
@@ -5434,7 +5433,7 @@ button:focus-visible {
     position: absolute;
     width: 22px;
     height: 2px;
-    background: var(--gray-700);
+    background: white;
     transition: transform 0.3s ease;
 }
 
