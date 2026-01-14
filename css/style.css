@@ -4451,12 +4451,18 @@ button:focus-visible {
 
     .nav-menu-new li {
         list-style: none;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .nav-menu-new li:last-child {
+        border-bottom: none;
+        margin-top: auto;
     }
 
     .nav-menu-new a {
         display: block;
         padding: 14px 16px;
-        border-radius: 8px;
+        border-radius: 0;
         color: #1e293b !important;
         font-weight: 600;
         font-size: 1rem;
@@ -4464,6 +4470,38 @@ button:focus-visible {
 
     .nav-menu-new a:hover {
         background: #f1f5f9;
+    }
+
+    /* Close button for mobile menu */
+    .mobile-menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-close::before,
+    .mobile-menu-close::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #1e293b;
+    }
+
+    .mobile-menu-close::before {
+        transform: rotate(45deg);
+    }
+
+    .mobile-menu-close::after {
+        transform: rotate(-45deg);
     }
 
     .header-whatsapp-btn {

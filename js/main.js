@@ -159,6 +159,12 @@
             this.toggle.addEventListener('click', () => this.toggleMenu());
             this.overlay.addEventListener('click', () => this.closeMenu());
 
+            // Close button inside menu
+            const closeBtn = document.querySelector('.mobile-menu-close');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => this.closeMenu());
+            }
+
             // Close on escape key
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && this.menu.classList.contains('active')) {
