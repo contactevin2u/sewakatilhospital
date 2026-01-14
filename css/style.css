@@ -4561,14 +4561,22 @@ button:focus-visible {
     }
 
     .hero-buttons {
-        justify-content: center;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .btn-hero-whatsapp,
     .btn-hero-tel {
-        padding: 12px 20px;
-        font-size: 0.85rem;
+        padding: 14px 20px;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-product-mobile img {
+        max-width: 250px;
+        height: 180px;
+        object-fit: cover;
     }
 
     .hero-right {
