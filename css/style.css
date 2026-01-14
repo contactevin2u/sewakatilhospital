@@ -4579,6 +4579,10 @@ button:focus-visible {
         font-size: 0.9rem;
     }
 
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
     .hero-cert-badge {
         justify-content: center;
         flex-wrap: wrap;
