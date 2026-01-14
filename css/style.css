@@ -4432,23 +4432,20 @@ button:focus-visible {
     .nav-menu-new {
         position: fixed;
         top: 0;
-        right: -300px;
+        right: 0;
         width: 280px;
         height: 100vh;
         background: white;
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 80px 24px 24px;
         gap: 5px;
         box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
-        transition: right 0.3s ease;
         z-index: 99;
-        visibility: hidden;
     }
 
     .nav-menu-new.active {
-        right: 0;
-        visibility: visible;
+        display: flex;
     }
 
     .nav-menu-new li {
