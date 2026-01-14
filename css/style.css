@@ -4430,7 +4430,7 @@ button:focus-visible {
     .nav-menu-new {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -300px;
         width: 280px;
         height: 100vh;
         background: white;
@@ -4441,10 +4441,12 @@ button:focus-visible {
         box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
         transition: right 0.3s ease;
         z-index: 99;
+        visibility: hidden;
     }
 
     .nav-menu-new.active {
         right: 0;
+        visibility: visible;
     }
 
     .nav-menu-new li {
