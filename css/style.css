@@ -4434,9 +4434,10 @@ button:focus-visible {
         width: 280px;
         height: 100vh;
         background: white;
+        display: flex;
         flex-direction: column;
         padding: 80px 24px 24px;
-        gap: 10px;
+        gap: 5px;
         box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
         transition: right 0.3s ease;
         z-index: 99;
@@ -4446,14 +4447,21 @@ button:focus-visible {
         right: 0;
     }
 
+    .nav-menu-new li {
+        list-style: none;
+    }
+
     .nav-menu-new a {
         display: block;
-        padding: 12px 16px;
+        padding: 14px 16px;
         border-radius: 8px;
+        color: #1e293b !important;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     .nav-menu-new a:hover {
-        background: var(--gray-50);
+        background: #f1f5f9;
     }
 
     .header-whatsapp-btn {
