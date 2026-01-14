@@ -4444,7 +4444,8 @@ button:focus-visible {
         z-index: 99;
     }
 
-    .nav-menu-new.active {
+    .nav-menu-new.active,
+    .main-nav.active .nav-menu-new {
         display: flex;
     }
 
