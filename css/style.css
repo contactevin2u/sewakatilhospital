@@ -3979,6 +3979,18 @@ button:focus-visible {
 
 .nav-menu-new .current a {
     color: white;
+    position: relative;
+}
+
+.nav-menu-new .current a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #10B981, #3B82F6);
+    border-radius: 2px;
 }
 
 .header-whatsapp-btn {
@@ -4466,6 +4478,10 @@ button:focus-visible {
         color: #1e293b !important;
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    .nav-menu-new .current a::after {
+        display: none;
     }
 
     .nav-menu-new a:hover {
