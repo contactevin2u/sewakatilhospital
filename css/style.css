@@ -3993,6 +3993,10 @@ button:focus-visible {
     border-radius: 2px;
 }
 
+.mobile-menu-close {
+    display: none;
+}
+
 .header-whatsapp-btn {
     display: inline-flex;
     align-items: center;
