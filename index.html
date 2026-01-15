@@ -1821,19 +1821,20 @@
                     line-height: 1.3 !important;
                 }
 
-                /* Footer - simplified for mobile */
+                /* Footer - compact for mobile */
                 .footer {
-                    padding: 1.5rem 0 1rem !important;
+                    padding: 1.2rem 0 1rem !important;
                 }
 
-                .footer-links {
+                .footer-links,
+                .footer-contact {
                     display: none !important;
                 }
 
                 .footer-grid {
                     grid-template-columns: 1fr !important;
-                    gap: 20px !important;
-                    margin-bottom: 1rem !important;
+                    gap: 0 !important;
+                    margin-bottom: 0.8rem !important;
                 }
 
                 .footer-about {
@@ -1841,55 +1842,46 @@
                 }
 
                 .footer-about > a {
-                    margin-bottom: 10px !important;
+                    margin-bottom: 8px !important;
                 }
 
                 .footer-about > a span {
-                    font-size: 1.3rem !important;
+                    font-size: 1.2rem !important;
                 }
 
-                .footer-about > p {
-                    font-size: 0.8rem !important;
-                    line-height: 1.4 !important;
-                    margin-top: 6px !important;
+                /* Hide addresses on mobile */
+                .footer-about > p:nth-of-type(2),
+                .footer-about > p:nth-of-type(3) {
+                    display: none !important;
+                }
+
+                .footer-about > p:first-of-type {
+                    font-size: 0.75rem !important;
+                    margin-top: 0 !important;
                 }
 
                 .footer-social {
                     justify-content: center !important;
-                    margin-top: 12px !important;
-                }
-
-                .footer-contact {
-                    text-align: center !important;
-                }
-
-                .footer-contact h3 {
-                    font-size: 1rem !important;
-                    margin-bottom: 8px !important;
-                }
-
-                .footer-contact p {
-                    font-size: 0.8rem !important;
-                    margin-top: 6px !important;
+                    margin-top: 10px !important;
                 }
 
                 .footer-bottom {
                     text-align: center !important;
-                    padding-top: 1rem !important;
+                    padding-top: 0.8rem !important;
                 }
 
                 .footer-bottom p {
-                    font-size: 0.75rem !important;
+                    font-size: 0.7rem !important;
                 }
 
                 .footer-legal {
                     justify-content: center !important;
-                    gap: 10px !important;
-                    margin-top: 8px !important;
+                    gap: 8px !important;
+                    margin-top: 6px !important;
                 }
 
                 .footer-legal li a {
-                    font-size: 0.7rem !important;
+                    font-size: 0.65rem !important;
                 }
             }
         </style>
