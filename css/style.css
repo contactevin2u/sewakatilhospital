@@ -5490,6 +5490,7 @@ button:focus-visible {
 .hamburger::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 22px;
     height: 2px;
     background: white;
