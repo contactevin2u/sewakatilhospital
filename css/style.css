@@ -3919,7 +3919,7 @@ button:focus-visible {
    NEW HEADER STYLE - COMPACT
    ----------------------------------------- */
 .header-new {
-    background-color: #1e4a9e;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
     padding: 2px 0;
     position: sticky;
     top: 0;
@@ -4920,9 +4920,9 @@ button:focus-visible {
 
 /* --- Enhanced Header --- */
 .header-new {
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
     backdrop-filter: blur(10px);
-    background-color: rgba(30, 74, 158, 0.98);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
 }
 
 .header-new.scrolled {
