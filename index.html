@@ -1760,6 +1760,39 @@
                 .google-rating-count {
                     font-size: 0.7rem !important;
                 }
+
+                /* Google summary container - override inline styles */
+                .google-summary-wrapper {
+                    margin-top: 15px !important;
+                }
+
+                .google-summary-link {
+                    gap: 6px !important;
+                    padding: 10px 14px !important;
+                    flex-wrap: wrap !important;
+                    justify-content: center !important;
+                }
+
+                .google-letter {
+                    font-size: 0.9rem !important;
+                }
+
+                .google-rating-num {
+                    font-size: 0.9rem !important;
+                }
+
+                .google-stars {
+                    font-size: 0.75rem !important;
+                }
+
+                .google-ulasan {
+                    font-size: 0.7rem !important;
+                }
+
+                .google-lihat {
+                    padding: 6px 12px !important;
+                    font-size: 0.75rem !important;
+                }
             }
         </style>
 
@@ -1961,13 +1994,13 @@
                 </div>
 
                 <!-- Google Summary -->
-                <div style="display: flex; justify-content: center; margin-top: 40px;">
-                    <a href="https://share.google/hBmGVugG4LxFv54ok" target="_blank" style="display: inline-flex; align-items: center; gap: 16px; background: white; padding: 16px 28px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.1); transition: box-shadow 0.2s;">
-                        <span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">G</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #FBBC05; font-size: 1.3rem; font-weight: 500;">o</span><span style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">g</span><span style="color: #34A853; font-size: 1.3rem; font-weight: 500;">l</span><span style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">e</span>
-                        <span style="color: #333; font-size: 1.1rem; font-weight: 600;">4.9</span>
-                        <span style="color: #FBBC05; font-size: 1rem;">★★★★★</span>
-                        <span style="color: #666; font-size: 0.9rem;">500+ ulasan</span>
-                        <span style="background: #1a73e8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 500; font-size: 0.9rem;">Lihat Semua</span>
+                <div class="google-summary-wrapper" style="display: flex; justify-content: center; margin-top: 40px;">
+                    <a class="google-summary-link" href="https://share.google/hBmGVugG4LxFv54ok" target="_blank" style="display: inline-flex; align-items: center; gap: 16px; background: white; padding: 16px 28px; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 12px rgba(0,0,0,0.1); transition: box-shadow 0.2s;">
+                        <span class="google-letter" style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">G</span><span class="google-letter" style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">o</span><span class="google-letter" style="color: #FBBC05; font-size: 1.3rem; font-weight: 500;">o</span><span class="google-letter" style="color: #4285F4; font-size: 1.3rem; font-weight: 500;">g</span><span class="google-letter" style="color: #34A853; font-size: 1.3rem; font-weight: 500;">l</span><span class="google-letter" style="color: #EA4335; font-size: 1.3rem; font-weight: 500;">e</span>
+                        <span class="google-rating-num" style="color: #333; font-size: 1.1rem; font-weight: 600;">4.9</span>
+                        <span class="google-stars" style="color: #FBBC05; font-size: 1rem;">★★★★★</span>
+                        <span class="google-ulasan" style="color: #666; font-size: 0.9rem;">500+ ulasan</span>
+                        <span class="google-lihat" style="background: #1a73e8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 500; font-size: 0.9rem;">Lihat Semua</span>
                     </a>
                 </div>
             </div>
