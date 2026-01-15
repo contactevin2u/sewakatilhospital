@@ -1547,30 +1547,28 @@
                     max-width: 250px !important;
                 }
 
-                /* Kelebihan section - horizontal scroll on mobile */
+                /* Kelebihan section - vertical scroll on mobile */
                 .kelebihan-grid {
                     display: flex !important;
+                    flex-direction: column !important;
                     grid-template-columns: unset !important;
-                    overflow-x: auto !important;
-                    scroll-snap-type: x mandatory;
+                    overflow-y: auto !important;
+                    max-height: 420px !important;
+                    scroll-snap-type: y mandatory;
                     -webkit-overflow-scrolling: touch;
-                    gap: 16px !important;
-                    padding-bottom: 16px;
-                    margin-left: -20px !important;
-                    margin-right: -20px !important;
-                    padding-left: 20px !important;
-                    padding-right: 20px !important;
+                    gap: 12px !important;
+                    padding-right: 8px;
                 }
 
                 .kelebihan-grid > div {
-                    flex: 0 0 280px !important;
-                    min-width: 280px !important;
+                    flex: 0 0 auto !important;
+                    min-width: unset !important;
                     scroll-snap-align: start;
                 }
 
-                /* Hide scrollbar but keep functionality */
+                /* Scrollbar styling */
                 .kelebihan-grid::-webkit-scrollbar {
-                    height: 6px;
+                    width: 4px;
                 }
 
                 .kelebihan-grid::-webkit-scrollbar-track {
