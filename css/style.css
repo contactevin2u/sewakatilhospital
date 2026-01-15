@@ -4135,7 +4135,8 @@ button:focus-visible {
     justify-content: center;
     gap: 8px;
     color: white;
-    padding: 0 20px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.85rem;
