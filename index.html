@@ -1796,8 +1796,20 @@
 
                 /* Service areas - add padding on mobile */
                 .service-areas .container {
-                    padding-left: 35px !important;
-                    padding-right: 35px !important;
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                }
+
+                .service-areas .container > div[style*="grid"] {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    gap: 10px !important;
+                    margin-top: 20px !important;
+                }
+
+                .state-card {
+                    padding: 12px !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
                 }
 
                 /* Footer - hide Pautan Pantas, fix Hubungi Kami position */
