@@ -410,6 +410,13 @@
             .hero-section > .container { padding: 0 !important; max-width: 100% !important; }
             .hero-container { border-radius: 0 !important; margin: 0 !important; padding: 30px 20px !important; }
 
+            /* Reorder hero elements: image → KKM → CTA */
+            .hero-left { display: flex !important; flex-direction: column !important; }
+            .hero-product-mobile { order: 2 !important; }
+            .hero-cert-badge { order: 3 !important; justify-content: center !important; width: 100% !important; }
+            .hero-cert-badge .cert-icons img { width: 110px !important; height: auto !important; }
+            .hero-buttons { order: 4 !important; }
+
             /* Show hospital bed image on mobile */
             .hero-right { display: block !important; margin: 20px 0 !important; }
             .hero-products img { max-width: 250px !important; margin: 0 auto !important; display: block !important; }
