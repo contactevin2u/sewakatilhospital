@@ -1699,6 +1699,31 @@
                 .proof-gallery-grid img {
                     height: 90px !important;
                 }
+
+                /* Reviews - horizontal scroll on mobile */
+                .google-reviews-grid {
+                    display: flex !important;
+                    overflow-x: auto !important;
+                    scroll-snap-type: x mandatory;
+                    -webkit-overflow-scrolling: touch;
+                    gap: 12px !important;
+                    padding-bottom: 10px;
+                    margin-left: -20px !important;
+                    margin-right: -20px !important;
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                }
+
+                .google-review-card {
+                    flex: 0 0 260px !important;
+                    min-width: 260px !important;
+                    scroll-snap-align: start;
+                    padding: 16px !important;
+                }
+
+                .google-review-text {
+                    font-size: 0.85rem !important;
+                }
             }
         </style>
 
