@@ -1441,7 +1441,7 @@
                     <p>Penjagaan di rumah dengan katil hospital yang betul memberikan <strong style="color: var(--secondary-green);">keselamatan, keselesaan dan kemudahan</strong> untuk pesakit dan penjaga.</p>
                 </header>
 
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px;">
+                <div class="kelebihan-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px;">
                     <!-- Card 1: Elak Jangkitan Hospital -->
                     <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); display: flex; align-items: flex-start; gap: 16px;">
                         <div style="width: 45px; height: 45px; min-width: 45px; background: linear-gradient(135deg, #1e4a9e, #3a92e8); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
@@ -1545,6 +1545,42 @@
                 }
                 .bantuan-product img {
                     max-width: 250px !important;
+                }
+
+                /* Kelebihan section - horizontal scroll on mobile */
+                .kelebihan-grid {
+                    display: flex !important;
+                    grid-template-columns: unset !important;
+                    overflow-x: auto !important;
+                    scroll-snap-type: x mandatory;
+                    -webkit-overflow-scrolling: touch;
+                    gap: 16px !important;
+                    padding-bottom: 16px;
+                    margin-left: -20px !important;
+                    margin-right: -20px !important;
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                }
+
+                .kelebihan-grid > div {
+                    flex: 0 0 280px !important;
+                    min-width: 280px !important;
+                    scroll-snap-align: start;
+                }
+
+                /* Hide scrollbar but keep functionality */
+                .kelebihan-grid::-webkit-scrollbar {
+                    height: 6px;
+                }
+
+                .kelebihan-grid::-webkit-scrollbar-track {
+                    background: rgba(0,0,0,0.05);
+                    border-radius: 3px;
+                }
+
+                .kelebihan-grid::-webkit-scrollbar-thumb {
+                    background: rgba(30, 74, 158, 0.3);
+                    border-radius: 3px;
                 }
             }
         </style>
