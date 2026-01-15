@@ -1510,7 +1510,7 @@
                 </div>
 
                 <!-- Who needs it -->
-                <div style="background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%); border-radius: 16px; padding: 30px 40px; margin-top: 40px; color: white;">
+                <div class="who-needs-container" style="background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%); border-radius: 16px; padding: 30px 40px; margin-top: 40px; color: white;">
                     <h3 style="color: white; margin-bottom: 16px; font-size: 1.3rem;">Siapa Yang Perlukan Katil Hospital?</h3>
                     <div style="display: flex; flex-wrap: wrap; gap: 12px;">
                         <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;">Warga emas</span>
@@ -1553,6 +1553,11 @@
                     flex-direction: column !important;
                     grid-template-columns: unset !important;
                     gap: 12px !important;
+                }
+
+                /* Hide "Siapa Yang Perlukan" on mobile */
+                .who-needs-container {
+                    display: none !important;
                 }
 
                 /* Proof gallery - shorter images on mobile */
