@@ -452,6 +452,13 @@
             .why-us-item h3 { font-size: 0.85rem !important; }
             .why-us-item p { font-size: 0.7rem !important; }
 
+            /* How to buy - 2x2 grid */
+            .how-to-buy-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 15px !important; }
+            .how-to-buy-grid > div { padding: 15px !important; }
+            .how-to-buy-grid > div > div:first-child { width: 50px !important; height: 50px !important; font-size: 1.3rem !important; margin-bottom: 10px !important; }
+            .how-to-buy-grid h3 { font-size: 0.9rem !important; margin-bottom: 8px !important; }
+            .how-to-buy-grid p { font-size: 0.75rem !important; }
+
             /* Bantuan section cards - smaller on mobile */
             .bantuan-section [style*="display: grid"] { gap: 12px !important; margin-top: 25px !important; }
             .bantuan-section [style*="padding: 30px"] { padding: 15px !important; }
@@ -916,11 +923,11 @@
         <section class="services" style="padding: 80px 0;">
             <div class="container">
                 <header class="section-header">
-                    <h2>Dari WhatsApp Ke Rumah Anda - Hanya 4 Jam</h2>
+                    <h2>Dari WhatsApp Ke Rumah Anda<br><span style="color: #16a34a;">Hanya 4 Jam</span></h2>
                     <p>Proses pembelian yang mudah, pantas dan telus. Tiada caj tersembunyi.</p>
                 </header>
 
-                <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                <div class="services-grid how-to-buy-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
                     <div style="text-align: center; padding: 30px;">
                         <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #1e4a9e 0%, #3a92e8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem; font-weight: bold;">1</div>
                         <h3 style="margin-bottom: 15px; color: #1e4a9e;">Hubungi Kami</h3>
