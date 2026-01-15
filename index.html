@@ -1821,7 +1821,7 @@
                     line-height: 1.3 !important;
                 }
 
-                /* Footer - clean 2-column layout */
+                /* Footer - simple 2 column, NO overlap */
                 .footer {
                     padding: 1rem 15px 0.8rem !important;
                 }
@@ -1837,42 +1837,28 @@
                 .footer-grid {
                     display: grid !important;
                     grid-template-columns: 1fr 1fr !important;
-                    gap: 10px !important;
+                    gap: 8px 12px !important;
                     margin-bottom: 0.8rem !important;
                 }
 
-                /* Left column */
                 .footer-about {
                     text-align: left !important;
                 }
 
                 .footer-about > a {
-                    position: absolute !important;
-                    left: 50% !important;
-                    transform: translateX(-50%) !important;
-                    top: 0 !important;
-                    margin-bottom: 0 !important;
-                }
-
-                .footer-about > a span {
-                    font-size: 1rem !important;
+                    display: none !important;
                 }
 
                 .footer-about > p {
-                    font-size: 0.6rem !important;
-                    line-height: 1.4 !important;
-                    margin-top: 4px !important;
-                }
-
-                .footer-about > p:first-of-type {
-                    margin-top: 0 !important;
+                    font-size: 0.55rem !important;
+                    line-height: 1.35 !important;
+                    margin: 0 0 6px 0 !important;
                 }
 
                 .footer-social {
                     display: none !important;
                 }
 
-                /* Right column */
                 .footer-contact {
                     text-align: right !important;
                 }
@@ -1882,32 +1868,23 @@
                 }
 
                 .footer-contact p {
-                    font-size: 0.6rem !important;
-                    line-height: 1.4 !important;
-                    margin-top: 4px !important;
-                }
-
-                .footer-contact p:first-of-type {
-                    margin-top: 0 !important;
+                    font-size: 0.55rem !important;
+                    line-height: 1.35 !important;
+                    margin: 0 0 6px 0 !important;
                 }
 
                 .footer-contact p a {
-                    font-size: 0.75rem !important;
-                }
-
-                /* Container for logo positioning */
-                .footer-grid {
-                    position: relative !important;
-                    padding-top: 30px !important;
+                    font-size: 0.65rem !important;
                 }
 
                 .footer-bottom {
                     text-align: center !important;
                     padding-top: 0.6rem !important;
+                    border-top: 1px solid rgba(255,255,255,0.2) !important;
                 }
 
                 .footer-bottom p {
-                    font-size: 0.55rem !important;
+                    font-size: 0.5rem !important;
                 }
 
                 .footer-legal {
@@ -1917,7 +1894,7 @@
                 }
 
                 .footer-legal li a {
-                    font-size: 0.5rem !important;
+                    font-size: 0.45rem !important;
                 }
             }
         </style>
