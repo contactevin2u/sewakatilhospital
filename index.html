@@ -1582,6 +1582,16 @@
                     background: rgba(30, 74, 158, 0.3);
                     border-radius: 3px;
                 }
+
+                /* Proof gallery - shorter images on mobile */
+                .proof-gallery-grid {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    gap: 10px !important;
+                }
+
+                .proof-gallery-grid img {
+                    height: 120px !important;
+                }
             }
         </style>
 
@@ -1653,7 +1663,7 @@
                     <p>Ini bukan janji kosong - tengok sendiri gambar penghantaran sebenar kepada pelanggan kami</p>
                 </header>
 
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px;">
+                <div class="proof-gallery-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px;">
                     <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                         <img src="images/Gallery/WhatsApp Image 2025-07-31 at 10.40.48 AM (2).jpeg" alt="Bukti penghantaran katil hospital" style="width: 100%; height: 200px; object-fit: cover;">
                     </div>
