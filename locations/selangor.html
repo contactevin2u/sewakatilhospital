@@ -990,16 +990,22 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="faq-section" style="padding: 60px 0; background: white;">
+        <section id="faq" class="faq-preview" aria-labelledby="faq-heading" style="padding-top: 30px;">
             <div class="container">
                 <header class="section-header">
-                    <h2>Soalan Lazim - Sewa Katil Hospital Selangor</h2>
-                    <p>Jawapan kepada soalan yang sering ditanya</p>
+                    <h2 id="faq-heading">Soalan Lazim - Sewa Katil Hospital Selangor</h2>
+                    <p>Jawapan kepada soalan yang sering ditanya. Atau WhatsApp kami untuk bantuan lebih lanjut.</p>
                 </header>
 
-                <div class="faq-accordion" style="max-width: 800px; margin: 0 auto;">
+                <style>
+                    .faq-item summary { display: flex; align-items: center; justify-content: space-between; }
+                    .faq-item summary::after { content: '+'; display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: #1e4a9e; color: white; border-radius: 50%; font-size: 1.2rem; font-weight: bold; flex-shrink: 0; margin-left: 16px; }
+                    .faq-item[open] summary::after { content: '−'; }
+                    .faq-item summary h3 { margin: 0; flex: 1; }
+                </style>
+                <div class="faq-accordion">
                     <details class="faq-item" open>
-                        <summary class="faq-question">
+                        <summary>
                             <h3>Berapa harga sewa katil hospital di Selangor?</h3>
                         </summary>
                         <div class="faq-answer">
@@ -1008,7 +1014,7 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question">
+                        <summary>
                             <h3>Berapa lama penghantaran ke Selangor?</h3>
                         </summary>
                         <div class="faq-answer">
@@ -1017,7 +1023,7 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question">
+                        <summary>
                             <h3>Ada deposit untuk sewa?</h3>
                         </summary>
                         <div class="faq-answer">
@@ -1026,7 +1032,7 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question">
+                        <summary>
                             <h3>Boleh pulangkan bila-bila masa?</h3>
                         </summary>
                         <div class="faq-answer">
@@ -1035,7 +1041,7 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary class="faq-question">
+                        <summary>
                             <h3>Apa yang termasuk dalam sewa?</h3>
                         </summary>
                         <div class="faq-answer">
