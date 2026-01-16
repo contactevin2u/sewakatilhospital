@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <!-- Homepage -->
     <url>
         <loc>https://sewakatilhospital.my/</loc>
-        <lastmod>2024-11-25</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://sewakatilhospital.my/images/hero-oxygen-concentrator.webp</image:loc>
-            <image:title>Portable Oxygen Concentrator Malaysia</image:title>
+            <image:loc>https://sewakatilhospital.my/images/hero-katil-hospital.webp</image:loc>
+            <image:title>Sewa Katil Hospital Malaysia</image:title>
         </image:image>
-    </url>
-
-    <!-- About Us -->
-    <url>
-        <loc>https://sewakatilhospital.my/about-us/</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
 
     <!-- Products Main -->
     <url>
         <loc>https://sewakatilhospital.my/products/</loc>
-        <lastmod>2024-11-20</lastmod>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -34,143 +25,53 @@
     <!-- Product Pages -->
     <url>
         <loc>https://sewakatilhospital.my/products/katil-hospital-2-fungsi/</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://sewakatilhospital.my/images/2 fucntion manual.png</image:loc>
+            <image:loc>https://sewakatilhospital.my/images/2-fungsi-manual.webp</image:loc>
             <image:title>Katil Hospital 2 Fungsi Malaysia</image:title>
         </image:image>
     </url>
 
     <url>
         <loc>https://sewakatilhospital.my/products/katil-hospital-3-fungsi/</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://sewakatilhospital.my/images/3 funtion manual.png</image:loc>
+            <image:loc>https://sewakatilhospital.my/images/3-fungsi-manual.webp</image:loc>
             <image:title>Katil Hospital 3 Fungsi Malaysia</image:title>
         </image:image>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/products/tilam-pvc/</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/products/ripple-mattress/</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
     </url>
 
     <!-- Rental & Purchase -->
     <url>
         <loc>https://sewakatilhospital.my/rental/</loc>
-        <lastmod>2024-11-20</lastmod>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://sewakatilhospital.my/purchase/</loc>
-        <lastmod>2024-11-20</lastmod>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Location Pages -->
-    <url>
-        <loc>https://sewakatilhospital.my/locations/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/kuala-lumpur/</loc>
-        <lastmod>2024-11-20</lastmod>
-        <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
+    <!-- FAQ -->
     <url>
-        <loc>https://sewakatilhospital.my/locations/petaling-jaya/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/shah-alam/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/subang-jaya/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/klang/</loc>
-        <lastmod>2024-11-15</lastmod>
+        <loc>https://sewakatilhospital.my/faq/</loc>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
+    <!-- Contact -->
     <url>
-        <loc>https://sewakatilhospital.my/locations/johor-bahru/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/penang/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/ipoh/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/melaka/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/seremban/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/kota-kinabalu/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/locations/kuching/</loc>
-        <lastmod>2024-11-15</lastmod>
+        <loc>https://sewakatilhospital.my/contact/</loc>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -178,122 +79,867 @@
     <!-- Blog -->
     <url>
         <loc>https://sewakatilhospital.my/blog/</loc>
-        <lastmod>2024-11-25</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/cara-guna-mesin-oksigen-di-rumah/</loc>
-        <lastmod>2024-11-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://sewakatilhospital.my/images/blog/cara-guna-mesin-oksigen.webp</image:loc>
-            <image:title>Cara Menggunakan Mesin Oksigen di Rumah</image:title>
-        </image:image>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/berapa-kos-sewa-oxygen-concentrator-malaysia/</loc>
-        <lastmod>2024-11-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/perbezaan-portable-dan-home-oxygen-concentrator/</loc>
-        <lastmod>2024-11-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/tanda-tanda-anda-perlukan-terapi-oksigen/</loc>
-        <lastmod>2024-11-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/panduan-penjagaan-pesakit-copd-di-rumah/</loc>
-        <lastmod>2024-10-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/oxygen-concentrator-vs-oxygen-cylinder/</loc>
-        <lastmod>2024-10-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/tips-travel-dengan-portable-oxygen-concentrator/</loc>
-        <lastmod>2024-10-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/cara-pilih-mesin-oksigen-terbaik/</loc>
-        <lastmod>2024-10-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://sewakatilhospital.my/blog/manfaat-terapi-oksigen-untuk-warga-emas/</loc>
-        <lastmod>2024-10-05</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 
+    <!-- STATE LOCATION PAGES (High Priority) -->
     <url>
-        <loc>https://sewakatilhospital.my/blog/soalan-lazim-sewa-mesin-oksigen/</loc>
-        <lastmod>2024-09-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://sewakatilhospital.my/locations/selangor/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-lumpur/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/johor/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pulau-pinang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/perak/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kedah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kelantan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/terengganu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pahang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/negeri-sembilan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sabah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sarawak/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
 
-    <!-- FAQ -->
+    <!-- SELANGOR CITIES -->
     <url>
-        <loc>https://sewakatilhospital.my/faq/</loc>
-        <lastmod>2024-11-20</lastmod>
+        <loc>https://sewakatilhospital.my/locations/shah-alam/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/petaling-jaya/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/subang-jaya/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/klang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kajang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bangi/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/puchong/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/ampang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/rawang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/cyberjaya/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/damansara/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/gombak/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sepang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-selangor/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sabak-bernam/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/banting/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/serdang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/putrajaya/</loc>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Testimonials -->
+    <!-- KUALA LUMPUR AREAS -->
     <url>
-        <loc>https://sewakatilhospital.my/testimonials/</loc>
-        <lastmod>2024-11-15</lastmod>
+        <loc>https://sewakatilhospital.my/locations/cheras/</loc>
+        <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
-
-    <!-- Contact -->
     <url>
-        <loc>https://sewakatilhospital.my/contact/</loc>
-        <lastmod>2024-11-01</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://sewakatilhospital.my/locations/bangsar/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kepong/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/mont-kiara/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bukit-bintang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/setapak/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sentul/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/wangsa-maju/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/titiwangsa/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/segambut/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/selayang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sri-petaling/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/batu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Legal Pages -->
+    <!-- JOHOR CITIES -->
     <url>
-        <loc>https://sewakatilhospital.my/privacy-policy/</loc>
-        <lastmod>2024-01-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <loc>https://sewakatilhospital.my/locations/johor-bahru/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/iskandar-puteri/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kulai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/senai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/skudai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pasir-gudang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/batu-pahat/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/muar/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kluang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/segamat/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kota-tinggi/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pontian/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/mersing/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tangkak/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
+    <!-- PULAU PINANG CITIES -->
     <url>
-        <loc>https://sewakatilhospital.my/terms-conditions/</loc>
-        <lastmod>2024-01-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <loc>https://sewakatilhospital.my/locations/george-town/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/butterworth/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bukit-mertajam/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bayan-lepas/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/air-itam/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/jelutong/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tanjung-bungah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/balik-pulau/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/seberang-perai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/nibong-tebal/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kepala-batas/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tasek-gelugor/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- KEDAH CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/alor-setar/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sungai-petani/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kulim/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/langkawi/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/jitra/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-kedah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/baling/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pendang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/yan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sik/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/changlun/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/gurun/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/padang-serai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- KELANTAN CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kota-bharu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pasir-mas/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tanah-merah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/machang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-krai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/gua-musang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bachok/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tumpat/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pasir-puteh/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/jeli/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/rantau-panjang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- TERENGGANU CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-terengganu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kemaman/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/dungun/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/besut/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/marang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/setiu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/hulu-terengganu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-nerus/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/chukai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/paka/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- PAHANG CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuantan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/temerloh/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bentong/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/raub/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/cameron-highlands/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/jerantut/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/lipis/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/pekan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/rompin/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bera/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/maran/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/mentakab/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- NEGERI SEMBILAN CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/seremban/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/nilai/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/port-dickson/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bahau/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuala-pilah/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tampin/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/rembau/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/jelebu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/senawang/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/labu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/mantin/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/gemas/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SABAH CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kota-kinabalu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sandakan/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/tawau/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/lahad-datu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/keningau/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/semporna/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SARAWAK CITIES -->
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kuching/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/miri/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sibu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/bintulu/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/sri-aman/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://sewakatilhospital.my/locations/kapit/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
