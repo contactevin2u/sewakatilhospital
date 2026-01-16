@@ -163,7 +163,9 @@
       "Bash(else echo \"MISSING: $img\")",
       "Bash(do if [ -f \"$page\" ])",
       "Bash(then echo \"OK: $page\")",
-      "Bash(else echo \"MISSING: $page\")"
+      "Bash(else echo \"MISSING: $page\")",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(python3:*)"
     ]
   }
 }
