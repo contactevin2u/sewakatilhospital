@@ -3947,9 +3947,6 @@ button:focus-visible {
     color: white;
 }
 
-.logo-oksigen {
-    color: #90EE90;
-}
 
 .logo-katil {
     color: #22c55e;
@@ -4939,12 +4936,6 @@ button:focus-visible {
     text-decoration: none;
 }
 
-.logo-oksigen {
-    background: linear-gradient(135deg, #90EE90 0%, #7CCD7C 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 .nav-menu-new a {
     transition: color 0.3s ease;
