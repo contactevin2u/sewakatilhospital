@@ -1,5 +1,5 @@
 /**
- * OxygenCare Malaysia - Main JavaScript
+ * SewaKatilHospital.my - Main JavaScript
  * UI/UX Enhancements for better user experience
  */
 

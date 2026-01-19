@@ -1233,7 +1233,7 @@
             let cachedGap = 24;
             let lastWidth = 0;
 
-            function cacheCarouselDimensions() {
+            function cacheCarouselDimensions(callback) {
                 requestAnimationFrame(function() {
                     const track = document.getElementById('productTrack');
                     const cards = track.querySelectorAll('.service-card');
@@ -1242,6 +1242,7 @@
                         cachedGap = parseInt(getComputedStyle(track).gap) || 24;
                         lastWidth = window.innerWidth;
                     }
+                    if (callback) callback();
                 });
             }
 
@@ -1263,10 +1264,11 @@
                 });
             }
 
-            // Initialize on load
+            // Initialize on load - cache first, then slide
             document.addEventListener('DOMContentLoaded', function() {
-                cacheCarouselDimensions();
-                slideProducts(0);
+                cacheCarouselDimensions(function() {
+                    slideProducts(0);
+                });
             });
 
             // Recache on resize (debounced)
