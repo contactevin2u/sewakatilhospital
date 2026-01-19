@@ -79,9 +79,17 @@
     <!-- Blog -->
     <url>
         <loc>https://renthospitalbed.my/blog/</loc>
-        <lastmod>2026-01-16</lastmod>
+        <lastmod>2026-01-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+    </url>
+
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://renthospitalbed.my/blog/katil-2-fungsi-vs-3-fungsi/</loc>
+        <lastmod>2026-01-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <!-- STATE LOCATION PAGES (High Priority) -->
