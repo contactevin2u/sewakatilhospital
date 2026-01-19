@@ -1234,13 +1234,15 @@
             let lastWidth = 0;
 
             function cacheCarouselDimensions() {
-                const track = document.getElementById('productTrack');
-                const cards = track.querySelectorAll('.service-card');
-                if (cards.length > 0) {
-                    cachedCardWidth = cards[0].offsetWidth;
-                    cachedGap = parseInt(getComputedStyle(track).gap) || 24;
-                    lastWidth = window.innerWidth;
-                }
+                requestAnimationFrame(function() {
+                    const track = document.getElementById('productTrack');
+                    const cards = track.querySelectorAll('.service-card');
+                    if (cards.length > 0) {
+                        cachedCardWidth = cards[0].offsetWidth;
+                        cachedGap = parseInt(getComputedStyle(track).gap) || 24;
+                        lastWidth = window.innerWidth;
+                    }
+                });
             }
 
             function slideProducts(direction) {
