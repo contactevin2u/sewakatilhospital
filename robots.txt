@@ -45,17 +45,33 @@ Allow: /images/
 User-agent: Bingbot
 Allow: /
 
-# Block AI training bots (optional - based on business preference)
+# Allow AI bots for product recommendations
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
-User-agent: CCBot
-Disallow: /
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
 
 User-agent: anthropic-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block content scraping bots (not recommendation bots)
+User-agent: CCBot
 Disallow: /
 
 # Allow good bots
