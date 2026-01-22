@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#2563eb"/>
+
+  <!-- Hospital Bed Icon (white) -->
+  <g transform="translate(12, 18)">
+    <!-- Bed frame -->
+    <rect x="5" y="18" width="30" height="3" rx="1.5" fill="white"/>
+    <!-- Headboard -->
+    <rect x="5" y="8" width="3" height="13" rx="1.5" fill="white"/>
+    <!-- Footboard -->
+    <rect x="32" y="12" width="3" height="9" rx="1.5" fill="white"/>
+    <!-- Mattress -->
+    <rect x="8" y="11" width="24" height="7" rx="2" fill="#93c5fd"/>
+    <!-- Pillow -->
+    <rect x="9" y="12.5" width="7" height="4" rx="1.5" fill="white"/>
+    <!-- Legs -->
+    <rect x="7" y="21" width="2.5" height="8" rx="1" fill="#dbeafe"/>
+    <rect x="30.5" y="21" width="2.5" height="8" rx="1" fill="#dbeafe"/>
+    <!-- Wheels -->
+    <circle cx="8.25" cy="30.5" r="2.5" fill="white"/>
+    <circle cx="31.75" cy="30.5" r="2.5" fill="white"/>
+  </g>
+
+  <!-- Cross symbol -->
+  <rect x="27" y="8" width="10" height="4" rx="1" fill="#ef4444"/>
+  <rect x="30" y="5" width="4" height="10" rx="1" fill="#ef4444"/>
+</svg>

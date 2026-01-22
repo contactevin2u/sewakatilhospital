@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Hospital Bed Icon -->
+  <g transform="translate(10, 15)">
+    <!-- Bed frame -->
+    <rect x="5" y="25" width="45" height="4" rx="2" fill="#2563eb"/>
+    <!-- Headboard -->
+    <rect x="5" y="10" width="4" height="20" rx="2" fill="#2563eb"/>
+    <!-- Footboard -->
+    <rect x="46" y="18" width="4" height="12" rx="2" fill="#2563eb"/>
+    <!-- Mattress -->
+    <rect x="9" y="15" width="37" height="10" rx="3" fill="#3b82f6"/>
+    <!-- Pillow -->
+    <rect x="10" y="17" width="10" height="6" rx="2" fill="#93c5fd"/>
+    <!-- Legs -->
+    <rect x="8" y="29" width="3" height="12" rx="1" fill="#1e40af"/>
+    <rect x="44" y="29" width="3" height="12" rx="1" fill="#1e40af"/>
+    <!-- Wheels -->
+    <circle cx="9.5" cy="43" r="3" fill="#1e3a8a"/>
+    <circle cx="45.5" cy="43" r="3" fill="#1e3a8a"/>
+    <!-- Cross symbol -->
+    <rect x="28" y="2" width="8" height="3" rx="1" fill="#ef4444"/>
+    <rect x="30" y="0" width="4" height="7" rx="1" fill="#ef4444"/>
+  </g>
+
+  <!-- Text: Sewa -->
+  <text x="70" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2563eb">Sewa</text>
+
+  <!-- Text: KatilHospital -->
+  <text x="122" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">KatilHospital</text>
+
+  <!-- Text: .my -->
+  <text x="268" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2563eb">.my</text>
+
+  <!-- Tagline -->
+  <text x="70" y="58" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Sewa &amp; Beli Katil Hospital Malaysia</text>
+</svg>
