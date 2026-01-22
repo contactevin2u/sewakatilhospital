@@ -136,7 +136,7 @@ Bad: "image1" or "katil" or ""
     "name": "SewaKatilHospital.my",
     "legalName": "AA Alive Sdn Bhd",
     "url": "https://renthospitalbed.my",
-    "telephone": "+601128322492",
+    "telephone": "+601128799609",
     "foundingDate": "2016",
     "sameAs": [
         "https://www.facebook.com/sewakatilhospital",
@@ -325,8 +325,8 @@ Locations: /locations/[location-name]/
 - Instagram: instagram.com/sewakatilhospital
 
 ### Contact
-- Phone: 011-2832 2492
-- WhatsApp: wa.me/601128322492
+- Phone: 011-2879 9609
+- WhatsApp: wa.me/601128799609
 - Email: contact@evin2u.com
 
 ### Founding Year
@@ -349,7 +349,7 @@ Images: Always alt text | WebP format
 Schema: Organization + Page-specific
 Founding: 2016
 Social: @sewakatilhospital
-Phone: 011-2832 2492
+Phone: 011-2879 9609
 ```
 
 ---

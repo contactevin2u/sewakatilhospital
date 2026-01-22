@@ -39,7 +39,7 @@ LOCATIONS_SEO = {
     "selangor.html": {
         "name": "Selangor",
         "title": "Sewa Katil Hospital Selangor | RM150/Bulan, Penghantaran 4 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di Selangor dari RM150/bulan. Penghantaran 4 jam ke Shah Alam, PJ, Subang, Klang. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Selangor dari RM150/bulan. Penghantaran 4 jam ke Shah Alam, PJ, Subang, Klang. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Selangor",
         "keywords": "sewa katil hospital Selangor, beli katil hospital Selangor, katil hospital Shah Alam, katil hospital PJ, katil hospital murah Selangor, hospital bed rental Selangor",
         "areas": ["Shah Alam", "Petaling Jaya", "Subang Jaya", "Klang", "Kajang", "Bangi", "Puchong", "Ampang", "Rawang", "Cyberjaya"],
@@ -48,7 +48,7 @@ LOCATIONS_SEO = {
     "johor.html": {
         "name": "Johor",
         "title": "Sewa Katil Hospital Johor | RM150/Bulan, Penghantaran 24 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di Johor dari RM150/bulan. Penghantaran 24 jam ke JB, Batu Pahat, Muar, Kluang. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Johor dari RM150/bulan. Penghantaran 24 jam ke JB, Batu Pahat, Muar, Kluang. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Johor",
         "keywords": "sewa katil hospital Johor, beli katil hospital Johor, katil hospital JB, katil hospital Johor Bahru, katil hospital murah Johor, hospital bed rental Johor",
         "areas": ["Johor Bahru", "Batu Pahat", "Muar", "Kluang", "Pontian", "Segamat", "Kota Tinggi", "Mersing", "Kulai", "Pasir Gudang"],
@@ -57,7 +57,7 @@ LOCATIONS_SEO = {
     "kuala-lumpur.html": {
         "name": "Kuala Lumpur",
         "title": "Sewa Katil Hospital KL | RM150/Bulan, Penghantaran 4 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di KL dari RM150/bulan. Penghantaran 4 jam ke Cheras, Kepong, Bangsar, Setapak. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di KL dari RM150/bulan. Penghantaran 4 jam ke Cheras, Kepong, Bangsar, Setapak. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Kuala Lumpur",
         "keywords": "sewa katil hospital KL, beli katil hospital Kuala Lumpur, katil hospital Cheras, katil hospital Kepong, katil hospital murah KL, hospital bed rental KL",
         "areas": ["Cheras", "Kepong", "Setapak", "Wangsa Maju", "Bangsar", "Mont Kiara", "Bukit Bintang", "Sentul", "Sri Petaling", "Batu"],
@@ -66,7 +66,7 @@ LOCATIONS_SEO = {
     "pulau-pinang.html": {
         "name": "Pulau Pinang",
         "title": "Sewa Katil Hospital Pulau Pinang | RM150/Bulan, Penghantaran 24 Jam",
-        "meta_desc": "Sewa & beli katil hospital di Pulau Pinang dari RM150/bulan. Penghantaran 24 jam ke George Town, Butterworth, BM. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Pulau Pinang dari RM150/bulan. Penghantaran 24 jam ke George Town, Butterworth, BM. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Pulau Pinang",
         "keywords": "sewa katil hospital Penang, beli katil hospital Pulau Pinang, katil hospital George Town, katil hospital Butterworth, hospital bed rental Penang",
         "areas": ["George Town", "Butterworth", "Bukit Mertajam", "Bayan Lepas", "Air Itam", "Jelutong", "Balik Pulau", "Seberang Perai"],
@@ -75,7 +75,7 @@ LOCATIONS_SEO = {
     "kedah.html": {
         "name": "Kedah",
         "title": "Sewa Katil Hospital Kedah | RM150/Bulan, Penghantaran 24 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di Kedah dari RM150/bulan. Penghantaran 24 jam ke Alor Setar, Sungai Petani, Kulim. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Kedah dari RM150/bulan. Penghantaran 24 jam ke Alor Setar, Sungai Petani, Kulim. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Kedah",
         "keywords": "sewa katil hospital Kedah, beli katil hospital Kedah, katil hospital Alor Setar, katil hospital Sungai Petani, hospital bed rental Kedah",
         "areas": ["Alor Setar", "Sungai Petani", "Kulim", "Langkawi", "Jitra", "Baling", "Pendang", "Yan", "Gurun"],
@@ -84,7 +84,7 @@ LOCATIONS_SEO = {
     "perak.html": {
         "name": "Perak",
         "title": "Sewa Katil Hospital Perak | RM150/Bulan, Penghantaran 24 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di Perak dari RM150/bulan. Penghantaran 24 jam ke Ipoh, Taiping, Teluk Intan. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Perak dari RM150/bulan. Penghantaran 24 jam ke Ipoh, Taiping, Teluk Intan. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Perak",
         "keywords": "sewa katil hospital Perak, beli katil hospital Perak, katil hospital Ipoh, katil hospital Taiping, hospital bed rental Perak",
         "areas": ["Ipoh", "Taiping", "Teluk Intan", "Sitiawan", "Manjung", "Kuala Kangsar", "Kampar", "Batu Gajah"],
@@ -93,7 +93,7 @@ LOCATIONS_SEO = {
     "negeri-sembilan.html": {
         "name": "Negeri Sembilan",
         "title": "Sewa Katil Hospital N. Sembilan | RM150/Bulan, Penghantaran 24 Jam",
-        "meta_desc": "Sewa & beli katil hospital di N. Sembilan dari RM150/bulan. Penghantaran 24 jam ke Seremban, Nilai, Port Dickson. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di N. Sembilan dari RM150/bulan. Penghantaran 24 jam ke Seremban, Nilai, Port Dickson. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Negeri Sembilan",
         "keywords": "sewa katil hospital Negeri Sembilan, beli katil hospital N9, katil hospital Seremban, katil hospital Nilai, hospital bed rental N9",
         "areas": ["Seremban", "Port Dickson", "Nilai", "Senawang", "Bahau", "Kuala Pilah", "Tampin", "Rembau"],
@@ -102,7 +102,7 @@ LOCATIONS_SEO = {
     "pahang.html": {
         "name": "Pahang",
         "title": "Sewa Katil Hospital Pahang | RM150/Bulan, Penghantaran 24 Jam (2026)",
-        "meta_desc": "Sewa & beli katil hospital di Pahang dari RM150/bulan. Penghantaran 24 jam ke Kuantan, Temerloh, Bentong. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Pahang dari RM150/bulan. Penghantaran 24 jam ke Kuantan, Temerloh, Bentong. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Pahang",
         "keywords": "sewa katil hospital Pahang, beli katil hospital Pahang, katil hospital Kuantan, katil hospital Temerloh, hospital bed rental Pahang",
         "areas": ["Kuantan", "Temerloh", "Bentong", "Raub", "Jerantut", "Pekan", "Maran", "Cameron Highlands"],
@@ -111,7 +111,7 @@ LOCATIONS_SEO = {
     "kelantan.html": {
         "name": "Kelantan",
         "title": "Sewa Katil Hospital Kelantan | RM150/Bulan, Penghantaran 24 Jam",
-        "meta_desc": "Sewa & beli katil hospital di Kelantan dari RM150/bulan. Penghantaran 24 jam ke Kota Bharu, Pasir Mas, Tanah Merah. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Kelantan dari RM150/bulan. Penghantaran 24 jam ke Kota Bharu, Pasir Mas, Tanah Merah. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Kelantan",
         "keywords": "sewa katil hospital Kelantan, beli katil hospital Kelantan, katil hospital Kota Bharu, katil hospital KB, hospital bed rental Kelantan",
         "areas": ["Kota Bharu", "Pasir Mas", "Tanah Merah", "Machang", "Kuala Krai", "Gua Musang", "Bachok", "Tumpat"],
@@ -120,7 +120,7 @@ LOCATIONS_SEO = {
     "terengganu.html": {
         "name": "Terengganu",
         "title": "Sewa Katil Hospital Terengganu | RM150/Bulan, Penghantaran 24 Jam",
-        "meta_desc": "Sewa & beli katil hospital di Terengganu dari RM150/bulan. Penghantaran 24 jam ke Kuala Terengganu, Kemaman, Dungun. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Terengganu dari RM150/bulan. Penghantaran 24 jam ke Kuala Terengganu, Kemaman, Dungun. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Terengganu",
         "keywords": "sewa katil hospital Terengganu, beli katil hospital Terengganu, katil hospital Kuala Terengganu, hospital bed rental Terengganu",
         "areas": ["Kuala Terengganu", "Kemaman", "Dungun", "Besut", "Marang", "Hulu Terengganu", "Setiu", "Chukai"],
@@ -129,7 +129,7 @@ LOCATIONS_SEO = {
     "sabah.html": {
         "name": "Sabah",
         "title": "Sewa Katil Hospital Sabah | RM150/Bulan, Penghantaran 1-2 Hari",
-        "meta_desc": "Sewa & beli katil hospital di Sabah dari RM150/bulan. Penghantaran 1-2 hari ke Kota Kinabalu, Sandakan, Tawau. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Sabah dari RM150/bulan. Penghantaran 1-2 hari ke Kota Kinabalu, Sandakan, Tawau. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Sabah",
         "keywords": "sewa katil hospital Sabah, beli katil hospital Sabah, katil hospital Kota Kinabalu, katil hospital KK, hospital bed rental Sabah",
         "areas": ["Kota Kinabalu", "Sandakan", "Tawau", "Lahad Datu", "Keningau", "Semporna"],
@@ -138,7 +138,7 @@ LOCATIONS_SEO = {
     "sarawak.html": {
         "name": "Sarawak",
         "title": "Sewa Katil Hospital Sarawak | RM150/Bulan, Penghantaran 1-2 Hari",
-        "meta_desc": "Sewa & beli katil hospital di Sarawak dari RM150/bulan. Penghantaran 1-2 hari ke Kuching, Miri, Sibu, Bintulu. Tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": "Sewa & beli katil hospital di Sarawak dari RM150/bulan. Penghantaran 1-2 hari ke Kuching, Miri, Sibu, Bintulu. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": "Katil Hospital #1 Sarawak",
         "keywords": "sewa katil hospital Sarawak, beli katil hospital Sarawak, katil hospital Kuching, katil hospital Miri, hospital bed rental Sarawak",
         "areas": ["Kuching", "Miri", "Sibu", "Bintulu", "Sri Aman", "Kapit"],
@@ -152,7 +152,7 @@ def generate_city_seo(filename, city_name, parent_state, delivery_time):
     return {
         "name": city_name,
         "title": f"Sewa Katil Hospital {city_name} | RM150/Bulan, Penghantaran {delivery_time.title()}",
-        "meta_desc": f"Sewa & beli katil hospital di {city_name} dari RM150/bulan. Penghantaran {delivery_time}, tanpa deposit, pemasangan percuma. ☎ 011-2832 2492",
+        "meta_desc": f"Sewa & beli katil hospital di {city_name} dari RM150/bulan. Penghantaran {delivery_time}, tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "h1": f"Katil Hospital #1 {city_name}",
         "keywords": f"sewa katil hospital {city_name}, beli katil hospital {city_name}, katil hospital murah {city_name}, hospital bed rental {city_name}, katil hospital {parent_state}",
         "delivery": delivery_time
@@ -169,7 +169,7 @@ def create_schema_markup(location_name, areas, delivery_time):
                 "name": f"Sewa Katil Hospital {location_name} - AA Alive Sdn Bhd",
                 "description": f"Perkhidmatan sewa dan beli katil hospital di {location_name}. Penghantaran {delivery_time}, tanpa deposit, pemasangan percuma.",
                 "url": f"https://sewakatilhospital.my/locations/{location_name.lower().replace(' ', '-')}/",
-                "telephone": "+601128322492",
+                "telephone": "+601128799609",
                 "priceRange": "RM150 - RM350/bulan",
                 "image": "https://sewakatilhospital.my/images/og-image.jpg",
                 "address": {

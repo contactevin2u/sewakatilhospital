@@ -400,7 +400,7 @@ def generate_content_section(location_name, state, delivery_time):
                         <h3 style="color: white; margin-bottom: 15px;">Sedia Untuk Tempah?</h3>
                         <p style="margin-bottom: 20px;">WhatsApp kami sekarang untuk konsultasi percuma</p>
                         <a href="https://wa.me/60112832492?text=Saya%20berminat%20sewa%20katil%20hospital%20di%20{location_name.replace(" ", "%20")}" style="display: inline-block; background: #25d366; color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 600;">
-                            WhatsApp: 011-2832 2492
+                            WhatsApp: 011-2879 9609
                         </a>
                     </div>
 
