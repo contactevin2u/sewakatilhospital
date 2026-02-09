@@ -654,7 +654,7 @@ def transform_page(slug, data):
 
     local_intro = f'''
         <!-- Local Intro Section -->
-        <section class="local-intro" style="background: #ffffff; padding: 50px 0;">
+        <section class="local-intro" style="background: #ffffff; padding: 60px 0;">
             <div class="container">
                 <div style="max-width: 900px; margin: 0 auto;">
                     <h2 style="color: #1e4a9e; font-size: 1.8rem; margin-bottom: 20px;">
@@ -704,7 +704,7 @@ def transform_page(slug, data):
 
     hospitals_section = f'''
         <!-- Local Hospitals Served -->
-        <section class="local-hospitals" style="background: #f8fafc; padding: 50px 0;">
+        <section class="local-hospitals" style="background: #f8fafc; padding: 60px 0;">
             <div class="container">
                 <header class="section-header">
                     <h2>Hospital & Klinik Berdekatan yang Kami Servis di {name}</h2>
@@ -718,7 +718,7 @@ def transform_page(slug, data):
         </section>
 
         <!-- Google Maps Section -->
-        <section class="local-map" style="background: #f1f5f9; padding: 50px 0;">
+        <section class="local-map" style="background: #f1f5f9; padding: 60px 0;">
             <div class="container">
                 <header class="section-header">
                     <h2>Lokasi Perkhidmatan di {name}</h2>
@@ -823,42 +823,68 @@ def transform_page(slug, data):
         flags=re.DOTALL
     )
 
-    # 17. Add testimonials section before CTA
+    # 16b. Fix any existing inline 50px to 60px for consistent spacing
+    html = html.replace('padding: 50px 0;', 'padding: 60px 0;')
+    html = html.replace('padding: 50px 0"', 'padding: 60px 0"')
+
+    # 17. Add Google Review testimonials section before CTA
+    star_svg = '<svg viewBox="0 0 24 24" fill="#FBBC05"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>'
+    five_stars = (star_svg + "\n                            ") * 5
+
     test_cards = ""
     for t_name, t_initial, t_area, t_text in data["testimonials"]:
         test_cards += f'''
-                    <div style="background: #f8fafc; padding: 24px; border-radius: 16px; position: relative;">
-                        <div style="color: #1e4a9e; font-size: 3rem; line-height: 1; margin-bottom: 12px;">"</div>
-                        <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; margin-bottom: 16px;">{t_text}</p>
-                        <div style="display: flex; align-items: center; gap: 12px;">
-                            <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #1e4a9e, #3a92e8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">{t_initial}</div>
-                            <div>
-                                <p style="color: #1e4a9e; font-weight: 600; margin: 0; font-size: 0.9rem;">{t_name}</p>
-                                <p style="color: #64748b; font-size: 0.8rem; margin: 0;">{t_area}</p>
+                    <article class="google-review-card">
+                        <div class="google-review-header">
+                            <div class="google-review-avatar">{t_initial}</div>
+                            <div class="google-review-info">
+                                <div class="google-review-name">{t_name}</div>
+                                <div class="google-review-date">{t_area}</div>
                             </div>
                         </div>
-                        <div style="margin-top: 12px; color: #fbbf24;">\u2605\u2605\u2605\u2605\u2605</div>
-                    </div>
+                        <div class="google-review-stars">
+                            {five_stars}
+                        </div>
+                        <p class="google-review-text">"{t_text}"</p>
+                    </article>
 '''
 
     testimonials_section = f'''
-        <!-- Local Testimonials -->
-        <section class="local-testimonials" style="background: white; padding: 50px 0;">
+        <!-- Google Reviews Section -->
+        <section class="local-testimonials" style="background: #f8fafc;">
             <div class="container">
                 <header class="section-header">
                     <h2>Apa Kata Pelanggan di {name}</h2>
-                    <p>Testimoni daripada pelanggan kami di {name} dan kawasan sekitar</p>
+                    <p>Ulasan sebenar daripada pelanggan kami di {name} dan kawasan sekitar</p>
                 </header>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 30px;">
+                <div class="google-reviews-grid">
 {test_cards}
+                </div>
+
+                <div class="google-summary-wrapper">
+                    <a class="google-summary-link" href="https://share.google/hBmGVugG4LxFv54ok" target="_blank">
+                        <span class="google-letter" style="color: #4285F4;">G</span><span class="google-letter" style="color: #EA4335;">o</span><span class="google-letter" style="color: #FBBC05;">o</span><span class="google-letter" style="color: #4285F4;">g</span><span class="google-letter" style="color: #34A853;">l</span><span class="google-letter" style="color: #EA4335;">e</span>
+                        <span class="google-rating-num">4.9</span>
+                        <span class="google-stars">\u2605\u2605\u2605\u2605\u2605</span>
+                        <span class="google-ulasan">500+ ulasan</span>
+                        <span class="google-lihat">Lihat Semua</span>
+                    </a>
                 </div>
             </div>
         </section>
 
 '''
 
-    if 'local-testimonials' not in html:
+    # Replace existing testimonials section or add new one
+    if 'local-testimonials' in html:
+        html = re.sub(
+            r'        <!-- (?:Local Testimonials|Google Reviews Section) -->.*?</section>\s*',
+            testimonials_section,
+            html,
+            flags=re.DOTALL
+        )
+    else:
         html = html.replace(
             '        <!-- CTA Section -->',
             testimonials_section + '        <!-- CTA Section -->'
@@ -880,7 +906,7 @@ def transform_page(slug, data):
 
     bottom_sections = f'''
         <!-- City Directory -->
-        <section style="background: linear-gradient(135deg, #0d3a7d 0%, #1e4a9e 100%); padding: 50px 0;">
+        <section style="background: linear-gradient(135deg, #0d3a7d 0%, #1e4a9e 100%); padding: 60px 0;">
             <div class="container">
                 <header class="section-header">
                     <h2 style="color: white;">Semua Lokasi di {name}</h2>
@@ -892,7 +918,7 @@ def transform_page(slug, data):
         </section>
 
         <!-- Nearby Locations -->
-        <section class="nearby-locations" style="background: white; padding: 50px 0;">
+        <section class="nearby-locations" style="background: white; padding: 60px 0;">
             <div class="container">
                 <header class="section-header">
                     <h2>Negeri Berdekatan {name}</h2>

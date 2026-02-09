@@ -3,27 +3,124 @@
    Extracted from inline styles to improve content-to-code ratio
    ============================================================ */
 
-/* --- Section Spacing - match main page framework --- */
-/* Main page uses var(--spacing-3xl) = 5rem (80px) for sections
-   and var(--spacing-2xl) = 3rem (48px) for section-header margin.
-   We follow the same rhythm here. New sections use 50px to feel
-   slightly lighter than core product/service sections. */
-
-/* New sections - complementary content, slightly lighter */
+/* --- Section Spacing - match main page (60px) --- */
 .local-intro {
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
 }
 .local-hospitals {
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
 }
 .local-map {
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
 }
 .local-testimonials {
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
 }
 .nearby-locations {
-    padding: 50px 0 !important;
+    padding: 60px 0 !important;
+}
+
+/* --- Google Review Cards (match main page layout) --- */
+.google-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+.google-review-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.google-review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.google-review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0052cc, #00a3ff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.google-review-info {
+    flex: 1;
+}
+.google-review-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+.google-review-date {
+    font-size: 12px;
+    color: #888;
+}
+.google-review-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+.google-review-stars svg {
+    width: 16px;
+    height: 16px;
+}
+.google-review-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+.google-summary-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.google-summary-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    padding: 16px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s;
+}
+.google-summary-link:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.google-letter {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.google-rating-num {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.google-stars {
+    color: #FBBC05;
+    font-size: 1rem;
+}
+.google-ulasan {
+    color: #666;
+    font-size: 0.9rem;
+}
+.google-lihat {
+    background: #1a73e8;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 /* --- Mobile Responsive Styles --- */
@@ -305,8 +402,61 @@
         grid-template-columns: 1fr !important;
     }
 
-    .local-testimonials .container > div[style*="grid-template-columns"] {
-        grid-template-columns: 1fr !important;
+    /* Google Reviews - horizontal scroll on mobile */
+    .google-reviews-grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        gap: 12px !important;
+        margin-top: 20px !important;
+        padding-bottom: 8px !important;
+        padding-left: 15px !important;
+        padding-right: 20px !important;
+    }
+    .google-reviews-grid::-webkit-scrollbar {
+        display: none;
+    }
+    .google-review-card {
+        flex: 0 0 240px !important;
+        min-width: 240px !important;
+        scroll-snap-align: start;
+        padding: 12px !important;
+    }
+    .google-review-header {
+        margin-bottom: 8px !important;
+    }
+    .google-review-stars {
+        margin-bottom: 8px !important;
+    }
+    .google-review-text {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 4 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+    }
+    .google-summary-link {
+        gap: 8px !important;
+        padding: 10px 16px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .google-letter {
+        font-size: 1rem !important;
+    }
+    .google-rating-num {
+        font-size: 0.9rem !important;
+    }
+    .google-ulasan {
+        font-size: 0.75rem !important;
+    }
+    .google-lihat {
+        font-size: 0.75rem !important;
+        padding: 6px 12px !important;
     }
 
     .nearby-locations .container > div[style*="grid-template-columns"] {
