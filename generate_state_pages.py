@@ -28,9 +28,7 @@ STATES = {
         "meta_desc": "Sewa katil hospital di Selangor dari RM150/bulan. Penghantaran 4 jam ke Shah Alam, PJ, Subang Jaya, Klang. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "hero_subtitle": "Penghantaran Express 4 Jam. Lebih 500+ keluarga di Selangor pilih kami. Tanpa Deposit.",
         "intro_paragraphs": [
-            "Selangor merupakan negeri terpadat di Malaysia dengan populasi lebih 6.5 juta penduduk dan permintaan tinggi untuk perkhidmatan sewa katil hospital. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Shah Alam, Petaling Jaya, Subang Jaya, Klang dan Kajang.",
-            "Gudang kami di Batu Caves terletak strategik di sempadan KL-Selangor. Van penghantaran kami sentiasa standby dan boleh sampai ke kebanyakan kawasan Selangor dalam masa 4 jam. Kami menerima ratusan tempahan setiap bulan daripada keluarga yang memerlukan katil hospital selepas ahli keluarga discharge dari hospital.",
-            "Selangor mempunyai infrastruktur jalan raya yang baik memudahkan penghantaran ke semua daerah termasuk Petaling, Klang, Hulu Langat, Gombak, Sepang, Kuala Selangor, Hulu Selangor dan Sabak Bernam. Kami juga cover kawasan baru seperti Cyberjaya, Puchong, Setia Alam dan Kota Kemuning."
+            "Selangor merupakan negeri terpadat di Malaysia dengan lebih 6.5 juta penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Gudang kami di Batu Caves terletak strategik di sempadan KL-Selangor, van penghantaran sentiasa standby dan boleh sampai ke Shah Alam, PJ, Subang Jaya, Klang, Kajang dan seluruh Selangor dalam masa 4 jam."
         ],
         "hospitals": [
             ("Hospital Shah Alam", "Persiaran Kayangan, Seksyen 7, Shah Alam", "30 minit"),
@@ -106,9 +104,7 @@ STATES = {
         "meta_desc": "Sewa katil hospital di Johor dari RM150/bulan. Penghantaran same-day ke JB, Batu Pahat, Muar, Kluang. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "hero_subtitle": "Penghantaran Same-Day ke seluruh Johor. Dipercayai sejak 2016. Tanpa Deposit.",
         "intro_paragraphs": [
-            "Johor merupakan negeri kedua terpadat di Malaysia dengan populasi lebih 4 juta penduduk. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Johor Bahru, Iskandar Puteri, Batu Pahat, Muar dan Kluang.",
-            "Kami mempunyai partner logistik tempatan di Johor Bahru yang membolehkan penghantaran same-day. Van penghantaran kami sentiasa standby di kawasan JB dan boleh sampai ke hospital-hospital utama di Johor dengan cepat. Untuk kawasan lain di Johor, penghantaran dalam masa 24 jam.",
-            "Dengan akses melalui Lebuhraya Utara-Selatan dan Lebuhraya Pantai Timur, kami cover seluruh Johor termasuk Johor Bahru, Iskandar Puteri, Skudai, Pasir Gudang, Kulai, Batu Pahat, Muar, Kluang, Pontian, Segamat, Mersing dan Kota Tinggi."
+            "Johor merupakan negeri kedua terpadat di Malaysia dengan lebih 4 juta penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Partner logistik kami di JB sentiasa standby untuk penghantaran same-day ke Johor Bahru, Iskandar Puteri, Batu Pahat, Muar, Kluang dan seluruh Johor."
         ],
         "hospitals": [
             ("Hospital Sultanah Aminah", "Jalan Persiaran Abu Bakar Sultan, JB", "Same day"),
@@ -181,9 +177,7 @@ STATES = {
         "meta_desc": "Sewa katil hospital di Pulau Pinang dari RM150/bulan. Penghantaran ke George Town, Bayan Lepas, Butterworth. Tanpa deposit, pemasangan percuma. ☎ 011-2879 9609",
         "hero_subtitle": "Penghantaran Same-Day ke seluruh Pulau Pinang. Dipercayai sejak 2016. Tanpa Deposit.",
         "intro_paragraphs": [
-            "Pulau Pinang dengan populasi 1.8 juta penduduk merupakan antara negeri dengan permintaan tinggi untuk katil hospital. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan George Town, Bayan Lepas, Air Itam, Butterworth dan Bukit Mertajam.",
-            "Rangkaian delivery kami meliputi kedua-dua bahagian pulau dan Seberang Perai. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Penang dalam masa 24 jam. Kami menerima banyak tempahan daripada keluarga di Penang yang memerlukan katil hospital selepas ahli keluarga discharge.",
-            "Dengan Jambatan Pulau Pinang dan Jambatan Kedua, penghantaran antara pulau dan daratan berjalan lancar. Kami cover seluruh Pulau Pinang termasuk George Town, Bayan Lepas, Jelutong, Tanjung Bungah, Balik Pulau, Butterworth, Bukit Mertajam, Nibong Tebal dan seluruh Seberang Perai."
+            "Pulau Pinang dengan 1.8 juta penduduk mempunyai permintaan tinggi untuk katil hospital. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Rangkaian delivery kami meliputi pulau dan Seberang Perai, van penghantaran sentiasa standby dan boleh sampai ke George Town, Bayan Lepas, Butterworth dan seluruh Penang dalam masa 24 jam."
         ],
         "hospitals": [
             ("Hospital Pulau Pinang (Penang GH)", "Jalan Residensi, George Town", "24 jam"),
@@ -254,9 +248,7 @@ STATES = {
         "meta_desc": "Sewa katil hospital di Kedah dari RM150/bulan. Penghantaran ke Alor Setar, Sungai Petani, Kulim, Langkawi. Tanpa deposit. ☎ 011-2879 9609",
         "hero_subtitle": "Penghantaran Same-Day ke seluruh Kedah. Dipercayai sejak 2016. Tanpa Deposit.",
         "intro_paragraphs": [
-            "Kedah dengan populasi 2.2 juta penduduk mempunyai permintaan yang stabil untuk perkhidmatan sewa katil hospital. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Alor Setar, Sungai Petani, Kulim, Langkawi dan Jitra.",
-            "Rangkaian delivery kami meliputi seluruh Kedah melalui partner logistik tempatan. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Kedah dalam masa 24 jam. Untuk kawasan Langkawi, penghantaran memerlukan masa tambahan kerana logistik feri.",
-            "Melalui Lebuhraya Utara-Selatan, kami cover seluruh Kedah termasuk Alor Setar, Sungai Petani, Kulim, Jitra, Baling, Sik, Pendang, Yan, Gurun dan Changlun."
+            "Kedah dengan 2.2 juta penduduk mempunyai permintaan stabil untuk katil hospital. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Rangkaian delivery kami melalui partner logistik tempatan sentiasa standby dan boleh sampai ke Alor Setar, Sungai Petani, Kulim, Langkawi dan seluruh Kedah dalam masa 24 jam."
         ],
         "hospitals": [
             ("Hospital Sultanah Bahiyah", "Km 6, Jalan Langgar, Alor Setar", "24 jam"),
@@ -410,11 +402,7 @@ STATES["kelantan"] = make_state("kelantan", "Kelantan", "Kelantan", 2, "24 jam",
     ["Kota Bharu", "Pasir Mas", "Tanah Merah", "Machang", "Kuala Krai", "Tumpat", "Bachok", "Pasir Puteh", "Gua Musang", "Jeli", "Rantau Panjang"],
     [("Kota Bharu", "kota-bharu"), ("Pasir Mas", "pasir-mas"), ("Tanah Merah", "tanah-merah"), ("Machang", "machang"), ("Kuala Krai", "kuala-krai"), ("Tumpat", "tumpat"), ("Bachok", "bachok"), ("Pasir Puteh", "pasir-puteh"), ("Gua Musang", "gua-musang"), ("Jeli", "jeli"), ("Rantau Panjang", "rantau-panjang")],
     [("Terengganu", "terengganu", "Penghantaran 24 Jam"), ("Pahang", "pahang", "Penghantaran 1-2 Hari"), ("Kedah", "kedah", "Penghantaran 1-2 Hari")],
-    [
-        "Kelantan dengan populasi 1.9 juta penduduk mempunyai keperluan tinggi untuk katil hospital terutamanya bagi penjagaan warga emas di rumah. Kami menyediakan katil hospital berkualiti — sesuai untuk pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kota Bharu, Pasir Mas, Tanah Merah, Machang dan Kuala Krai.",
-        "Rangkaian delivery kami meliputi seluruh Kelantan. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Kelantan dalam masa 24 jam. Kami menerima banyak tempahan dari keluarga di Kelantan yang memerlukan katil hospital untuk penjagaan di rumah.",
-        "Kami cover seluruh Kelantan termasuk Kota Bharu, Pasir Mas, Tanah Merah, Machang, Kuala Krai, Tumpat, Bachok, Pasir Puteh, Gua Musang, Jeli dan Rantau Panjang."
-    ]
+    ["Kelantan dengan 1.9 juta penduduk mempunyai keperluan tinggi untuk katil hospital. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Rangkaian delivery kami sentiasa standby dan boleh sampai ke Kota Bharu, Pasir Mas, Tanah Merah dan seluruh Kelantan dalam masa 24 jam."]
 )
 
 STATES["perak"] = make_state("perak", "Perak", "Perak", 2, "24 jam", "RM80-120", "Partner delivery", "4.5921", "101.0901", "2.5 juta",
@@ -423,11 +411,7 @@ STATES["perak"] = make_state("perak", "Perak", "Perak", 2, "24 jam", "RM80-120",
     ["Ipoh", "Taiping", "Teluk Intan", "Seri Manjung", "Lumut", "Kampar", "Kuala Kangsar", "Batu Gajah", "Sitiawan", "Slim River", "Tanjung Malim", "Gerik", "Gopeng"],
     [("Ipoh", "ipoh"), ("Taiping", "taiping"), ("Teluk Intan", "teluk-intan"), ("Seri Manjung", "seri-manjung"), ("Lumut", "lumut"), ("Kampar", "kampar"), ("Kuala Kangsar", "kuala-kangsar"), ("Batu Gajah", "batu-gajah"), ("Sitiawan", "sitiawan"), ("Slim River", "slim-river"), ("Tanjung Malim", "tanjung-malim"), ("Gerik", "gerik"), ("Gopeng", "gopeng"), ("Cameron Highlands", "cameron-highlands")],
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Kedah", "kedah", "Penghantaran 1-2 Hari"), ("Pulau Pinang", "pulau-pinang", "Penghantaran 1-2 Hari"), ("Pahang", "pahang", "Penghantaran 1-2 Hari")],
-    [
-        "Perak dengan populasi 2.5 juta penduduk merupakan negeri keempat terbesar di Malaysia. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Ipoh, Taiping, Teluk Intan, Kampar dan Seri Manjung.",
-        "Rangkaian delivery kami meliputi seluruh Perak. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Perak dalam masa 24 jam. Ipoh sebagai ibu negeri hanya 2 jam dari gudang utama kami di Batu Caves melalui Lebuhraya Utara-Selatan.",
-        "Kami cover seluruh Perak termasuk Ipoh, Taiping, Teluk Intan, Seri Manjung, Lumut, Kampar, Kuala Kangsar, Batu Gajah, Sitiawan, Slim River, Tanjung Malim, Gerik dan Gopeng."
-    ]
+    ["Perak dengan 2.5 juta penduduk merupakan negeri keempat terbesar di Malaysia. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Ipoh hanya 2 jam dari gudang kami di Batu Caves, van penghantaran sentiasa standby dan boleh sampai ke Ipoh, Taiping, Teluk Intan dan seluruh Perak dalam masa 24 jam."]
 )
 
 STATES["pahang"] = make_state("pahang", "Pahang", "Pahang", 2, "24 jam", "RM80-120", "Partner delivery", "3.8126", "103.3256", "1.7 juta",
@@ -436,11 +420,7 @@ STATES["pahang"] = make_state("pahang", "Pahang", "Pahang", 2, "24 jam", "RM80-1
     ["Kuantan", "Temerloh", "Bentong", "Raub", "Jerantut", "Pekan", "Rompin", "Maran", "Lipis", "Cameron Highlands", "Mentakab", "Bera"],
     [("Kuantan", "kuantan"), ("Temerloh", "temerloh"), ("Bentong", "bentong"), ("Raub", "raub"), ("Jerantut", "jerantut"), ("Pekan", "pekan"), ("Rompin", "rompin"), ("Maran", "maran"), ("Lipis", "lipis"), ("Cameron Highlands", "cameron-highlands"), ("Mentakab", "mentakab"), ("Bera", "bera")],
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Terengganu", "terengganu", "Penghantaran 1-2 Hari"), ("Kelantan", "kelantan", "Penghantaran 1-2 Hari"), ("Negeri Sembilan", "negeri-sembilan", "Penghantaran 1-2 Hari")],
-    [
-        "Pahang merupakan negeri terbesar di Semenanjung Malaysia dengan populasi 1.7 juta penduduk. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kuantan, Temerloh, Bentong dan Raub.",
-        "Rangkaian delivery kami meliputi seluruh Pahang. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Pahang dalam masa 24 jam. Kawasan Bentong dan Raub mudah diakses melalui Lebuhraya KL-Karak, hanya 1-2 jam dari gudang kami.",
-        "Kami cover seluruh Pahang termasuk Kuantan, Temerloh, Bentong, Raub, Jerantut, Pekan, Rompin, Maran, Lipis, Cameron Highlands, Mentakab dan Bera."
-    ]
+    ["Pahang merupakan negeri terbesar di Semenanjung Malaysia dengan 1.7 juta penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Bentong dan Raub hanya 1-2 jam dari gudang kami melalui Lebuhraya KL-Karak, van penghantaran sentiasa standby dan boleh sampai ke Kuantan, Temerloh dan seluruh Pahang dalam masa 24 jam."]
 )
 
 STATES["terengganu"] = make_state("terengganu", "Terengganu", "Terengganu", 2, "24 jam", "RM100-150", "Partner delivery", "5.3117", "103.1324", "1.3 juta",
@@ -449,11 +429,7 @@ STATES["terengganu"] = make_state("terengganu", "Terengganu", "Terengganu", 2, "
     ["Kuala Terengganu", "Kemaman", "Dungun", "Marang", "Besut", "Setiu", "Hulu Terengganu", "Kuala Nerus", "Chukai", "Paka"],
     [("Kuala Terengganu", "kuala-terengganu"), ("Kemaman", "kemaman"), ("Dungun", "dungun"), ("Marang", "marang"), ("Besut", "besut"), ("Setiu", "setiu"), ("Hulu Terengganu", "hulu-terengganu"), ("Kuala Nerus", "kuala-nerus"), ("Chukai", "chukai"), ("Paka", "paka")],
     [("Kelantan", "kelantan", "Penghantaran 24 Jam"), ("Pahang", "pahang", "Penghantaran 1-2 Hari")],
-    [
-        "Terengganu dengan populasi 1.3 juta penduduk mempunyai keperluan untuk perkhidmatan sewa katil hospital terutamanya di kawasan bandar. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kuala Terengganu, Kemaman, Dungun dan Marang.",
-        "Rangkaian delivery kami meliputi seluruh Terengganu. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Terengganu dalam masa 24 jam. Kami menerima tempahan dari keluarga di seluruh Terengganu yang memerlukan katil hospital untuk penjagaan di rumah.",
-        "Kami cover seluruh Terengganu termasuk Kuala Terengganu, Kemaman, Dungun, Marang, Besut, Setiu, Hulu Terengganu, Kuala Nerus, Chukai dan Paka."
-    ]
+    ["Terengganu dengan 1.3 juta penduduk mempunyai keperluan untuk katil hospital terutamanya di kawasan bandar. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Rangkaian delivery kami sentiasa standby dan boleh sampai ke Kuala Terengganu, Kemaman, Dungun dan seluruh Terengganu dalam masa 24 jam."]
 )
 
 STATES["melaka"] = make_state("melaka", "Melaka", "Melaka", 2, "24 jam", "RM80-100", "Partner delivery", "2.1896", "102.2501", "930,000",
@@ -462,11 +438,7 @@ STATES["melaka"] = make_state("melaka", "Melaka", "Melaka", 2, "24 jam", "RM80-1
     ["Melaka Tengah", "Ayer Keroh", "Alor Gajah", "Jasin", "Masjid Tanah", "Klebang", "Bukit Baru", "Bukit Katil", "Bukit Rambai", "Krubong", "Tanjung Kling"],
     [("Melaka Tengah", "melaka-tengah"), ("Ayer Keroh", "ayer-keroh"), ("Alor Gajah", "alor-gajah"), ("Jasin", "jasin"), ("Masjid Tanah", "masjid-tanah"), ("Klebang", "klebang"), ("Bukit Baru", "bukit-baru"), ("Bukit Katil", "bukit-katil"), ("Bukit Rambai", "bukit-rambai"), ("Krubong", "krubong"), ("Tanjung Kling", "tanjung-kling")],
     [("Negeri Sembilan", "negeri-sembilan", "Penghantaran 24 Jam"), ("Johor", "johor", "Penghantaran 24 Jam"), ("Selangor", "selangor", "Penghantaran 1-2 Hari")],
-    [
-        "Melaka dengan populasi 930,000 penduduk merupakan negeri yang padat dan mudah diakses. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Melaka Tengah, Ayer Keroh, Alor Gajah dan Jasin.",
-        "Melaka hanya 1.5 jam dari gudang utama kami di Batu Caves melalui Lebuhraya PLUS. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Melaka dalam masa 24 jam. Melaka yang kecil memudahkan penghantaran ke semua kawasan.",
-        "Kami cover seluruh Melaka termasuk Melaka Tengah, Ayer Keroh, Alor Gajah, Jasin, Masjid Tanah, Klebang, Bukit Baru, Bukit Katil, Bukit Rambai, Krubong dan Tanjung Kling."
-    ]
+    ["Melaka dengan 930,000 penduduk merupakan negeri yang padat dan mudah diakses, hanya 1.5 jam dari gudang kami. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Van penghantaran kami sentiasa standby dan boleh sampai ke Melaka Tengah, Ayer Keroh, Alor Gajah dan seluruh Melaka dalam masa 24 jam."]
 )
 
 STATES["negeri-sembilan"] = make_state("negeri-sembilan", "Negeri Sembilan", "Negeri Sembilan", 2, "24 jam", "RM50-80", "~60 km dari gudang", "2.7258", "101.9424", "1.1 juta",
@@ -475,11 +447,7 @@ STATES["negeri-sembilan"] = make_state("negeri-sembilan", "Negeri Sembilan", "Ne
     ["Seremban", "Nilai", "Port Dickson", "Bahau", "Kuala Pilah", "Tampin", "Rembau", "Jelebu", "Senawang", "Mantin", "Labu"],
     [("Seremban", "seremban"), ("Nilai", "nilai"), ("Port Dickson", "port-dickson"), ("Bahau", "bahau"), ("Kuala Pilah", "kuala-pilah"), ("Tampin", "tampin"), ("Rembau", "rembau"), ("Jelebu", "jelebu"), ("Senawang", "senawang"), ("Mantin", "mantin"), ("Labu", "labu"), ("Gemas", "gemas")],
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Kuala Lumpur", "kuala-lumpur", "Penghantaran 4 Jam"), ("Melaka", "melaka", "Penghantaran 24 Jam"), ("Johor", "johor", "Penghantaran 1-2 Hari")],
-    [
-        "Negeri Sembilan dengan populasi 1.1 juta penduduk terletak bersebelahan Selangor dan mudah diakses dari gudang kami. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Seremban, Nilai, Port Dickson dan Bahau.",
-        "Seremban hanya 60 km dari gudang utama kami di Batu Caves. Van penghantaran kami sentiasa standby dan boleh sampai ke Seremban dalam masa 4-6 jam, manakala kawasan lain di Negeri Sembilan dalam 24 jam. Kami menerima banyak tempahan dari keluarga di N9 yang memerlukan katil hospital.",
-        "Kami cover seluruh Negeri Sembilan termasuk Seremban, Nilai, Port Dickson, Bahau, Kuala Pilah, Tampin, Rembau, Jelebu, Senawang, Mantin, Labu dan Gemas."
-    ]
+    ["Negeri Sembilan dengan 1.1 juta penduduk terletak bersebelahan Selangor, hanya 60 km dari gudang kami. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Van penghantaran kami sentiasa standby dan boleh sampai ke Seremban dalam 4-6 jam, manakala Nilai, Port Dickson dan seluruh N9 dalam masa 24 jam."]
 )
 
 STATES["perlis"] = make_state("perlis", "Perlis", "Perlis", 3, "1-2 hari", "RM120-150", "Partner delivery", "6.4414", "100.1986", "260,000",
@@ -488,11 +456,7 @@ STATES["perlis"] = make_state("perlis", "Perlis", "Perlis", 3, "1-2 hari", "RM12
     ["Kangar", "Arau", "Padang Besar", "Kuala Perlis", "Beseri", "Kaki Bukit", "Simpang Empat", "Sanglang", "Wang Kelian"],
     [("Kangar", "kangar"), ("Arau", "arau"), ("Padang Besar", "padang-besar"), ("Kuala Perlis", "kuala-perlis"), ("Beseri", "beseri"), ("Kaki Bukit", "kaki-bukit"), ("Simpang Empat", "simpang-empat"), ("Sanglang", "sanglang"), ("Wang Kelian", "wang-kelian")],
     [("Kedah", "kedah", "Penghantaran 24 Jam"), ("Pulau Pinang", "pulau-pinang", "Penghantaran 1-2 Hari")],
-    [
-        "Perlis merupakan negeri terkecil di Malaysia dengan populasi 260,000 penduduk. Walaupun kecil, kami tetap menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kangar, Arau, Padang Besar dan Kuala Perlis.",
-        "Penghantaran ke Perlis memerlukan masa 1-2 hari dari gudang utama kami. Van penghantaran kami menggunakan Lebuhraya Utara-Selatan untuk sampai ke seluruh Perlis. Kami juga bekerjasama dengan partner logistik di utara untuk memastikan penghantaran berjalan lancar.",
-        "Perlis yang kecil memudahkan penghantaran ke semua kawasan termasuk Kangar, Arau, Padang Besar, Kuala Perlis, Beseri, Kaki Bukit, Simpang Empat, Sanglang dan Wang Kelian."
-    ]
+    ["Perlis merupakan negeri terkecil di Malaysia dengan 260,000 penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Melalui partner logistik di utara, van penghantaran kami boleh sampai ke Kangar, Arau, Padang Besar dan seluruh Perlis dalam masa 1-2 hari."]
 )
 
 STATES["sabah"] = make_state("sabah", "Sabah", "Sabah", 3, "1-2 hari", "RM150-200", "Cawangan Kota Kinabalu", "5.9804", "116.0735", "3.9 juta",
@@ -501,11 +465,7 @@ STATES["sabah"] = make_state("sabah", "Sabah", "Sabah", 3, "1-2 hari", "RM150-20
     ["Kota Kinabalu", "Sandakan", "Tawau", "Lahad Datu", "Keningau", "Beaufort", "Ranau", "Kudat", "Semporna", "Papar", "Tuaran", "Tambunan", "Kota Belud"],
     [("Kota Kinabalu", "kota-kinabalu"), ("Sandakan", "sandakan"), ("Tawau", "tawau"), ("Lahad Datu", "lahad-datu"), ("Keningau", "keningau"), ("Beaufort", "beaufort"), ("Ranau", "ranau"), ("Kudat", "kudat"), ("Semporna", "semporna"), ("Papar", "papar"), ("Tuaran", "tuaran"), ("Tambunan", "tambunan"), ("Kota Belud", "kota-belud"), ("Kunak", "kunak")],
     [("Sarawak", "sarawak", "Penghantaran 1-2 Hari"), ("Labuan", "labuan", "Penghantaran 1-2 Hari")],
-    [
-        "Sabah dengan populasi 3.9 juta penduduk merupakan negeri kedua terbesar di Malaysia. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kota Kinabalu, Sandakan, Tawau dan Lahad Datu.",
-        "Kami mempunyai cawangan di Kota Kinabalu yang membolehkan penghantaran same-day ke kawasan KK dan sekitar. Untuk kawasan lain di Sabah seperti Sandakan, Tawau dan Lahad Datu, penghantaran dalam masa 1-2 hari. Van penghantaran kami sentiasa standby di KK untuk memastikan katil hospital sampai dengan cepat.",
-        "Kami cover seluruh Sabah termasuk Kota Kinabalu, Sandakan, Tawau, Lahad Datu, Keningau, Beaufort, Ranau, Kudat, Semporna, Papar, Tuaran, Tambunan dan Kota Belud."
-    ]
+    ["Sabah dengan 3.9 juta penduduk merupakan negeri kedua terbesar di Malaysia. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Cawangan kami di Kota Kinabalu membolehkan penghantaran same-day ke KK, manakala Sandakan, Tawau dan seluruh Sabah dalam masa 1-2 hari."]
 )
 
 STATES["sarawak"] = make_state("sarawak", "Sarawak", "Sarawak", 3, "1-2 hari", "RM150-200", "Partner delivery", "1.5533", "110.3592", "2.9 juta",
@@ -514,11 +474,7 @@ STATES["sarawak"] = make_state("sarawak", "Sarawak", "Sarawak", 3, "1-2 hari", "
     ["Kuching", "Sibu", "Miri", "Bintulu", "Sri Aman", "Kapit", "Sarikei"],
     [("Kuching", "kuching"), ("Sibu", "sibu"), ("Miri", "miri"), ("Bintulu", "bintulu"), ("Sri Aman", "sri-aman"), ("Kapit", "kapit")],
     [("Sabah", "sabah", "Penghantaran 1-2 Hari"), ("Labuan", "labuan", "Penghantaran 1-2 Hari")],
-    [
-        "Sarawak merupakan negeri terbesar di Malaysia dengan populasi 2.9 juta penduduk. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di kawasan Kuching, Sibu, Miri dan Bintulu.",
-        "Rangkaian delivery kami meliputi bandar-bandar utama di Sarawak. Van penghantaran kami sentiasa standby dan boleh sampai ke hospital-hospital utama di Kuching dalam masa 1-2 hari. Untuk Sibu, Miri dan Bintulu, penghantaran dalam masa 2-3 hari melalui logistik darat dan udara.",
-        "Kami cover bandar-bandar utama di Sarawak termasuk Kuching, Sibu, Miri, Bintulu, Sri Aman, Kapit dan Sarikei."
-    ]
+    ["Sarawak merupakan negeri terbesar di Malaysia dengan 2.9 juta penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Rangkaian delivery kami meliputi bandar-bandar utama dan boleh sampai ke Kuching dalam 1-2 hari, manakala Sibu, Miri dan Bintulu dalam 2-3 hari."]
 )
 
 STATES["labuan"] = make_state("labuan", "Labuan", "Wilayah Persekutuan Labuan", 3, "1-2 hari", "RM150-200", "Via Kota Kinabalu", "5.2831", "115.2308", "100,000",
@@ -527,11 +483,7 @@ STATES["labuan"] = make_state("labuan", "Labuan", "Wilayah Persekutuan Labuan", 
     ["Labuan Town", "Victoria", "Layang-Layangan", "Patau-Patau", "Pohon Batu", "Rancha-Rancha", "Bebuloh"],
     [("Labuan Town", "labuan-town"), ("Victoria", "victoria"), ("Layang-Layangan", "layang-layangan"), ("Patau-Patau", "patau-patau"), ("Pohon Batu", "pohon-batu"), ("Rancha-Rancha", "rancha-rancha"), ("Bebuloh", "bebuloh")],
     [("Sabah", "sabah", "Penghantaran 1-2 Hari"), ("Sarawak", "sarawak", "Penghantaran 1-2 Hari")],
-    [
-        "Labuan merupakan Wilayah Persekutuan pulau di pantai Sabah dengan populasi 100,000 penduduk. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di Labuan Town dan sekitar.",
-        "Penghantaran ke Labuan melalui Kota Kinabalu menggunakan logistik feri. Van penghantaran kami sentiasa standby dan katil hospital boleh sampai ke Labuan dalam masa 1-2 hari. Labuan yang kecil memudahkan penghantaran ke semua kawasan setelah tiba di pulau.",
-        "Kami cover seluruh Labuan termasuk Labuan Town, Victoria, Layang-Layangan, Patau-Patau, Pohon Batu, Rancha-Rancha dan Bebuloh."
-    ]
+    ["Labuan merupakan Wilayah Persekutuan pulau di pantai Sabah dengan 100,000 penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Penghantaran melalui Kota Kinabalu menggunakan logistik feri, katil hospital boleh sampai ke seluruh Labuan dalam masa 1-2 hari."]
 )
 
 STATES["putrajaya"] = make_state("putrajaya", "Putrajaya", "Wilayah Persekutuan Putrajaya", 1, "4 jam", "RM50", "~35 km dari gudang", "2.9264", "101.6964", "110,000",
@@ -540,11 +492,7 @@ STATES["putrajaya"] = make_state("putrajaya", "Putrajaya", "Wilayah Persekutuan 
     ["Presint 1-18", "Cyberjaya", "Dengkil"],
     [("Cyberjaya", "cyberjaya")],
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Kuala Lumpur", "kuala-lumpur", "Penghantaran 4 Jam"), ("Negeri Sembilan", "negeri-sembilan", "Penghantaran 24 Jam")],
-    [
-        "Putrajaya merupakan pusat pentadbiran persekutuan Malaysia dengan populasi 110,000 penduduk. Kami menyediakan katil hospital berkualiti untuk kegunaan di rumah — sesuai untuk penjagaan warga emas, pesakit post-surgery, pesakit stroke, dan pesakit terlantar di semua Presint Putrajaya dan Cyberjaya.",
-        "Putrajaya hanya 35 km dari gudang utama kami di Batu Caves. Van penghantaran kami sentiasa standby dan boleh sampai ke Putrajaya dalam masa 4 jam melalui Lebuhraya KL-Putrajaya. Kami menerima tempahan dari penduduk Putrajaya dan Cyberjaya yang memerlukan katil hospital.",
-        "Kami cover seluruh Putrajaya termasuk Presint 1 hingga 18 serta Cyberjaya dan Dengkil yang berdekatan."
-    ]
+    ["Putrajaya merupakan pusat pentadbiran persekutuan Malaysia dengan 110,000 penduduk. Kami menyediakan katil hospital untuk kegunaan di rumah — sesuai untuk warga emas, pesakit post-surgery, stroke dan terlantar. Putrajaya hanya 35 km dari gudang kami, van penghantaran sentiasa standby dan boleh sampai ke semua Presint dan Cyberjaya dalam masa 4 jam."]
 )
 
 
@@ -705,10 +653,7 @@ def transform_page(slug, data):
     for c_name, c_slug in data.get("cities", []):
         city_links += f'                    <a href="/katil-hospital-{c_slug}.html">{c_name}</a>\n'
 
-    # Build intro paragraphs HTML
-    intro_paragraphs_html = ""
-    for para in data.get("intro_paragraphs", []):
-        intro_paragraphs_html += f'                    <p>{para}</p>\n'
+    intro_text = data["intro_paragraphs"][0] if data["intro_paragraphs"] else ""
 
     hospitals_section = f'''
         <!-- Local Hospitals Served -->
@@ -719,15 +664,16 @@ def transform_page(slug, data):
                     <p>Kami kerap menghantar katil hospital kepada pesakit yang discharge dari hospital-hospital ini</p>
                 </header>
 
-                <div style="max-width: 800px; margin: 0 auto 40px; color: #4b5563; line-height: 1.8;">
-{intro_paragraphs_html}                </div>
+                <p style="color: #4b5563; line-height: 1.8; margin-bottom: 30px;">{intro_text}</p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
 {hosp_cards}
                 </div>
             </div>
         </section>
+'''
 
+    kawasan_section = f'''
         <!-- Kawasan Liputan (merged: map + delivery info + city links) -->
         <section class="local-map" style="background: linear-gradient(135deg, #1e4a9e 0%, #2563eb 100%); padding: 60px 0;">
             <div class="container">
@@ -799,10 +745,16 @@ def transform_page(slug, data):
         flags=re.DOTALL
     )
 
-    # Insert fresh merged sections before FAQ
+    # Insert hospitals section before Services (position #2)
+    html = html.replace(
+        '        <!-- Services Section -->',
+        hospitals_section + '        <!-- Services Section -->'
+    )
+
+    # Insert kawasan liputan section before FAQ
     html = html.replace(
         '        <!-- FAQ Section -->',
-        hospitals_section + '        <!-- FAQ Section -->'
+        kawasan_section + '        <!-- FAQ Section -->'
     )
 
     # 15. Replace FAQ with 6 unique questions
