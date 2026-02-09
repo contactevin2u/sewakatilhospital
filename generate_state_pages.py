@@ -697,6 +697,11 @@ def transform_page(slug, data):
                     </div>
 '''
 
+    # Build city links for merged section
+    city_links = ""
+    for c_name, c_slug in data.get("cities", []):
+        city_links += f'                    <a href="/katil-hospital-{c_slug}.html">{c_name}</a>\n'
+
     hospitals_section = f'''
         <!-- Local Hospitals Served -->
         <section class="local-hospitals" style="background: #f8fafc; padding: 60px 0;">
@@ -712,55 +717,80 @@ def transform_page(slug, data):
             </div>
         </section>
 
-        <!-- Google Maps Section -->
-        <section class="local-map" style="background: #f1f5f9; padding: 60px 0;">
+        <!-- Kawasan Liputan (merged: map + delivery info + city links) -->
+        <section class="local-map" style="background: linear-gradient(135deg, #1e4a9e 0%, #2563eb 100%); padding: 60px 0;">
             <div class="container">
                 <header class="section-header">
-                    <h2>Lokasi Perkhidmatan di {name}</h2>
-                    <p>Kami meliputi seluruh {name} dan kawasan sekitar</p>
+                    <h2 style="color: white;">Kawasan Liputan di <span style="color: #4ade80;">{name}</span></h2>
+                    <p style="color: rgba(255,255,255,0.9);">Penghantaran {data["delivery_time"]} ke semua kawasan berikut</p>
                 </header>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; align-items: start;">
-                    <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d200000!2d{data["lng"]}!3d{data["lat"]}!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s{name.replace(" ", "%20")}!5e0!3m2!1sen!2smy" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px;">
+                    <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d200000!2d{data["lng"]}!3d{data["lat"]}!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s{name.replace(" ", "%20")}!5e0!3m2!1sen!2smy" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
-                    <div>
-                        <h3 style="color: #1e4a9e; font-size: 1.2rem; margin-bottom: 16px;">Maklumat Penghantaran {name}</h3>
-                        <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 16px;">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); padding: 20px; border-radius: 12px;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 40px; height: 40px; background: #dcfce7; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                    <svg width="20" height="20" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <div style="width: 40px; height: 40px; background: rgba(34,197,94,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="20" height="20" fill="none" stroke="#4ade80" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                                 </div>
                                 <div>
-                                    <p style="color: #1e4a9e; font-weight: 600; margin: 0;">Masa Penghantaran</p>
-                                    <p style="color: #22c55e; font-size: 1.1rem; font-weight: 700; margin: 0;">{data["delivery_time"].title()}</p>
+                                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin: 0;">Masa Penghantaran</p>
+                                    <p style="color: #4ade80; font-size: 1.1rem; font-weight: 700; margin: 0;">{data["delivery_time"].title()}</p>
                                 </div>
                             </div>
                         </div>
-                        <div style="background: white; padding: 20px; border-radius: 12px;">
+                        <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); padding: 20px; border-radius: 12px;">
                             <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 40px; height: 40px; background: #dbeafe; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                    <svg width="20" height="20" fill="none" stroke="#1e4a9e" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                <div style="width: 40px; height: 40px; background: rgba(255,255,255,0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                                 </div>
                                 <div>
-                                    <p style="color: #1e4a9e; font-weight: 600; margin: 0;">Jarak dari Gudang</p>
-                                    <p style="color: #64748b; margin: 0;">{data["distance"]}</p>
+                                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin: 0;">Jarak dari Gudang</p>
+                                    <p style="color: white; font-weight: 600; margin: 0;">{data["distance"]}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <h3 style="color: white; font-size: 1.1rem; margin-bottom: 16px;">Pilih kawasan anda:</h3>
+                <div class="city-directory-grid">
+{city_links}                </div>
             </div>
         </section>
 
 '''
 
-    if 'local-hospitals' not in html:
-        html = html.replace(
-            '        <!-- FAQ Section -->',
-            hospitals_section + '        <!-- FAQ Section -->'
+    # Remove old Kawasan Liputan section (static area names - now merged)
+    html = re.sub(
+        r'\s*<!-- Kawasan Liputan[^>]*-->.*?</section>',
+        '',
+        html,
+        flags=re.DOTALL
+    )
+
+    # Remove old separate map section and hospitals if they exist (will be re-added merged)
+    if 'local-hospitals' in html:
+        html = re.sub(
+            r'\s*<!-- Local Hospitals Served -->.*?<!-- Kawasan Liputan \(merged[^>]*-->.*?</section>',
+            '',
+            html,
+            flags=re.DOTALL
         )
+        # Also try removing old separate format
+        html = re.sub(
+            r'\s*<!-- Local Hospitals Served -->.*?</section>\s*<!-- Google Maps Section -->.*?</section>',
+            '',
+            html,
+            flags=re.DOTALL
+        )
+
+    html = html.replace(
+        '        <!-- FAQ Section -->',
+        hospitals_section + '        <!-- FAQ Section -->'
+    )
 
     # 15. Replace FAQ with 6 unique questions
     faq_items = ""
@@ -874,54 +904,19 @@ def transform_page(slug, data):
             testimonials_section + '        <!-- CTA Section -->'
         )
 
-    # 18. Add city directory + nearby locations before footer
-    city_links = ""
-    for c_name, c_slug in data.get("cities", []):
-        city_links += f'                    <a href="/katil-hospital-{c_slug}.html">{c_name}</a>\n'
-
-    nearby_links = ""
-    for n_name, n_slug, n_delivery in data.get("nearby_states", []):
-        nearby_links += f'''
-                    <a href="/katil-hospital-{n_slug}.html" style="background: #f8fafc; padding: 20px; border-radius: 12px; text-decoration: none; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                        <p style="color: #1e4a9e; font-weight: 600; margin: 0 0 4px 0;">{n_name}</p>
-                        <p style="color: #64748b; font-size: 0.85rem; margin: 0;">{n_delivery}</p>
-                    </a>
-'''
-
-    bottom_sections = f'''
-        <!-- City Directory -->
-        <section style="background: linear-gradient(135deg, #0d3a7d 0%, #1e4a9e 100%); padding: 60px 0;">
-            <div class="container">
-                <header class="section-header">
-                    <h2 style="color: white;">Semua Lokasi di {name}</h2>
-                    <p style="color: rgba(255,255,255,0.9);">Pilih kawasan anda untuk maklumat penghantaran yang lebih tepat</p>
-                </header>
-                <div class="city-directory-grid">
-{city_links}                </div>
-            </div>
-        </section>
-
-        <!-- Nearby Locations -->
-        <section class="nearby-locations" style="background: white; padding: 60px 0;">
-            <div class="container">
-                <header class="section-header">
-                    <h2>Negeri Berdekatan {name}</h2>
-                    <p>Kami juga menyediakan perkhidmatan sewa katil hospital di negeri-negeri berhampiran</p>
-                </header>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 30px;">
-{nearby_links}
-                </div>
-            </div>
-        </section>
-
-'''
-
-    if 'nearby-locations' not in html:
-        html = html.replace(
-            '    </main>\n\n    <!-- Footer -->',
-            bottom_sections + '    </main>\n\n    <!-- Footer -->'
-        )
+    # 18. Remove old City Directory + Nearby Locations sections (now merged into Kawasan Liputan)
+    html = re.sub(
+        r'\s*<!-- City Directory[^>]*-->.*?</section>',
+        '',
+        html,
+        flags=re.DOTALL
+    )
+    html = re.sub(
+        r'\s*<!-- Nearby Locations[^>]*-->.*?</section>',
+        '',
+        html,
+        flags=re.DOTALL
+    )
 
     # Write back
     with open(filepath, 'w', encoding='utf-8') as f:
