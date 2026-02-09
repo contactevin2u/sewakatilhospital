@@ -3,6 +3,127 @@
    Extracted from inline styles to improve content-to-code ratio
    ============================================================ */
 
+/* --- Compact Section Spacing (desktop) --- */
+/* Tighten all sections so pages don't feel too spread out */
+
+/* Existing sections - override framework defaults */
+.services {
+    padding: 30px 0 35px 0 !important;
+}
+.bantuan-section {
+    padding: 35px 0 !important;
+}
+.why-us {
+    padding: 35px 0 !important;
+}
+.proof-delivery {
+    padding: 35px 0 !important;
+}
+.faq-preview {
+    padding: 30px 0 !important;
+}
+.cta-section {
+    padding: 35px 0 !important;
+}
+
+/* New sections */
+.local-intro {
+    padding: 30px 0 !important;
+}
+.local-hospitals {
+    padding: 30px 0 !important;
+}
+.local-map {
+    padding: 30px 0 !important;
+}
+.local-testimonials {
+    padding: 30px 0 !important;
+}
+.nearby-locations {
+    padding: 30px 0 !important;
+}
+
+/* Tighten section headers throughout */
+.section-header {
+    margin-bottom: 20px !important;
+}
+.section-header h2 {
+    margin-bottom: 6px !important;
+}
+
+/* Tighten internal grid margins */
+.kelebihan-grid {
+    margin-top: 24px !important;
+}
+.who-needs-container {
+    margin-top: 24px !important;
+}
+.proof-gallery-grid {
+    margin-top: 24px !important;
+}
+
+/* Tighten grids inside new sections */
+.local-hospitals .container > div[style*="grid-template-columns"] {
+    margin-top: 20px !important;
+}
+.local-map .container > div[style*="grid-template-columns"] {
+    margin-top: 20px !important;
+    gap: 24px !important;
+}
+.local-testimonials .container > div[style*="grid-template-columns"] {
+    margin-top: 20px !important;
+    gap: 16px !important;
+}
+.nearby-locations .container > div[style*="grid-template-columns"] {
+    margin-top: 16px !important;
+    gap: 12px !important;
+}
+
+/* Compact local intro paragraphs */
+.local-intro p {
+    margin-bottom: 12px !important;
+    line-height: 1.7 !important;
+}
+.local-intro h2 {
+    margin-bottom: 14px !important;
+}
+
+/* Compact testimonial cards */
+.local-testimonials div[style*="border-radius: 16px"] {
+    padding: 18px !important;
+}
+
+/* Compact hospital cards */
+.local-hospitals div[style*="border-left: 4px"] {
+    padding: 14px 16px !important;
+}
+
+/* Compact map delivery info cards */
+.local-map div[style*="border-radius: 12px"][style*="margin-bottom: 16px"] {
+    margin-bottom: 10px !important;
+    padding: 14px 16px !important;
+}
+
+/* Hero CTA buttons mid-page - less top margin */
+.bantuan-section .hero-buttons {
+    margin-top: 24px !important;
+}
+
+/* Tighten feature strip */
+.feature-strip-grid {
+    margin-top: 0 !important;
+}
+
+/* Kawasan Liputan section (inline bg gradient) */
+section[style*="linear-gradient(135deg, #1e4a9e 0%, #2563eb"] {
+    padding: 35px 0 !important;
+}
+
+/* City directory section */
+section[style*="linear-gradient(135deg, #0d3a7d 0%, #1e4a9e"] {
+    padding: 35px 0 !important;
+}
+
 /* --- Mobile Responsive Styles --- */
 @media (max-width: 768px) {
     /* Hero container fill screen on mobile */
@@ -61,10 +182,10 @@
         justify-content: center !important;
     }
 
-    /* Standardize section spacing on mobile */
+    /* Compact section spacing on mobile */
     section {
-        padding-top: 35px !important;
-        padding-bottom: 35px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
     }
 
     .hero-section {
@@ -269,9 +390,30 @@
         font-size: 0.45rem !important;
     }
 
-    /* New sections - mobile responsive */
+    /* New sections - mobile responsive & compact */
+    .local-intro {
+        padding: 20px 0 !important;
+    }
     .local-intro .container > div {
         padding: 0 15px !important;
+    }
+    .local-intro p {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .local-hospitals {
+        padding: 20px 0 !important;
+    }
+    .local-map {
+        padding: 20px 0 !important;
+    }
+    .local-testimonials {
+        padding: 20px 0 !important;
+    }
+    .nearby-locations {
+        padding: 20px 0 !important;
     }
 
     .local-map .container > div[style*="grid-template-columns: 1fr 1fr"] {
@@ -291,12 +433,17 @@
     }
 
     .breadcrumb-nav {
-        padding: 8px 15px !important;
+        padding: 6px 15px !important;
         font-size: 0.75rem !important;
     }
 
     .city-directory-grid {
         grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
+    .city-directory-grid a {
+        padding: 10px 12px !important;
+        font-size: 0.8rem !important;
     }
 }
 
