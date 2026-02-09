@@ -69,11 +69,10 @@ STATES = {
             "Technician datang ke rumah anda di Selangor untuk repair percuma sepanjang sewa",
         ],
         "faq": [
-            ("Berapa harga sewa katil hospital di Selangor?", "Harga sewa katil hospital di Selangor bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi manual dari RM250/bulan. Harga belum termasuk tilam (RM50/bulan) dan kos penghantaran (RM50 dalam Selangor). Tiada deposit diperlukan."),
+            ("Berapa harga sewa katil hospital di Selangor?", "Harga sewa katil hospital di Selangor bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi manual dari RM250/bulan. Tiada deposit diperlukan."),
             ("Berapa lama penghantaran katil hospital ke Selangor?", "Penghantaran ke kebanyakan kawasan Selangor dalam masa <strong>4 jam</strong> selepas pengesahan order. Gudang kami di Batu Caves memudahkan akses ke Shah Alam (30 min), PJ (25 min), Klang (40 min) dan Kajang (45 min). Order sebelum 2pm untuk penghantaran hari yang sama."),
             ("Kawasan mana di Selangor yang anda cover?", "Kami cover <strong>seluruh Selangor</strong> termasuk Shah Alam, Petaling Jaya, Subang Jaya, Klang, Kajang, Bangi, Puchong, Rawang, Cyberjaya, Sepang, Kuala Selangor dan Sabak Bernam. Untuk kawasan luar bandar Selangor, sila hubungi untuk pengesahan masa penghantaran."),
             ("Hospital mana di Selangor yang pesakit anda biasa discharge dari?", "Kami kerap menerima tempahan dari pesakit yang discharge dari <strong>Hospital Shah Alam</strong>, Hospital Tengku Ampuan Rahimah Klang, Sunway Medical Centre, Columbia Asia PJ dan KPJ Selangor. Kami boleh coordinate penghantaran pada hari yang sama pesakit discharge."),
-            ("Berapa kos penghantaran ke Selangor?", "Kos penghantaran ke kawasan Selangor adalah <strong>RM50</strong>. Ini termasuk penghantaran ke rumah, pemasangan katil, demonstrasi penggunaan dan pengambilan semula apabila tamat sewa. Tiada caj tersembunyi."),
             ("Boleh hantar ke kawasan baru macam Cyberjaya dan Puchong?", "Ya, kami cover <strong>semua kawasan baru di Selangor</strong> termasuk Cyberjaya, Puchong, Setia Alam, Kota Kemuning, Rawang dan Bangi. Kawasan-kawasan ini mudah diakses dari gudang kami dan penghantaran biasanya dalam masa 4 jam."),
         ],
         "gallery_alts": [
@@ -146,11 +145,10 @@ STATES = {
             "Technician datang ke rumah anda di Johor untuk repair percuma sepanjang sewa",
         ],
         "faq": [
-            ("Berapa harga sewa katil hospital di Johor?", "Harga sewa katil hospital di Johor bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi manual dari RM250/bulan. Kos penghantaran ke Johor antara RM80-120. Tiada deposit diperlukan."),
+            ("Berapa harga sewa katil hospital di Johor?", "Harga sewa katil hospital di Johor bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi manual dari RM250/bulan. Tiada deposit diperlukan."),
             ("Berapa lama penghantaran katil hospital ke Johor?", "Penghantaran ke kawasan Johor Bahru dan sekitar biasanya <strong>same-day</strong> (hari yang sama). Untuk kawasan lain di Johor seperti Batu Pahat, Muar dan Kluang, penghantaran dalam masa <strong>24 jam</strong>."),
             ("Kawasan mana di Johor yang anda cover?", "Kami cover <strong>seluruh Johor</strong> termasuk Johor Bahru, Iskandar Puteri, Skudai, Pasir Gudang, Kulai, Batu Pahat, Muar, Kluang, Pontian, Segamat, Mersing dan Kota Tinggi."),
             ("Hospital mana di Johor yang pesakit anda biasa discharge dari?", "Kami kerap menerima tempahan dari pesakit yang discharge dari <strong>Hospital Sultanah Aminah</strong>, KPJ Johor Specialist, Gleneagles Medini dan Columbia Asia JB. Kami boleh coordinate penghantaran pada hari yang sama."),
-            ("Berapa kos penghantaran ke Johor?", "Kos penghantaran ke Johor antara <strong>RM80-120</strong> bergantung lokasi. Kawasan JB dan sekitar RM80, manakala Batu Pahat, Muar dan Kluang sekitar RM100-120. Harga termasuk pemasangan."),
             ("Ada cawangan di Johor?", "Kami mempunyai <strong>partner logistik tempatan di Johor Bahru</strong> yang membolehkan penghantaran same-day. Untuk kawasan lain di Johor, penghantaran diuruskan dari gudang utama kami dengan masa 24 jam."),
         ],
         "gallery_alts": [
@@ -220,11 +218,10 @@ STATES = {
             "Technician datang ke rumah anda di Penang untuk repair percuma sepanjang sewa",
         ],
         "faq": [
-            ("Berapa harga sewa katil hospital di Pulau Pinang?", "Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Kos penghantaran ke Penang antara RM100-150. Tiada deposit diperlukan."),
+            ("Berapa harga sewa katil hospital di Pulau Pinang?", "Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Tiada deposit diperlukan."),
             ("Berapa lama penghantaran ke Pulau Pinang?", "Penghantaran ke seluruh Pulau Pinang termasuk George Town, Bayan Lepas, Butterworth dan Bukit Mertajam dalam masa <strong>24 jam</strong> selepas pengesahan order."),
             ("Kawasan mana di Penang yang anda cover?", "Kami cover <strong>seluruh Pulau Pinang</strong> termasuk George Town, Bayan Lepas, Jelutong, Tanjung Bungah, Air Itam, Balik Pulau, Butterworth, Bukit Mertajam, Nibong Tebal, Kepala Batas dan seluruh Seberang Perai."),
             ("Hospital mana di Penang yang pesakit anda biasa discharge dari?", "Kami kerap menerima tempahan dari pesakit yang discharge dari <strong>Penang General Hospital</strong>, Gleneagles Penang, Island Hospital, Lam Wah Ee Hospital dan Hospital Seberang Jaya."),
-            ("Berapa kos penghantaran ke Pulau Pinang?", "Kos penghantaran ke Pulau Pinang antara <strong>RM100-150</strong>. Kawasan pulau dan Seberang Perai Tengah sekitar RM100, manakala kawasan Seberang Perai Utara dan Selatan sekitar RM120-150."),
             ("Boleh hantar ke kawasan pulau macam Tanjung Bungah dan Balik Pulau?", "Ya, kami cover <strong>semua kawasan di pulau</strong> termasuk Tanjung Bungah, Balik Pulau, Air Itam dan Batu Ferringhi. Penghantaran ke kawasan pulau biasanya sama 24 jam."),
         ],
         "gallery_alts": [
@@ -293,12 +290,11 @@ STATES = {
             "Technician datang ke rumah anda di Kedah untuk repair percuma sepanjang sewa",
         ],
         "faq": [
-            ("Berapa harga sewa katil hospital di Kedah?", "Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Kos penghantaran ke Kedah antara RM100-150. Tiada deposit."),
+            ("Berapa harga sewa katil hospital di Kedah?", "Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Tiada deposit diperlukan."),
             ("Berapa lama penghantaran ke Kedah?", "Penghantaran ke seluruh Kedah termasuk Alor Setar, Sungai Petani dan Kulim dalam masa <strong>24 jam</strong> selepas pengesahan order."),
             ("Kawasan mana di Kedah yang anda cover?", "Kami cover <strong>seluruh Kedah</strong> termasuk Alor Setar, Sungai Petani, Kulim, Langkawi, Jitra, Baling, Sik, Pendang, Yan dan Gurun."),
             ("Hospital mana di Kedah yang pesakit anda biasa discharge dari?", "Kami kerap menerima tempahan dari pesakit yang discharge dari <strong>Hospital Sultanah Bahiyah</strong>, Hospital Sultan Abdul Halim, KPJ Kedah dan Hospital Kulim."),
-            ("Berapa kos penghantaran ke Kedah?", "Kos penghantaran ke Kedah antara <strong>RM100-150</strong>. Kawasan bandar Alor Setar dan SP sekitar RM100, kawasan luar bandar RM120-150."),
-            ("Boleh hantar ke Langkawi?", "Ya, kami boleh hantar ke <strong>Langkawi</strong> tetapi memerlukan masa tambahan 1-2 hari kerana logistik feri. Kos penghantaran ke Langkawi sekitar RM150-200. Sila hubungi untuk pengesahan."),
+            ("Boleh hantar ke Langkawi?", "Ya, kami boleh hantar ke <strong>Langkawi</strong> tetapi memerlukan masa tambahan 1-2 hari kerana logistik feri. Sila hubungi untuk pengesahan."),
         ],
         "gallery_alts": [
             "Katil hospital 2 fungsi dipasang di rumah pelanggan di Alor Setar",
@@ -356,11 +352,10 @@ def make_state(slug, name, state, tier, delivery_time, delivery_cost, distance, 
     areas_full = ", ".join(coverage_areas)
 
     faq = [
-        (f"Berapa harga sewa katil hospital di {name}?", f"Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Kos penghantaran ke {name} {delivery_cost}. Tiada deposit diperlukan."),
+        (f"Berapa harga sewa katil hospital di {name}?", f"Harga sewa bermula dari <strong>RM150/bulan</strong> untuk katil 2 fungsi manual. Katil 3 fungsi dari RM250/bulan. Tiada deposit diperlukan."),
         (f"Berapa lama penghantaran ke {name}?", f"Penghantaran ke seluruh {name} dalam masa <strong>{delivery_time}</strong> selepas pengesahan order."),
         (f"Kawasan mana di {name} yang anda cover?", f"Kami cover <strong>seluruh {name}</strong> termasuk {areas_full}."),
         (f"Hospital mana di {name} yang pesakit anda biasa discharge dari?", f"Kami kerap menerima tempahan dari pesakit yang discharge dari <strong>{hosp_names[0]}</strong>, {hosp_str}. Kami boleh coordinate penghantaran."),
-        (f"Berapa kos penghantaran ke {name}?", f"Kos penghantaran ke {name} adalah <strong>{delivery_cost}</strong>. Harga termasuk penghantaran, pemasangan dan demonstrasi penggunaan. Tiada caj tersembunyi."),
     ]
 
     gallery_alts = []
@@ -472,7 +467,7 @@ STATES["negeri-sembilan"] = make_state("negeri-sembilan", "Negeri Sembilan", "Ne
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Kuala Lumpur", "kuala-lumpur", "Penghantaran 4 Jam"), ("Melaka", "melaka", "Penghantaran 24 Jam"), ("Johor", "johor", "Penghantaran 1-2 Hari")],
     ["Negeri Sembilan dengan populasi lebih 1.1 juta penduduk terletak strategik bersebelahan Selangor dan KL. Seremban sebagai ibu negeri hanya 60 km dari gudang kami, menjadikan penghantaran lebih pantas berbanding negeri-negeri lain di luar Lembah Klang.",
      "Hospital utama di Negeri Sembilan termasuk Hospital Tuanku Ja'afar, KPJ Seremban dan Columbia Asia Seremban. Pesakit yang discharge dari hospital-hospital ini memerlukan katil hospital untuk pemulihan. Kedekatan dengan KL membolehkan kami menghantar dalam masa 4-6 jam ke Seremban.",
-     "Negeri Sembilan meliputi kawasan dari Seremban di utara hingga Port Dickson di selatan dan Kuala Pilah di pedalaman. Kami menyediakan penghantaran ke semua daerah dengan harga penghantaran yang kompetitif bermula dari RM50."]
+     "Negeri Sembilan meliputi kawasan dari Seremban di utara hingga Port Dickson di selatan dan Kuala Pilah di pedalaman. Kami menyediakan penghantaran ke semua daerah di Negeri Sembilan."]
 )
 
 STATES["perlis"] = make_state("perlis", "Perlis", "Perlis", 3, "1-2 hari", "RM120-150", "Partner delivery", "6.4414", "100.1986", "260,000",
@@ -527,7 +522,7 @@ STATES["putrajaya"] = make_state("putrajaya", "Putrajaya", "Wilayah Persekutuan 
     [("Selangor", "selangor", "Penghantaran 4 Jam"), ("Kuala Lumpur", "kuala-lumpur", "Penghantaran 4 Jam"), ("Negeri Sembilan", "negeri-sembilan", "Penghantaran 24 Jam")],
     ["Putrajaya, pusat pentadbiran kerajaan Malaysia dengan populasi sekitar 110,000 penduduk, merupakan Wilayah Persekutuan yang terletak di antara KL dan Seremban. Walaupun populasi tidak besar, permintaan untuk katil hospital datang terutamanya dari kakitangan kerajaan yang menjaga ahli keluarga di rumah.",
      "Hospital Putrajaya dan KPJ Putrajaya Specialist Hospital merupakan hospital utama di kawasan ini. Pesakit yang discharge memerlukan katil hospital untuk pemulihan di rumah. Lokasinya yang hanya 35 km dari gudang kami di Batu Caves membolehkan penghantaran express 4 jam.",
-     "Putrajaya mempunyai infrastruktur moden dengan lebuh raya yang baik memudahkan penghantaran ke semua presint. Kami juga meliputi Cyberjaya yang bersebelahan. Kos penghantaran ke Putrajaya hanya RM50, sama seperti kawasan KL dan Selangor."]
+     "Putrajaya mempunyai infrastruktur moden dengan lebuh raya yang baik memudahkan penghantaran ke semua presint. Kami juga meliputi Cyberjaya yang bersebelahan."]
 )
 
 
@@ -743,7 +738,7 @@ def transform_page(slug, data):
                                 </div>
                             </div>
                         </div>
-                        <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 16px;">
+                        <div style="background: white; padding: 20px; border-radius: 12px;">
                             <div style="display: flex; align-items: center; gap: 12px;">
                                 <div style="width: 40px; height: 40px; background: #dbeafe; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                     <svg width="20" height="20" fill="none" stroke="#1e4a9e" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -751,17 +746,6 @@ def transform_page(slug, data):
                                 <div>
                                     <p style="color: #1e4a9e; font-weight: 600; margin: 0;">Jarak dari Gudang</p>
                                     <p style="color: #64748b; margin: 0;">{data["distance"]}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="background: white; padding: 20px; border-radius: 12px;">
-                            <div style="display: flex; align-items: center; gap: 12px;">
-                                <div style="width: 40px; height: 40px; background: #fef3c7; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                    <svg width="20" height="20" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <div>
-                                    <p style="color: #1e4a9e; font-weight: 600; margin: 0;">Kos Penghantaran</p>
-                                    <p style="color: #64748b; margin: 0;">{data["delivery_cost"]}</p>
                                 </div>
                             </div>
                         </div>
