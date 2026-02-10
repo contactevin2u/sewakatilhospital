@@ -14,14 +14,6 @@
         </image:image>
     </url>
 
-    <!-- Products Main -->
-    <url>
-        <loc>https://renthospitalbed.my/products/</loc>
-        <lastmod>2026-02-10</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
     <!-- Product Pages -->
     <url>
         <loc>https://renthospitalbed.my/products/katil-hospital-2-fungsi.html</loc>
