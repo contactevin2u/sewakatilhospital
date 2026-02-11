@@ -1903,99 +1903,257 @@
                 <header class="section-header">
                     <p style="color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px;">Rangkaian Produk Kami</p>
                     <h2 id="partner-heading">Satu Pasukan, Semua Keperluan Perubatan Anda</h2>
-                    <p>Kami bukan sekadar jual katil hospital. Pasukan kami menyediakan pelbagai produk perubatan untuk penjagaan menyeluruh di rumah — dari kerusi roda hingga mesin oksigen.</p>
+                    <p>Kami bukan sekadar jual katil hospital. Pasukan kami menyediakan pelbagai produk perubatan untuk penjagaan menyeluruh di rumah.</p>
                 </header>
 
-                <div class="partner-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px;">
+                <div class="partner-carousel-container">
+                    <button class="carousel-nav partner-carousel-prev" onclick="slidePartner(-1)" aria-label="Previous">&#10094;</button>
 
-                    <!-- Card 1: Kerusi Roda -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #e0f2fe, #bae6fd); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0066CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l2 2"/><path d="M8 16a4 4 0 0 0 8 0"/><circle cx="9" cy="19" r="2"/><circle cx="15" cy="19" r="2"/></svg>
+                    <div class="partner-carousel-wrapper">
+                        <div class="partner-carousel-track" id="partnerTrack">
+
+                            <!-- Card 1: Kerusi Roda (Travel Wheelchair) -->
+                            <a href="https://travelwheelchair.my/" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/kerusi-roda.webp" alt="Kerusi Roda - TravelWheelchair.my" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0066CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M7 21a5 5 0 0 1 0-10h4"/><path d="M12 11v4l3 3"/><circle cx="7" cy="21" r="0"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Kerusi Roda</span>
+                            </a>
+
+                            <!-- Card 2: Tilam Ripple -->
+                            <a href="#" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/tilam-ripple.webp" alt="Tilam Ripple Anti-Bedsore" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 12h20"/><path d="M6 9h3"/><path d="M6 15h3"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Tilam Ripple</span>
+                            </a>
+
+                            <!-- Card 3: Mesin Oksigen -->
+                            <a href="https://sewamesinoksigen.my/" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/mesin-oksigen.webp" alt="Mesin Oksigen - SewaMesinOksigen.my" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v4h8V6a4 4 0 0 0-4-4z"/><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M10 15h4"/><path d="M12 13v4"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Mesin Oksigen</span>
+                            </a>
+
+                            <!-- Card 4: Transfer Chair -->
+                            <a href="https://transferchair.my/" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/transfer-chair.webp" alt="Transfer Chair - TransferChair.my" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M6 20a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4"/><path d="M12 6v6"/><path d="M8 12h8"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Transfer Chair</span>
+                            </a>
+
+                            <!-- Card 5: Mesin Suction -->
+                            <a href="#" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/mesin-suction.webp" alt="Mesin Suction" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Mesin Suction</span>
+                            </a>
+
+                            <!-- Card 6: Nebulizer -->
+                            <a href="#" target="_blank" rel="noopener" class="partner-card">
+                                <div class="partner-card-img">
+                                    <img src="images/partner/nebulizer.webp" alt="Nebulizer" width="220" height="240" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="partner-card-placeholder" style="display:flex;">
+                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 10H4L8 2z"/><path d="M12 12v6"/><path d="M8 18h8"/><path d="M10 22h4"/></svg>
+                                        <span>Gambar akan datang</span>
+                                    </div>
+                                </div>
+                                <span class="partner-card-btn">Nebulizer</span>
+                            </a>
+
                         </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Kerusi Roda</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Pelbagai jenis kerusi roda manual dan elektrik untuk mobiliti harian pesakit dan warga emas.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
+                    </div>
 
-                    <!-- Card 2: Tilam Perubatan -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 12h20"/><path d="M6 8h4"/><path d="M6 16h4"/></svg>
-                        </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Tilam Ripple & Perubatan</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Tilam anti-bedsore ripple dan tilam perubatan untuk cegah kudis tekanan pesakit bedridden.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
-
-                    <!-- Card 3: Mesin Oksigen -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #ede9fe, #ddd6fe); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v4h8V6a4 4 0 0 0-4-4z"/><rect x="6" y="10" width="12" height="10" rx="2"/><path d="M10 15h4"/><path d="M12 13v4"/></svg>
-                        </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Mesin Oksigen</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Oxygen concentrator untuk pesakit yang memerlukan bantuan pernafasan di rumah.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
-
-                    <!-- Card 4: Walker & Tongkat -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #fff7ed, #fed7aa); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4v16"/><path d="M14 20h8"/><path d="M6 4v10"/><path d="M6 14c0 3.5 3 4 3 4"/><path d="M2 20h8"/></svg>
-                        </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Walker & Tongkat</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Alat bantuan berjalan seperti walker, rollator dan tongkat untuk latihan mobiliti pesakit.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
-
-                    <!-- Card 5: Mesin Suction -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #fce7f3, #fbcfe8); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>
-                        </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Mesin Suction</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Mesin sedutan kahak (suction machine) untuk pesakit yang memerlukan pembersihan saluran pernafasan.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
-
-                    <!-- Card 6: Nebulizer -->
-                    <a href="#" target="_blank" rel="noopener" class="partner-card" style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px 24px; text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center; text-align: center; transition: all 0.3s ease; position: relative; overflow: hidden;">
-                        <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #ecfeff, #a5f3fc); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l4 10H4L8 2z"/><path d="M12 12v6"/><path d="M8 18h8"/><path d="M10 22h4"/></svg>
-                        </div>
-                        <h3 style="font-size: 1.1rem; color: #1E293B; margin: 0 0 8px 0;">Nebulizer</h3>
-                        <p style="font-size: 0.85rem; color: #64748B; margin: 0 0 20px 0; line-height: 1.6; flex-grow: 1;">Mesin nebulizer untuk rawatan pernafasan asma, bronkitis dan masalah paru-paru di rumah.</p>
-                        <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-blue); font-weight: 600; font-size: 0.85rem;">
-                            Lawati Laman Web
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-                        </span>
-                    </a>
-
+                    <button class="carousel-nav partner-carousel-next" onclick="slidePartner(1)" aria-label="Next">&#10095;</button>
                 </div>
 
                 <!-- Trust message -->
-                <div style="text-align: center; margin-top: 40px; padding: 24px 32px; background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-radius: 12px; border: 1px solid #bae6fd;">
-                    <p style="color: #1e4a9e; font-size: 0.95rem; margin: 0; line-height: 1.7;">
-                        <strong>Satu pasukan, satu misi</strong> — memastikan pesakit dan keluarga mendapat semua peralatan perubatan yang diperlukan untuk penjagaan terbaik di rumah.
+                <div style="text-align: center; margin-top: 40px; padding: 20px 32px; background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-radius: 12px; border: 1px solid #bae6fd;">
+                    <p style="color: #1e4a9e; font-size: 0.9rem; margin: 0; line-height: 1.6;">
+                        <strong>Satu pasukan, satu misi</strong> — semua keperluan perubatan di rumah, kami ada.
                     </p>
                 </div>
             </div>
         </section>
+
+        <style>
+            .partner-carousel-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .partner-carousel-wrapper {
+                overflow: hidden;
+                flex: 1;
+            }
+            .partner-carousel-track {
+                display: flex;
+                gap: 16px;
+                transition: transform 0.4s ease;
+            }
+            .partner-card {
+                flex: 0 0 200px;
+                min-width: 200px;
+                border-radius: 16px;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                background: #fff;
+                border: 1px solid #E2E8F0;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s ease;
+            }
+            .partner-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 12px 32px rgba(0, 102, 204, 0.15);
+                border-color: var(--primary-blue);
+            }
+            .partner-card-img {
+                width: 100%;
+                height: 220px;
+                background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+                overflow: hidden;
+                position: relative;
+            }
+            .partner-card-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .partner-card-placeholder {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                gap: 12px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .partner-card-placeholder span {
+                font-size: 0.75rem;
+                color: #94A3B8;
+                font-style: italic;
+            }
+            .partner-card-btn {
+                display: block;
+                text-align: center;
+                padding: 14px 12px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: var(--primary-blue);
+                background: white;
+                border-top: 1px solid #E2E8F0;
+                transition: all 0.3s ease;
+            }
+            .partner-card:hover .partner-card-btn {
+                background: var(--primary-blue);
+                color: white;
+            }
+            @media (max-width: 768px) {
+                .partner-card {
+                    flex: 0 0 160px;
+                    min-width: 160px;
+                }
+                .partner-card-img {
+                    height: 180px;
+                }
+                .partner-card-btn {
+                    padding: 12px 10px;
+                    font-size: 0.8rem;
+                }
+                .partner-carousel-container .carousel-nav {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <script>
+            (function() {
+                var partnerIndex = 0;
+                var pCachedWidth = 0;
+                var pCachedGap = 16;
+                var pLastWidth = 0;
+
+                function cachePartnerDimensions(cb) {
+                    requestAnimationFrame(function() {
+                        var track = document.getElementById('partnerTrack');
+                        var cards = track.querySelectorAll('.partner-card');
+                        if (cards.length > 0) {
+                            pCachedWidth = cards[0].offsetWidth;
+                            pCachedGap = parseInt(getComputedStyle(track).gap) || 16;
+                            pLastWidth = window.innerWidth;
+                        }
+                        if (cb) cb();
+                    });
+                }
+
+                window.slidePartner = function(dir) {
+                    var track = document.getElementById('partnerTrack');
+                    var cards = track.querySelectorAll('.partner-card');
+                    var wrapperWidth = track.parentElement.offsetWidth;
+                    var visibleCards = Math.floor((wrapperWidth + pCachedGap) / (pCachedWidth + pCachedGap));
+                    var maxIndex = cards.length - visibleCards;
+                    if (maxIndex < 0) maxIndex = 0;
+
+                    partnerIndex += dir;
+                    if (partnerIndex < 0) partnerIndex = 0;
+                    if (partnerIndex > maxIndex) partnerIndex = maxIndex;
+
+                    requestAnimationFrame(function() {
+                        track.style.transform = 'translateX(-' + (partnerIndex * (pCachedWidth + pCachedGap)) + 'px)';
+                        document.querySelector('.partner-carousel-prev').disabled = partnerIndex === 0;
+                        document.querySelector('.partner-carousel-next').disabled = partnerIndex >= maxIndex;
+                    });
+                };
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    cachePartnerDimensions(function() {
+                        window.slidePartner(0);
+                    });
+                });
+
+                var pResizeTimeout;
+                window.addEventListener('resize', function() {
+                    clearTimeout(pResizeTimeout);
+                    pResizeTimeout = setTimeout(function() {
+                        cachePartnerDimensions();
+                        partnerIndex = 0;
+                        window.slidePartner(0);
+                    }, 150);
+                }, { passive: true });
+            })();
+        </script>
 
         <!-- Proof of Delivery Section -->
         <section class="proof-delivery" aria-labelledby="proof-heading" style="background: #f8fafc; padding: 60px 0;">

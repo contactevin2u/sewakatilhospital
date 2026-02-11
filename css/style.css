@@ -5673,33 +5673,6 @@ button:focus-visible {
     padding: 60px 0;
 }
 
-.partner-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 102, 204, 0.15);
-    border-color: var(--primary-blue) !important;
-}
-
-.partner-card:hover span {
-    gap: 10px;
-}
-
-@media (max-width: 1024px) {
-    .partner-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .partner-grid {
-        grid-template-columns: 1fr !important;
-        gap: 16px !important;
-    }
-
-    .partner-card {
-        padding: 24px 20px !important;
-    }
-}
-
 /* --- Reduced Motion Support --- */
 @media (prefers-reduced-motion: reduce) {
     *,
