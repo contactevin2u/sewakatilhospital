@@ -2192,24 +2192,34 @@
         </section>
 
         <!-- Trust Stats -->
+        <style>
+            .trust-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; text-align: center; }
+            .trust-stats-grid .stat-number { font-size: 2.2rem; font-weight: 800; color: #1e4a9e; }
+            .trust-stats-grid .stat-label { font-size: 0.9rem; color: #64748b; font-weight: 500; }
+            @media (max-width: 768px) {
+                .trust-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+                .trust-stats-grid .stat-number { font-size: 1.5rem; }
+                .trust-stats-grid .stat-label { font-size: 0.8rem; }
+            }
+        </style>
         <section style="background: #f8fafc; padding: 0 0 50px;">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; text-align: center;">
+                <div class="trust-stats-grid">
                     <div>
-                        <div style="font-size: 2.2rem; font-weight: 800; color: #1e4a9e;">500+</div>
-                        <div style="font-size: 0.9rem; color: #64748b; font-weight: 500;">Pelanggan Gembira</div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Pelanggan Gembira</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.2rem; font-weight: 800; color: #1e4a9e;">10+</div>
-                        <div style="font-size: 0.9rem; color: #64748b; font-weight: 500;">Tahun Pengalaman</div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Tahun Pengalaman</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.2rem; font-weight: 800; color: #1e4a9e;">4.9★</div>
-                        <div style="font-size: 0.9rem; color: #64748b; font-weight: 500;">Rating Google</div>
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Rating Google</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.2rem; font-weight: 800; color: #1e4a9e;">24/7</div>
-                        <div style="font-size: 0.9rem; color: #64748b; font-weight: 500;">Sokongan Teknikal</div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Sokongan Teknikal</div>
                     </div>
                 </div>
             </div>
