@@ -165,7 +165,26 @@
       "Bash(then echo \"OK: $page\")",
       "Bash(else echo \"MISSING: $page\")",
       "WebFetch(domain:pagespeed.web.dev)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "WebFetch(domain:www.googleapis.com)",
+      "Bash(wc:*)",
+      "Bash(awk:*)",
+      "Bash(git rm:*)",
+      "WebFetch(domain:renthospitalbed.my)",
+      "Bash(del \"C:\\\\Users\\\\SGH625S0P4\\\\Documents\\\\sewa katil hospital\\\\fix-location-images.ps1\")",
+      "Bash(npm uninstall:*)",
+      "Bash(do [ ! -f \"locations/$f.html\" ])",
+      "Bash(echo:*)",
+      "Bash(git log:*)",
+      "Bash(md5sum:*)",
+      "Bash(uniq:*)",
+      "Bash(do [ -f \"locations/$f.html\" ])",
+      "Bash(del \"C:\\\\Users\\\\SGH625S0P4\\\\Documents\\\\sewa katil hospital\\\\gsc_indexing_api.py\")",
+      "Bash(node:*)",
+      "Bash(del \"C:\\\\Users\\\\SGH625S0P4\\\\Documents\\\\sewa katil hospital\\\\temp_sitemap_audit.ps1\")",
+      "WebFetch(domain:www.katil-hospital.my)",
+      "Bash(xargs:*)",
+      "Bash(mkdir:*)"
     ]
   }
 }

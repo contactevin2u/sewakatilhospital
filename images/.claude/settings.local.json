@@ -5,7 +5,12 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd comprehensive UI enhancements and polish\n\n- Hero section: floating animations, slide-in effects, shimmer overlay\n- Features bar: staggered animations, gradient borders, icon hover effects\n- Header: glassmorphism blur, gradient nav underlines, ripple button effect\n- Trust badges: hover lift, counter animations on scroll\n- Service cards: enhanced hover lift, rotating icons\n- Why Choose Us: card lift effects, icon scaling with glow\n- Testimonials: quote decorations, hover shadows, stats styling\n- CTA section: gradient background, pulsing urgency dot\n- WhatsApp float: scale hover, tooltip, enhanced glow\n- Mobile: better touch targets, improved menu with overlay\n- Accessibility: reduced motion support throughout\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:contactevin2u.github.io)",
+      "WebFetch(domain:sewakatilhospital.my)",
+      "WebFetch(domain:renthospitalbed.my)",
+      "WebFetch(domain:www.katil-hospital-bed.my)",
+      "Bash(dir:*)"
     ]
   }
 }
