@@ -4014,7 +4014,11 @@ button:focus-visible {
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: var(--font-body);
-    margin-left: -18px;
+    margin-left: -22px;
+}
+
+.header-whatsapp-btn + .lang-switcher {
+    margin-left: 2px;
 }
 
 .lang-btn:hover {
