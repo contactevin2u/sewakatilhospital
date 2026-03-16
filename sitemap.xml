@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- Homepage -->
+    <!-- Homepage (Bahasa Melayu - Default) -->
     <url>
         <loc>https://renthospitalbed.my/</loc>
-        <lastmod>2026-03-02</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://renthospitalbed.my/images/hero-katil-hospital.webp</image:loc>
             <image:title>Sewa Katil Hospital Malaysia</image:title>
+        </image:image>
+    </url>
+
+    <!-- Homepage (English) -->
+    <url>
+        <loc>https://renthospitalbed.my/en/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://renthospitalbed.my/images/hero-katil-hospital.webp</image:loc>
+            <image:title>Hospital Bed Rental Malaysia</image:title>
+        </image:image>
+    </url>
+
+    <!-- Homepage (中文) -->
+    <url>
+        <loc>https://renthospitalbed.my/zh/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://renthospitalbed.my/images/hero-katil-hospital.webp</image:loc>
+            <image:title>医院床出租马来西亚</image:title>
+        </image:image>
+    </url>
+
+    <!-- Homepage (தமிழ்) -->
+    <url>
+        <loc>https://renthospitalbed.my/ta/</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://renthospitalbed.my/images/hero-katil-hospital.webp</image:loc>
+            <image:title>மருத்துவமனை கட்டில் வாடகை மலேசியா</image:title>
         </image:image>
     </url>
 
