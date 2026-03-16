@@ -3932,7 +3932,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
 .logo-text {
@@ -4014,7 +4014,7 @@ button:focus-visible {
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: var(--font-body);
-    margin-left: -8px;
+    margin-left: -12px;
 }
 
 .lang-btn:hover {
@@ -4087,6 +4087,7 @@ button:focus-visible {
     border-radius: 6px;
     font-weight: 600;
     font-size: 0.9rem;
+    margin-right: 0;
     text-decoration: none;
     transition: all 0.2s ease;
 }
