@@ -3994,6 +3994,87 @@ button:focus-visible {
     display: none;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    position: relative;
+    z-index: 1001;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1px solid #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: var(--font-body);
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    list-style: none;
+    padding: 4px 0;
+    min-width: 170px;
+    z-index: 1002;
+}
+
+.lang-switcher.open .lang-dropdown {
+    display: block;
+}
+
+.lang-dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--gray-700);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.15s;
+}
+
+.lang-dropdown li a:hover {
+    background: #f1f5f9;
+    text-decoration: none;
+}
+
+.lang-dropdown li a.lang-active {
+    background: #e0f2fe;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        order: -1;
+    }
+    .lang-btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .lang-dropdown {
+        right: auto;
+        left: 0;
+    }
+}
+
 .header-whatsapp-btn {
     display: inline-flex;
     align-items: center;

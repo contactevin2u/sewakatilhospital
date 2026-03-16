@@ -538,10 +538,32 @@
         console.log('OxygenCare: UI/UX enhancements loaded');
     }
 
+    // =========================================
+    // LANGUAGE SWITCHER
+    // =========================================
+    function initLangSwitcher() {
+        var switcher = document.querySelector('.lang-switcher');
+        if (!switcher) return;
+        var btn = switcher.querySelector('.lang-btn');
+        if (!btn) return;
+
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            switcher.classList.toggle('open');
+            btn.setAttribute('aria-expanded', switcher.classList.contains('open'));
+        });
+
+        document.addEventListener('click', function() {
+            switcher.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        });
+    }
+
     // Run when DOM is ready
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', function() { init(); initLangSwitcher(); });
     } else {
         init();
+        initLangSwitcher();
     }
 })();
