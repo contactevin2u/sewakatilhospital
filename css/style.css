@@ -4004,20 +4004,22 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: transparent;
+    background: white;
     border: 1px solid #e2e8f0;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border-radius: 6px;
     font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--gray-700);
+    font-weight: 600;
+    color: var(--primary-blue);
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: var(--font-body);
+    margin-left: -8px;
 }
 
 .lang-btn:hover {
     border-color: var(--primary-blue);
+    background: var(--primary-blue-light);
     color: var(--primary-blue);
 }
 
