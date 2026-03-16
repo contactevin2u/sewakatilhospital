@@ -3994,6 +3994,14 @@ button:focus-visible {
     display: none;
 }
 
+/* Header Actions Group */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
 /* Language Switcher */
 .lang-switcher {
     position: relative;
@@ -4014,11 +4022,6 @@ button:focus-visible {
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: var(--font-body);
-    margin-left: -22px;
-}
-
-.header-whatsapp-btn + .lang-switcher {
-    margin-left: 2px;
 }
 
 .lang-btn:hover {
@@ -4091,7 +4094,6 @@ button:focus-visible {
     border-radius: 6px;
     font-weight: 600;
     font-size: 0.9rem;
-    margin-right: 0;
     text-decoration: none;
     transition: all 0.2s ease;
 }
