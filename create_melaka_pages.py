@@ -48,7 +48,7 @@ for slug, name in locations:
     # Change meta description
     content = content.replace(
         '<meta name="description" content="Sewa atau beli mesin oksigen mudah alih di Malaysia. Penghantaran percuma ke seluruh Semenanjung. Harga berpatutan mulai RM150/minggu. Hubungi 03-7890 1234.">',
-        f'<meta name="description" content="Sewa atau beli mesin oksigen mudah alih di {name}. Penghantaran percuma, harga berpatutan mulai RM150/minggu. Hubungi 011-2868 6592.">'
+        f'<meta name="description" content="Sewa atau beli mesin oksigen mudah alih di {name}. Pemasangan percuma, harga berpatutan mulai RM150/minggu. Hubungi 011-2868 6592.">'
     )
 
     # Change canonical URL

@@ -65,7 +65,7 @@
 ### 1. HOME PAGE (/)
 
 **Meta Title:** Sewa Mesin Oksigen Malaysia | Portable Oxygen Concentrator Rental & Sale
-**Meta Description:** Sewa atau beli mesin oksigen mudah alih di Malaysia. Penghantaran percuma ke seluruh Semenanjung. Harga berpatutan mulai RM150/minggu. Hubungi 03-XXXX XXXX.
+**Meta Description:** Sewa atau beli mesin oksigen mudah alih di Malaysia. Pemasangan percuma ke seluruh Semenanjung. Harga berpatutan mulai RM150/minggu. Hubungi 03-XXXX XXXX.
 **H1:** Sewa & Beli Mesin Oksigen Mudah Alih di Malaysia
 **Primary Keywords:** sewa mesin oksigen, oxygen concentrator Malaysia, portable oxygen concentrator rental
 
@@ -167,7 +167,7 @@
 ### Example: Kuala Lumpur (/locations/kuala-lumpur/)
 
 **Meta Title:** Sewa Mesin Oksigen Kuala Lumpur | Oxygen Concentrator Rental KL
-**Meta Description:** Sewa mesin oksigen di Kuala Lumpur. Penghantaran percuma ke semua kawasan KL termasuk Cheras, Bangsar, Mont Kiara, Kepong. Hubungi 03-XXXX XXXX.
+**Meta Description:** Sewa mesin oksigen di Kuala Lumpur. Pemasangan percuma ke semua kawasan KL termasuk Cheras, Bangsar, Mont Kiara, Kepong. Hubungi 03-XXXX XXXX.
 **H1:** Sewa Mesin Oksigen di Kuala Lumpur
 
 **Content to include:**
