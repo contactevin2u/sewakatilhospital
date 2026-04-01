@@ -34,189 +34,257 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-perak.html#business",
-            "name": "Sewa Katil Hospital Perak - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Perak. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-perak.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Perak",
-                "addressRegion": "Perak",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "4.5921",
-                "longitude": "101.0901"
-            },
-            "areaServed": [
-                "Ipoh",
-                "Taiping",
-                "Teluk Intan",
-                "Sitiawan",
-                "Manjung",
-                "Kuala Kangsar",
-                "Kampar",
-                "Batu Gajah"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Perak",
-            "description": "Perkhidmatan sewa katil hospital di Perak dari RM150/bulan. Penghantaran 24 jam.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-perak.html#business",
+                "name": "Sewa Katil Hospital Perak - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Perak. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-perak.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Perak",
+                    "addressRegion": "Perak",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "4.5921",
+                    "longitude": "101.0901"
+                },
+                "areaServed": [
+                    "Ipoh",
+                    "Taiping",
+                    "Teluk Intan",
+                    "Sitiawan",
+                    "Manjung",
+                    "Kuala Kangsar",
+                    "Kampar",
+                    "Batu Gajah"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Perak"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Perak",
+                "description": "Perkhidmatan sewa katil hospital di Perak dari RM150/bulan. Penghantaran 24 jam.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Perak"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama penghantaran katil hospital ke kawasan Ipoh old town?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Penghantaran ke Ipoh termasuk old town, Batu Gajah, Gopeng dan kawasan sekitar biasanya dalam masa 24 jam selepas pengesahan order. Ipoh hanya 2 jam dari gudang kami, jadi penghantaran sangat pantas. Untuk kawasan bandar Ipoh, same-day delivery sering boleh diatur."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Boleh hantar ke Cameron Highlands atau Pulau Pangkor?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ya, kami cover kedua-dua kawasan ini. Penghantaran ke Cameron Highlands memerlukan masa tambahan kerana jalan mendaki, tetapi biasanya masih dalam 24-48 jam. Untuk Pulau Pangkor, logistik feri perlu diambil kira dan mungkin memerlukan 1-2 hari tambahan. Hubungi kami untuk pengesahan jadual."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital ini sesuai untuk pesara dan pesakit dialisis?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sangat sesuai. Perak, terutamanya Ipoh, semakin menjadi destinasi persaraan popular dengan kos hidup yang rendah. Katil hospital kami membantu pesara dan warga emas berehat dengan selesa. Untuk pesakit dialisis yang perlu rehat selepas rawatan, katil dengan fungsi laras kepala sangat membantu kedudukan badan yang betul."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Pasangan warga emas boleh ke kendalikan crank katil hospital?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Boleh. Crank katil manual kami direka ringan dan mudah diputar, tidak memerlukan tenaga yang besar. Walaupun pasangan yang sudah berusia, mereka boleh melaraskan kepala dan kaki katil tanpa masalah. Pasukan kami akan tunjuk cara guna secara percuma semasa pemasangan supaya kedua-dua penjaga dan pesakit selesa."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Boleh tempah segera selepas discharge dari Hospital Raja Permaisuri Bainun?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Boleh. Kami kerap menerima tempahan dari keluarga pesakit yang baru discharge dari Hospital Raja Permaisuri Bainun di Ipoh. Hubungi kami melalui WhatsApp seawal mungkin, dan kami akan atur penghantaran pada hari yang sama atau keesokan hari. Kami beroperasi 7 hari seminggu termasuk cuti umum."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Macam mana nak sediakan bilik di tingkat bawah untuk katil hospital?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kami sarankan letakkan katil hospital di bilik tingkat bawah untuk memudahkan akses, terutamanya untuk pesakit yang tidak boleh naik tangga. Pastikan ruang sekurang-kurangnya 4x6 kaki dan laluan dari pintu utama tidak terhalang. Untuk rumah teres di Ipoh dan Taiping, bilik tidur bawah atau ruang tamu biasanya sesuai. Alihkan perabot yang tidak perlu sebelum pasukan kami tiba."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Perak",
+                        "item": "https://renthospitalbed.my/katil-hospital-perak.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama penghantaran katil hospital ke kawasan Ipoh old town?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Penghantaran ke Ipoh termasuk old town, Batu Gajah, Gopeng dan kawasan sekitar biasanya dalam masa 24 jam selepas pengesahan order. Ipoh hanya 2 jam dari gudang kami, jadi penghantaran sangat pantas. Untuk kawasan bandar Ipoh, same-day delivery sering boleh diatur."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Boleh hantar ke Cameron Highlands atau Pulau Pangkor?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Ya, kami cover kedua-dua kawasan ini. Penghantaran ke Cameron Highlands memerlukan masa tambahan kerana jalan mendaki, tetapi biasanya masih dalam 24-48 jam. Untuk Pulau Pangkor, logistik feri perlu diambil kira dan mungkin memerlukan 1-2 hari tambahan. Hubungi kami untuk pengesahan jadual."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital ini sesuai untuk pesara dan pesakit dialisis?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sangat sesuai. Perak, terutamanya Ipoh, semakin menjadi destinasi persaraan popular dengan kos hidup yang rendah. Katil hospital kami membantu pesara dan warga emas berehat dengan selesa. Untuk pesakit dialisis yang perlu rehat selepas rawatan, katil dengan fungsi laras kepala sangat membantu kedudukan badan yang betul."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Pasangan warga emas boleh ke kendalikan crank katil hospital?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Boleh. Crank katil manual kami direka ringan dan mudah diputar, tidak memerlukan tenaga yang besar. Walaupun pasangan yang sudah berusia, mereka boleh melaraskan kepala dan kaki katil tanpa masalah. Pasukan kami akan tunjuk cara guna secara percuma semasa pemasangan supaya kedua-dua penjaga dan pesakit selesa."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Boleh tempah segera selepas discharge dari Hospital Raja Permaisuri Bainun?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Boleh. Kami kerap menerima tempahan dari keluarga pesakit yang baru discharge dari Hospital Raja Permaisuri Bainun di Ipoh. Hubungi kami melalui WhatsApp seawal mungkin, dan kami akan atur penghantaran pada hari yang sama atau keesokan hari. Kami beroperasi 7 hari seminggu termasuk cuti umum."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Macam mana nak sediakan bilik di tingkat bawah untuk katil hospital?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Kami sarankan letakkan katil hospital di bilik tingkat bawah untuk memudahkan akses, terutamanya untuk pesakit yang tidak boleh naik tangga. Pastikan ruang sekurang-kurangnya 4x6 kaki dan laluan dari pintu utama tidak terhalang. Untuk rumah teres di Ipoh dan Taiping, bilik tidur bawah atau ruang tamu biasanya sesuai. Alihkan perabot yang tidak perlu sebelum pasukan kami tiba."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Perak",
-                    "item": "https://renthospitalbed.my/katil-hospital-perak.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 </head>
 <body>

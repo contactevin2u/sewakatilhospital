@@ -34,190 +34,258 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-kedah.html#business",
-            "name": "Sewa Katil Hospital Kedah - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Kedah. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-kedah.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kedah",
-                "addressRegion": "Kedah",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "6.1184",
-                "longitude": "100.3685"
-            },
-            "areaServed": [
-                "Alor Setar",
-                "Sungai Petani",
-                "Kulim",
-                "Langkawi",
-                "Jitra",
-                "Baling",
-                "Pendang",
-                "Yan",
-                "Gurun"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Kedah",
-            "description": "Perkhidmatan sewa katil hospital di Kedah dari RM150/bulan. Penghantaran 24 jam.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-kedah.html#business",
+                "name": "Sewa Katil Hospital Kedah - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Kedah. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-kedah.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Kedah",
+                    "addressRegion": "Kedah",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "6.1184",
+                    "longitude": "100.3685"
+                },
+                "areaServed": [
+                    "Alor Setar",
+                    "Sungai Petani",
+                    "Kulim",
+                    "Langkawi",
+                    "Jitra",
+                    "Baling",
+                    "Pendang",
+                    "Yan",
+                    "Gurun"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Kedah"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Kedah",
+                "description": "Perkhidmatan sewa katil hospital di Kedah dari RM150/bulan. Penghantaran 24 jam.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Kedah"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama masa penghantaran katil hospital ke kampung di Kedah?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk kawasan bandar seperti Alor Setar, Sungai Petani dan Kulim, penghantaran biasanya dalam masa 24 jam selepas pengesahan. Untuk kawasan kampung dan pedalaman seperti Baling, Sik dan Pendang, kami tetap boleh hantar dalam 24 jam melalui partner logistik tempatan kami di utara. Penghantaran ke Langkawi memerlukan 1-2 hari tambahan kerana logistik feri dari Kuala Kedah."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Kawasan mana di Kedah dan sekitarnya yang diliputi?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kami cover seluruh Kedah tanpa terkecuali — dari Alor Setar, Sungai Petani, Kulim, Jitra, Baling, Sik, Pendang, Yan, Gurun hingga ke Langkawi. Kawasan bersempadan dengan Perlis dan Pulau Pinang juga dalam liputan kami. Tidak kira rumah anda di bandar atau kampung, kami sampai."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital ini sesuai untuk siapa di Kedah?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Katil hospital kami sangat sesuai untuk warga emas di Kedah yang dijaga oleh keluarga di rumah, terutamanya ibu bapa petani dan pesawah padi yang sudah berusia. Ia juga sesuai untuk pesakit post-surgery, stroke, terlantar dan mereka yang baru discharge dari Hospital Sultanah Bahiyah atau Hospital Sultan Abdul Halim."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Adakah katil ini mudah digunakan oleh penjaga yang bukan jururawat?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sangat mudah. Katil manual kami menggunakan crank tangan yang boleh diputar oleh sesiapa sahaja tanpa memerlukan tenaga besar. Pasukan kami akan pasang dan tunjuk cara guna secara percuma semasa penghantaran. Dalam 5 minit, penjaga sudah boleh laras kepala dan kaki katil dengan yakin."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Boleh ke buat tempahan segera atau same-day di Kedah?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Boleh. Kami faham kadang-kadang keperluan datang secara mendadak, terutamanya bila ada ahli keluarga baru discharge dari hospital. Hubungi kami melalui WhatsApp dan nyatakan lokasi anda di Kedah. Untuk kawasan Alor Setar, Sungai Petani dan Kulim, same-day delivery biasanya boleh diatur."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Macam mana nak sediakan bilik sebelum katil hospital sampai?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk rumah kampung tradisional di Kedah, pastikan ruang sekurang-kurangnya 4x6 kaki di lantai bawah. Alihkan perabot yang tidak perlu dan pastikan laluan dari pintu utama ke bilik tidak terhalang. Katil kami boleh muat melalui pintu standard rumah Melayu. Jika rumah atas tiang, kami boleh bantu angkat naik katil semasa pemasangan."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Kedah",
+                        "item": "https://renthospitalbed.my/katil-hospital-kedah.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama masa penghantaran katil hospital ke kampung di Kedah?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk kawasan bandar seperti Alor Setar, Sungai Petani dan Kulim, penghantaran biasanya dalam masa 24 jam selepas pengesahan. Untuk kawasan kampung dan pedalaman seperti Baling, Sik dan Pendang, kami tetap boleh hantar dalam 24 jam melalui partner logistik tempatan kami di utara. Penghantaran ke Langkawi memerlukan 1-2 hari tambahan kerana logistik feri dari Kuala Kedah."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Kawasan mana di Kedah dan sekitarnya yang diliputi?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Kami cover seluruh Kedah tanpa terkecuali — dari Alor Setar, Sungai Petani, Kulim, Jitra, Baling, Sik, Pendang, Yan, Gurun hingga ke Langkawi. Kawasan bersempadan dengan Perlis dan Pulau Pinang juga dalam liputan kami. Tidak kira rumah anda di bandar atau kampung, kami sampai."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital ini sesuai untuk siapa di Kedah?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Katil hospital kami sangat sesuai untuk warga emas di Kedah yang dijaga oleh keluarga di rumah, terutamanya ibu bapa petani dan pesawah padi yang sudah berusia. Ia juga sesuai untuk pesakit post-surgery, stroke, terlantar dan mereka yang baru discharge dari Hospital Sultanah Bahiyah atau Hospital Sultan Abdul Halim."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Adakah katil ini mudah digunakan oleh penjaga yang bukan jururawat?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sangat mudah. Katil manual kami menggunakan crank tangan yang boleh diputar oleh sesiapa sahaja tanpa memerlukan tenaga besar. Pasukan kami akan pasang dan tunjuk cara guna secara percuma semasa penghantaran. Dalam 5 minit, penjaga sudah boleh laras kepala dan kaki katil dengan yakin."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Boleh ke buat tempahan segera atau same-day di Kedah?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Boleh. Kami faham kadang-kadang keperluan datang secara mendadak, terutamanya bila ada ahli keluarga baru discharge dari hospital. Hubungi kami melalui WhatsApp dan nyatakan lokasi anda di Kedah. Untuk kawasan Alor Setar, Sungai Petani dan Kulim, same-day delivery biasanya boleh diatur."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Macam mana nak sediakan bilik sebelum katil hospital sampai?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk rumah kampung tradisional di Kedah, pastikan ruang sekurang-kurangnya 4x6 kaki di lantai bawah. Alihkan perabot yang tidak perlu dan pastikan laluan dari pintu utama ke bilik tidak terhalang. Katil kami boleh muat melalui pintu standard rumah Melayu. Jika rumah atas tiang, kami boleh bantu angkat naik katil semasa pemasangan."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Kedah",
-                    "item": "https://renthospitalbed.my/katil-hospital-kedah.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 </head>
 <body>

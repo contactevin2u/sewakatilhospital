@@ -34,187 +34,255 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-sarawak.html#business",
-            "name": "Sewa Katil Hospital Sarawak - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Sarawak. Penghantaran 1-2 hari, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-sarawak.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Sarawak",
-                "addressRegion": "Sarawak",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "1.5497",
-                "longitude": "110.3592"
-            },
-            "areaServed": [
-                "Kuching",
-                "Miri",
-                "Sibu",
-                "Bintulu",
-                "Sri Aman",
-                "Kapit"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Sarawak",
-            "description": "Perkhidmatan sewa katil hospital di Sarawak dari RM150/bulan. Penghantaran 1-2 hari.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-sarawak.html#business",
+                "name": "Sewa Katil Hospital Sarawak - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Sarawak. Penghantaran 1-2 hari, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-sarawak.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Sarawak",
+                    "addressRegion": "Sarawak",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "1.5497",
+                    "longitude": "110.3592"
+                },
+                "areaServed": [
+                    "Kuching",
+                    "Miri",
+                    "Sibu",
+                    "Bintulu",
+                    "Sri Aman",
+                    "Kapit"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Sarawak"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Sarawak",
+                "description": "Perkhidmatan sewa katil hospital di Sarawak dari RM150/bulan. Penghantaran 1-2 hari.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Sarawak"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama penghantaran katil hospital ke bahagian-bahagian berbeza di Sarawak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Masa penghantaran berbeza mengikut bahagian. Kuching: 1-2 hari. Sibu dan Bintulu: 2-3 hari. Miri: 2-3 hari (dihantar dari cawangan KK Sabah yang lebih dekat). Untuk kawasan lain seperti Sri Aman dan Kapit, kami akan maklumkan tempoh yang tepat semasa anda buat tempahan."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Kawasan mana di Sarawak yang boleh dihantar katil hospital?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kami cover semua bandar utama di Sarawak: Kuching, Miri, Sibu, Bintulu, Sri Aman dan Kapit. Untuk kawasan pekan kecil dan komuniti di sepanjang sungai, kami akan berusaha arrange penghantaran dengan koordinasi logistik tempatan. Hubungi kami untuk sahkan ketersediaan di lokasi anda."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital sesuai untuk komuniti di rumah panjang atau kawasan rural Sarawak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ya, sangat sesuai. Ramai pelanggan kami di Sarawak adalah keluarga yang menjaga warga emas di rumah panjang atau kawasan rural yang jauh dari hospital. Katil hospital manual tidak memerlukan bekalan elektrik dan sangat mudah digunakan, menjadikannya pilihan praktikal untuk komuniti luar bandar."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Adakah katil hospital ini memerlukan pemasangan yang rumit?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak sama sekali. Katil hospital kami direka untuk pemasangan mudah yang boleh disiapkan dalam masa 15-20 minit. Untuk penghantaran ke bandar utama, tim kami akan pasang di rumah anda. Untuk kawasan jauh, kami sertakan panduan bergambar yang jelas supaya sesiapa sahaja boleh memasangnya."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Macam mana kalau saya perlukan katil hospital secara urgent di Sarawak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk kes urgent, hubungi hotline kami di 011-2879 9609 melalui WhatsApp. Kami akan cari option penghantaran terpantas ke lokasi anda. Untuk Kuching, kami biasanya boleh percepat ke esok hari. Untuk Miri, penghantaran boleh dibuat dari cawangan KK yang lebih dekat berbanding dari Semenanjung."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Bagaimana katil hospital dihantar ke kawasan yang hanya boleh diakses melalui sungai?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk kawasan pedalaman Sarawak yang bergantung kepada pengangkutan sungai, kami akan koordinasi dengan partner logistik tempatan. Katil hospital dipack dengan selamat dan boleh diangkut melalui bot. Kami pernah hantar ke komuniti di sepanjang Batang Rajang dan Batang Ai. Masa penghantaran mungkin lebih lama, tapi kami pastikan katil sampai dalam keadaan baik."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Sarawak",
+                        "item": "https://renthospitalbed.my/katil-hospital-sarawak.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama penghantaran katil hospital ke bahagian-bahagian berbeza di Sarawak?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Masa penghantaran berbeza mengikut bahagian. Kuching: 1-2 hari. Sibu dan Bintulu: 2-3 hari. Miri: 2-3 hari (dihantar dari cawangan KK Sabah yang lebih dekat). Untuk kawasan lain seperti Sri Aman dan Kapit, kami akan maklumkan tempoh yang tepat semasa anda buat tempahan."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Kawasan mana di Sarawak yang boleh dihantar katil hospital?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Kami cover semua bandar utama di Sarawak: Kuching, Miri, Sibu, Bintulu, Sri Aman dan Kapit. Untuk kawasan pekan kecil dan komuniti di sepanjang sungai, kami akan berusaha arrange penghantaran dengan koordinasi logistik tempatan. Hubungi kami untuk sahkan ketersediaan di lokasi anda."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital sesuai untuk komuniti di rumah panjang atau kawasan rural Sarawak?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Ya, sangat sesuai. Ramai pelanggan kami di Sarawak adalah keluarga yang menjaga warga emas di rumah panjang atau kawasan rural yang jauh dari hospital. Katil hospital manual tidak memerlukan bekalan elektrik dan sangat mudah digunakan, menjadikannya pilihan praktikal untuk komuniti luar bandar."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Adakah katil hospital ini memerlukan pemasangan yang rumit?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Tidak sama sekali. Katil hospital kami direka untuk pemasangan mudah yang boleh disiapkan dalam masa 15-20 minit. Untuk penghantaran ke bandar utama, tim kami akan pasang di rumah anda. Untuk kawasan jauh, kami sertakan panduan bergambar yang jelas supaya sesiapa sahaja boleh memasangnya."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Macam mana kalau saya perlukan katil hospital secara urgent di Sarawak?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk kes urgent, hubungi hotline kami di 011-2879 9609 melalui WhatsApp. Kami akan cari option penghantaran terpantas ke lokasi anda. Untuk Kuching, kami biasanya boleh percepat ke esok hari. Untuk Miri, penghantaran boleh dibuat dari cawangan KK yang lebih dekat berbanding dari Semenanjung."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Bagaimana katil hospital dihantar ke kawasan yang hanya boleh diakses melalui sungai?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk kawasan pedalaman Sarawak yang bergantung kepada pengangkutan sungai, kami akan koordinasi dengan partner logistik tempatan. Katil hospital dipack dengan selamat dan boleh diangkut melalui bot. Kami pernah hantar ke komuniti di sepanjang Batang Rajang dan Batang Ai. Masa penghantaran mungkin lebih lama, tapi kami pastikan katil sampai dalam keadaan baik."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Sarawak",
-                    "item": "https://renthospitalbed.my/katil-hospital-sarawak.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 </head>
 <body>

@@ -322,7 +322,10 @@
         "@type": "MedicalBusiness",
         "@id": "https://renthospitalbed.my/#organization",
         "name": "SewaKatilHospital.my",
-        "alternateName": ["Sewa Katil Hospital Malaysia", "Hospital Bed Rental Malaysia"],
+        "alternateName": [
+            "Sewa Katil Hospital Malaysia",
+            "Hospital Bed Rental Malaysia"
+        ],
         "url": "https://renthospitalbed.my",
         "logo": {
             "@type": "ImageObject",
@@ -363,7 +366,15 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
                 "opens": "08:00",
                 "closes": "22:00"
             }
@@ -376,13 +387,34 @@
             "name": "Malaysia"
         },
         "serviceArea": [
-            {"@type": "State", "name": "Selangor"},
-            {"@type": "State", "name": "Kuala Lumpur"},
-            {"@type": "State", "name": "Johor"},
-            {"@type": "State", "name": "Penang"},
-            {"@type": "State", "name": "Perak"},
-            {"@type": "State", "name": "Sabah"},
-            {"@type": "State", "name": "Sarawak"}
+            {
+                "@type": "State",
+                "name": "Selangor"
+            },
+            {
+                "@type": "State",
+                "name": "Kuala Lumpur"
+            },
+            {
+                "@type": "State",
+                "name": "Johor"
+            },
+            {
+                "@type": "State",
+                "name": "Penang"
+            },
+            {
+                "@type": "State",
+                "name": "Perak"
+            },
+            {
+                "@type": "State",
+                "name": "Sabah"
+            },
+            {
+                "@type": "State",
+                "name": "Sarawak"
+            }
         ],
         "sameAs": [
             "https://www.facebook.com/sewakatilhospital",
@@ -406,7 +438,41 @@
                             "price": "150",
                             "priceCurrency": "MYR",
                             "priceValidUntil": "2026-12-31",
-                            "availability": "https://schema.org/InStock"
+                            "availability": "https://schema.org/InStock",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
                         }
                     },
                     "price": "150",
@@ -416,6 +482,40 @@
                         "price": "150",
                         "priceCurrency": "MYR",
                         "unitText": "month"
+                    },
+                    "shippingDetails": {
+                        "@type": "OfferShippingDetails",
+                        "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "MYR"
+                        },
+                        "shippingDestination": {
+                            "@type": "DefinedRegion",
+                            "addressCountry": "MY"
+                        },
+                        "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "handlingTime": {
+                                "@type": "QuantitativeValue",
+                                "minValue": "0",
+                                "maxValue": "1",
+                                "unitCode": "DAY"
+                            },
+                            "transitTime": {
+                                "@type": "QuantitativeValue",
+                                "minValue": "0",
+                                "maxValue": "1",
+                                "unitCode": "DAY"
+                            }
+                        }
+                    },
+                    "hasMerchantReturnPolicy": {
+                        "@type": "MerchantReturnPolicy",
+                        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                        "merchantReturnDays": "30",
+                        "returnMethod": "https://schema.org/ReturnByMail",
+                        "returnFees": "https://schema.org/FreeReturn"
                     }
                 },
                 {
@@ -430,7 +530,41 @@
                             "price": "250",
                             "priceCurrency": "MYR",
                             "priceValidUntil": "2026-12-31",
-                            "availability": "https://schema.org/InStock"
+                            "availability": "https://schema.org/InStock",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
                         }
                     },
                     "price": "250",
@@ -440,6 +574,40 @@
                         "price": "250",
                         "priceCurrency": "MYR",
                         "unitText": "month"
+                    },
+                    "shippingDetails": {
+                        "@type": "OfferShippingDetails",
+                        "shippingRate": {
+                            "@type": "MonetaryAmount",
+                            "value": "0",
+                            "currency": "MYR"
+                        },
+                        "shippingDestination": {
+                            "@type": "DefinedRegion",
+                            "addressCountry": "MY"
+                        },
+                        "deliveryTime": {
+                            "@type": "ShippingDeliveryTime",
+                            "handlingTime": {
+                                "@type": "QuantitativeValue",
+                                "minValue": "0",
+                                "maxValue": "1",
+                                "unitCode": "DAY"
+                            },
+                            "transitTime": {
+                                "@type": "QuantitativeValue",
+                                "minValue": "0",
+                                "maxValue": "1",
+                                "unitCode": "DAY"
+                            }
+                        }
+                    },
+                    "hasMerchantReturnPolicy": {
+                        "@type": "MerchantReturnPolicy",
+                        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                        "merchantReturnDays": "30",
+                        "returnMethod": "https://schema.org/ReturnByMail",
+                        "returnFees": "https://schema.org/FreeReturn"
                     }
                 }
             ]
@@ -455,45 +623,87 @@
         "review": [
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Puan Siti Aminah"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Puan Siti Aminah"
+                },
                 "datePublished": "2025-11-15",
                 "reviewBody": "Very satisfied with SewaKatilHospital's service. Fast delivery in 3 hours. Quality bed and staff were very helpful with setup at home. My mother is now more comfortable.",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             },
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Encik Mohd Hafiz"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Encik Mohd Hafiz"
+                },
                 "datePublished": "2025-10-28",
                 "reviewBody": "Affordable price and no deposit. Rental process was very easy. When the bed broke down, they replaced it within 24 hours. Highly recommended!",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             },
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Dr. Tan Wei Ming"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Dr. Tan Wei Ming"
+                },
                 "datePublished": "2025-09-10",
                 "reviewBody": "As a doctor, I often recommend SewaKatilHospital to my patients. Bed quality is on par with hospital standards and their after-sales service is excellent.",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             },
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Suresh A/L Maniam"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Suresh A/L Maniam"
+                },
                 "datePublished": "2026-02-16",
                 "reviewBody": "My father fell and fractured his hip. The doctor said he needs at least 3 months of bed rest. We rented the 3 function bed because it's easy to adjust the height. The technician came to our house to set everything up and taught us how to use it. When my father recovered, we just returned it - no penalty at all.",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             },
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Lim Bee Hwa"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Lim Bee Hwa"
+                },
                 "datePublished": "2026-01-16",
                 "reviewBody": "My mother had a stroke and needed to recover at home. The service was really good, delivered to my house in Shah Alam within 4 hours. The installation technician was very patient and taught us everything. Now my mother sleeps comfortably every day. The price is reasonable too, RM150 per month. Highly recommend!",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             },
             {
                 "@type": "Review",
-                "author": {"@type": "Person", "name": "Aisyah Binti Yusof"},
+                "author": {
+                    "@type": "Person",
+                    "name": "Aisyah Binti Yusof"
+                },
                 "datePublished": "2026-01-16",
                 "reviewBody": "My husband just had knee surgery. He needed to rest at home for 2 months. This bed was a lifesaver - can raise his leg to reduce swelling. Side rails give a sense of safety when sleeping at night. After 2 months he recovered, we returned it. The return process was easy too, they came to pick it up themselves. Thank you team!",
-                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
             }
         ],
         "hasCredential": [

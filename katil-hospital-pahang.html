@@ -34,189 +34,257 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-pahang.html#business",
-            "name": "Sewa Katil Hospital Pahang - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Pahang. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-pahang.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Pahang",
-                "addressRegion": "Pahang",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "3.8126",
-                "longitude": "103.3256"
-            },
-            "areaServed": [
-                "Kuantan",
-                "Temerloh",
-                "Bentong",
-                "Raub",
-                "Jerantut",
-                "Pekan",
-                "Maran",
-                "Cameron Highlands"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Pahang",
-            "description": "Perkhidmatan sewa katil hospital di Pahang dari RM150/bulan. Penghantaran 24 jam.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-pahang.html#business",
+                "name": "Sewa Katil Hospital Pahang - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Pahang. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-pahang.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Pahang",
+                    "addressRegion": "Pahang",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "3.8126",
+                    "longitude": "103.3256"
+                },
+                "areaServed": [
+                    "Kuantan",
+                    "Temerloh",
+                    "Bentong",
+                    "Raub",
+                    "Jerantut",
+                    "Pekan",
+                    "Maran",
+                    "Cameron Highlands"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Pahang"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Pahang",
+                "description": "Perkhidmatan sewa katil hospital di Pahang dari RM150/bulan. Penghantaran 24 jam.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Pahang"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama penghantaran katil hospital ke kawasan tanah tinggi dan dataran rendah Pahang?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk kawasan dataran rendah seperti Kuantan, Temerloh dan Bentong, penghantaran dalam masa 24 jam. Bentong dan Raub lebih pantas kerana dekat dengan gudang kami melalui Lebuhraya KL-Karak. Kawasan tanah tinggi seperti Cameron Highlands dan Genting Highlands juga diliputi dalam masa 24 jam."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Adakah anda hantar katil hospital ke kawasan Felda dan RISDA di Pahang?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ya, kami hantar ke seluruh Pahang termasuk penempatan Felda dan RISDA di kawasan Jerantut, Maran, Bera dan Rompin. Kami faham ramai pesara peneroka ladang yang memerlukan katil hospital untuk penjagaan di rumah. Pasukan kami biasa menghantar ke kawasan-kawasan ini."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital ini sesuai untuk pesara peneroka ladang yang uzur?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sangat sesuai. Ramai pelanggan kami di Pahang adalah keluarga pesara peneroka Felda yang menjaga ibu bapa tua di rumah. Katil hospital memudahkan penjagaan harian untuk warga emas yang lemah, pesakit kronik, atau yang baru lepas pembedahan. Side rail dan fungsi laras memastikan keselamatan dan keselesaan pesakit."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Perlukah saya sediakan alatan khas untuk pasang katil hospital?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tidak perlu langsung. Pasukan kami akan bawa semua alatan yang diperlukan dan pasang katil hospital di rumah anda. Pemasangan mengambil masa lebih kurang 30 minit sahaja. Kami juga akan tunjuk cara guna katil supaya keluarga anda yakin dan selesa menggunakannya."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Pesakit baru discharge dari Hospital Tengku Ampuan Afzan, boleh order urgent?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Boleh. Kami kerap menerima tempahan urgent dari keluarga pesakit yang baru discharge dari Hospital Tengku Ampuan Afzan dan hospital lain di Kuantan. Hubungi kami melalui WhatsApp dan kami akan cuba aturkan penghantaran secepat mungkin, biasanya dalam hari yang sama untuk kawasan Kuantan."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Macam mana nak sediakan bilik untuk katil hospital di rumah kampung atau teres?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk rumah teres, bilik tidur bawah adalah pilihan terbaik. Alihkan perabot yang tidak perlu untuk buat ruang sekurang-kurangnya 6 kaki x 8 kaki. Untuk rumah kampung, pastikan lantai rata dan kukuh. Letakkan katil berdekatan soket elektrik jika guna model elektrik, dan pastikan ada ruang untuk penjaga bergerak di kedua-dua belah katil."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Pahang",
+                        "item": "https://renthospitalbed.my/katil-hospital-pahang.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama penghantaran katil hospital ke kawasan tanah tinggi dan dataran rendah Pahang?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk kawasan dataran rendah seperti Kuantan, Temerloh dan Bentong, penghantaran dalam masa 24 jam. Bentong dan Raub lebih pantas kerana dekat dengan gudang kami melalui Lebuhraya KL-Karak. Kawasan tanah tinggi seperti Cameron Highlands dan Genting Highlands juga diliputi dalam masa 24 jam."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Adakah anda hantar katil hospital ke kawasan Felda dan RISDA di Pahang?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Ya, kami hantar ke seluruh Pahang termasuk penempatan Felda dan RISDA di kawasan Jerantut, Maran, Bera dan Rompin. Kami faham ramai pesara peneroka ladang yang memerlukan katil hospital untuk penjagaan di rumah. Pasukan kami biasa menghantar ke kawasan-kawasan ini."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital ini sesuai untuk pesara peneroka ladang yang uzur?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sangat sesuai. Ramai pelanggan kami di Pahang adalah keluarga pesara peneroka Felda yang menjaga ibu bapa tua di rumah. Katil hospital memudahkan penjagaan harian untuk warga emas yang lemah, pesakit kronik, atau yang baru lepas pembedahan. Side rail dan fungsi laras memastikan keselamatan dan keselesaan pesakit."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Perlukah saya sediakan alatan khas untuk pasang katil hospital?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Tidak perlu langsung. Pasukan kami akan bawa semua alatan yang diperlukan dan pasang katil hospital di rumah anda. Pemasangan mengambil masa lebih kurang 30 minit sahaja. Kami juga akan tunjuk cara guna katil supaya keluarga anda yakin dan selesa menggunakannya."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Pesakit baru discharge dari Hospital Tengku Ampuan Afzan, boleh order urgent?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Boleh. Kami kerap menerima tempahan urgent dari keluarga pesakit yang baru discharge dari Hospital Tengku Ampuan Afzan dan hospital lain di Kuantan. Hubungi kami melalui WhatsApp dan kami akan cuba aturkan penghantaran secepat mungkin, biasanya dalam hari yang sama untuk kawasan Kuantan."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Macam mana nak sediakan bilik untuk katil hospital di rumah kampung atau teres?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk rumah teres, bilik tidur bawah adalah pilihan terbaik. Alihkan perabot yang tidak perlu untuk buat ruang sekurang-kurangnya 6 kaki x 8 kaki. Untuk rumah kampung, pastikan lantai rata dan kukuh. Letakkan katil berdekatan soket elektrik jika guna model elektrik, dan pastikan ada ruang untuk penjaga bergerak di kedua-dua belah katil."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Pahang",
-                    "item": "https://renthospitalbed.my/katil-hospital-pahang.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 </head>
 <body>

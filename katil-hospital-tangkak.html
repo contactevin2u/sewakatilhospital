@@ -33,157 +33,225 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-tangkak.html#business",
-            "name": "Sewa Katil Hospital Tangkak - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Tangkak. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-tangkak.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "Tangkak",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "2.2674",
-                "longitude": "102.5456"
-            },
-            "areaServed": [
-                "Tangkak"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Tangkak",
-            "description": "Perkhidmatan sewa katil hospital di Tangkak dari RM150/bulan. Penghantaran 24 jam.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-tangkak.html#business",
+                "name": "Sewa Katil Hospital Tangkak - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Tangkak. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-tangkak.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "Tangkak",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "2.2674",
+                    "longitude": "102.5456"
+                },
+                "areaServed": [
+                    "Tangkak"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Tangkak"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Tangkak",
+                "description": "Perkhidmatan sewa katil hospital di Tangkak dari RM150/bulan. Penghantaran 24 jam.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Tangkak"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa harga sewa katil hospital di Tangkak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Harga sewa katil hospital di Tangkak bermula dari RM150/bulan untuk katil 2 fungsi manual. Katil 3 fungsi dari RM200/bulan."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama penghantaran ke Tangkak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Penghantaran ke Tangkak dalam masa 24 jam selepas pengesahan order."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Ada deposit untuk sewa?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Tiada deposit diperlukan. Anda hanya perlu bayar sewa bulanan sahaja."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Tangkak",
+                        "item": "https://renthospitalbed.my/katil-hospital-tangkak.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa harga sewa katil hospital di Tangkak?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Harga sewa katil hospital di Tangkak bermula dari RM150/bulan untuk katil 2 fungsi manual. Katil 3 fungsi dari RM200/bulan."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama penghantaran ke Tangkak?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Penghantaran ke Tangkak dalam masa 24 jam selepas pengesahan order."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Ada deposit untuk sewa?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Tiada deposit diperlukan. Anda hanya perlu bayar sewa bulanan sahaja."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Tangkak",
-                    "item": "https://renthospitalbed.my/katil-hospital-tangkak.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 
     <!-- Mobile Styles -->

@@ -34,189 +34,257 @@
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "LocalBusiness",
-            "@id": "https://renthospitalbed.my/katil-hospital-kelantan.html#business",
-            "name": "Sewa Katil Hospital Kelantan - AA Alive Sdn Bhd",
-            "description": "Perkhidmatan sewa dan beli katil hospital di Kelantan. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
-            "url": "https://renthospitalbed.my/katil-hospital-kelantan.html",
-            "telephone": "+601128799609",
-            "priceRange": "RM150 - RM350/bulan",
-            "image": "https://renthospitalbed.my/images/og-image.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kelantan",
-                "addressRegion": "Kelantan",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "6.1254",
-                "longitude": "102.2381"
-            },
-            "areaServed": [
-                "Kota Bharu",
-                "Pasir Mas",
-                "Tanah Merah",
-                "Machang",
-                "Kuala Krai",
-                "Gua Musang",
-                "Bachok",
-                "Tumpat"
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/sewakatilhospital",
-                "https://www.instagram.com/sewakatilhospital/"
-            ]
-        },
-        {
-            "@type": "Service",
-            "serviceType": "Hospital Bed Rental",
-            "name": "Sewa Katil Hospital Kelantan",
-            "description": "Perkhidmatan sewa katil hospital di Kelantan dari RM150/bulan. Penghantaran 24 jam.",
-            "provider": {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "LocalBusiness",
-                "name": "AA Alive Sdn Bhd"
+                "@id": "https://renthospitalbed.my/katil-hospital-kelantan.html#business",
+                "name": "Sewa Katil Hospital Kelantan - AA Alive Sdn Bhd",
+                "description": "Perkhidmatan sewa dan beli katil hospital di Kelantan. Penghantaran 24 jam, tanpa deposit, pemasangan percuma.",
+                "url": "https://renthospitalbed.my/katil-hospital-kelantan.html",
+                "telephone": "+601128799609",
+                "priceRange": "RM150 - RM350/bulan",
+                "image": "https://renthospitalbed.my/images/og-image.jpg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Kelantan",
+                    "addressRegion": "Kelantan",
+                    "addressCountry": "MY"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "6.1254",
+                    "longitude": "102.2381"
+                },
+                "areaServed": [
+                    "Kota Bharu",
+                    "Pasir Mas",
+                    "Tanah Merah",
+                    "Machang",
+                    "Kuala Krai",
+                    "Gua Musang",
+                    "Bachok",
+                    "Tumpat"
+                ],
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/sewakatilhospital",
+                    "https://www.instagram.com/sewakatilhospital/"
+                ]
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Kelantan"
+            {
+                "@type": "Service",
+                "serviceType": "Hospital Bed Rental",
+                "name": "Sewa Katil Hospital Kelantan",
+                "description": "Perkhidmatan sewa katil hospital di Kelantan dari RM150/bulan. Penghantaran 24 jam.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "AA Alive Sdn Bhd"
+                },
+                "areaServed": {
+                    "@type": "Place",
+                    "name": "Kelantan"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "150",
+                    "priceCurrency": "MYR",
+                    "priceValidUntil": "2026-12-31",
+                    "availability": "https://schema.org/InStock"
+                }
             },
-            "offers": {
-                "@type": "Offer",
-                "price": "150",
-                "priceCurrency": "MYR",
-                "priceValidUntil": "2026-12-31",
-                "availability": "https://schema.org/InStock"
-            }
-        },
-        {
-            "@type": "Product",
-            "name": "Katil Hospital 2 Fungsi Manual",
-            "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
-            "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
-            "brand": {
-                "@type": "Brand",
-                "name": "AA Alive"
+            {
+                "@type": "Product",
+                "name": "Katil Hospital 2 Fungsi Manual",
+                "description": "Katil hospital 2 fungsi dengan laras kepala dan kaki. Sesuai untuk pemulihan jangka pendek.",
+                "image": "https://renthospitalbed.my/images/Product/2%20Funtion%20Manual.webp",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "AA Alive"
+                },
+                "offers": {
+                    "@type": "AggregateOffer",
+                    "lowPrice": "150",
+                    "highPrice": "799",
+                    "priceCurrency": "MYR",
+                    "offerCount": "2",
+                    "offers": [
+                        {
+                            "@type": "Offer",
+                            "name": "Sewa",
+                            "price": "150",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Beli",
+                            "price": "799",
+                            "priceCurrency": "MYR",
+                            "priceValidUntil": "2026-12-31",
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "MYR"
+                                },
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "MY"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": "0",
+                                        "maxValue": "1",
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": "30",
+                                "returnMethod": "https://schema.org/ReturnByMail",
+                                "returnFees": "https://schema.org/FreeReturn"
+                            }
+                        }
+                    ]
+                }
             },
-            "offers": {
-                "@type": "AggregateOffer",
-                "lowPrice": "150",
-                "highPrice": "799",
-                "priceCurrency": "MYR",
-                "offerCount": "2",
-                "offers": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
                     {
-                        "@type": "Offer",
-                        "name": "Sewa",
-                        "price": "150",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Berapa lama penghantaran katil hospital ke Kota Bharu dan kawasan pedalaman Kelantan?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Untuk Kota Bharu dan kawasan sekitar seperti Pasir Mas dan Bachok, penghantaran biasanya dalam masa 24 jam. Kawasan pedalaman seperti Kuala Krai dan Tanah Merah juga dalam 24 jam. Kami akan hubungi anda untuk confirm waktu penghantaran selepas order disahkan."
+                        }
                     },
                     {
-                        "@type": "Offer",
-                        "name": "Beli",
-                        "price": "799",
-                        "priceCurrency": "MYR",
-                        "priceValidUntil": "2026-12-31"
+                        "@type": "Question",
+                        "name": "Adakah anda hantar katil hospital sampai ke Gua Musang?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ya, kami cover seluruh Kelantan termasuk Gua Musang, Jeli dan Rantau Panjang. Walaupun Gua Musang agak jauh dari KB, pasukan kami tetap hantar ke sana. Penghantaran ke kawasan ini mungkin ambil masa sedikit lebih lama tapi masih dalam 24 jam."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital ini sesuai untuk pesakit stroke di rumah ke?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sangat sesuai. Ramai pelanggan kami di Kelantan menyewa katil hospital untuk pesakit stroke dan warga emas terlantar. Katil ini boleh laras kepala dan kaki, memudahkan penjaga tukar posisi pesakit, bagi makan, dan jaga kebersihan. Side rail juga disediakan untuk keselamatan pesakit."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Katil hospital ni guna elektrik ke? Rumah kampung saya kadang putus bekalan.",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Katil manual kami guna sistem crank tangan, jadi langsung tak perlu elektrik. Ini sangat sesuai untuk rumah kampung di Kelantan. Anda hanya pusing handle untuk laras kedudukan kepala atau kaki pesakit. Senang dan tak perlu risau tentang bekalan elektrik."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Boleh tak saya order katil hospital secara urgent semasa musim banjir di Kelantan?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Kami faham musim banjir di Kelantan boleh datang tiba-tiba. Untuk permintaan urgent, hubungi kami terus di WhatsApp dan kami akan cuba prioritikan penghantaran anda. Walau bagaimanapun, semasa banjir teruk, sesetengah jalan mungkin terputus. Kami sarankan keluarga yang ada pesakit terlantar untuk sediakan katil hospital awal sebelum musim monsun bermula."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Macam mana nak sediakan bilik untuk katil hospital di rumah kayu tradisional?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Katil hospital kami sesuai untuk kebanyakan rumah di Kelantan termasuk rumah kayu tradisional. Pastikan ruang sekurang-kurangnya 6 kaki x 8 kaki dan lantai rata. Untuk rumah panggung, pastikan lantai kukuh. Pasukan kami akan bantu pasang dan bagi tips penempatan yang sesuai semasa penghantaran."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Utama",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Lokasi",
+                        "item": "https://renthospitalbed.my/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Kelantan",
+                        "item": "https://renthospitalbed.my/katil-hospital-kelantan.html"
                     }
                 ]
             }
-        },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Berapa lama penghantaran katil hospital ke Kota Bharu dan kawasan pedalaman Kelantan?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Untuk Kota Bharu dan kawasan sekitar seperti Pasir Mas dan Bachok, penghantaran biasanya dalam masa 24 jam. Kawasan pedalaman seperti Kuala Krai dan Tanah Merah juga dalam 24 jam. Kami akan hubungi anda untuk confirm waktu penghantaran selepas order disahkan."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Adakah anda hantar katil hospital sampai ke Gua Musang?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Ya, kami cover seluruh Kelantan termasuk Gua Musang, Jeli dan Rantau Panjang. Walaupun Gua Musang agak jauh dari KB, pasukan kami tetap hantar ke sana. Penghantaran ke kawasan ini mungkin ambil masa sedikit lebih lama tapi masih dalam 24 jam."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital ini sesuai untuk pesakit stroke di rumah ke?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sangat sesuai. Ramai pelanggan kami di Kelantan menyewa katil hospital untuk pesakit stroke dan warga emas terlantar. Katil ini boleh laras kepala dan kaki, memudahkan penjaga tukar posisi pesakit, bagi makan, dan jaga kebersihan. Side rail juga disediakan untuk keselamatan pesakit."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Katil hospital ni guna elektrik ke? Rumah kampung saya kadang putus bekalan.",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Katil manual kami guna sistem crank tangan, jadi langsung tak perlu elektrik. Ini sangat sesuai untuk rumah kampung di Kelantan. Anda hanya pusing handle untuk laras kedudukan kepala atau kaki pesakit. Senang dan tak perlu risau tentang bekalan elektrik."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Boleh tak saya order katil hospital secara urgent semasa musim banjir di Kelantan?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Kami faham musim banjir di Kelantan boleh datang tiba-tiba. Untuk permintaan urgent, hubungi kami terus di WhatsApp dan kami akan cuba prioritikan penghantaran anda. Walau bagaimanapun, semasa banjir teruk, sesetengah jalan mungkin terputus. Kami sarankan keluarga yang ada pesakit terlantar untuk sediakan katil hospital awal sebelum musim monsun bermula."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Macam mana nak sediakan bilik untuk katil hospital di rumah kayu tradisional?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Katil hospital kami sesuai untuk kebanyakan rumah di Kelantan termasuk rumah kayu tradisional. Pastikan ruang sekurang-kurangnya 6 kaki x 8 kaki dan lantai rata. Untuk rumah panggung, pastikan lantai kukuh. Pasukan kami akan bantu pasang dan bagi tips penempatan yang sesuai semasa penghantaran."
-                    }
-                }
-            ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Utama",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Lokasi",
-                    "item": "https://renthospitalbed.my/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Kelantan",
-                    "item": "https://renthospitalbed.my/katil-hospital-kelantan.html"
-                }
-            ]
-        }
-    ]
-}
+        ]
+    }
     </script>
 </head>
 <body>
