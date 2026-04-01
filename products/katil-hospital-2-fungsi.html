@@ -84,6 +84,13 @@
                     "@type": "OfferShippingDetails",
                     "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 4, "unitCode": "HUR"}},
                     "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "MYR"}
+                },
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": "30",
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
                 }
             },
             {
@@ -94,7 +101,20 @@
                 "availability": "https://schema.org/InStock",
                 "priceValidUntil": "2026-12-31",
                 "itemCondition": "https://schema.org/NewCondition",
-                "warranty": "2 tahun jaminan penuh"
+                "warranty": "2 tahun jaminan penuh",
+                "seller": {"@type": "Organization", "name": "SewaKatilHospital.my"},
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 4, "unitCode": "HUR"}},
+                    "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "MYR"}
+                },
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": "30",
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
             }
         ],
         "aggregateRating": {
