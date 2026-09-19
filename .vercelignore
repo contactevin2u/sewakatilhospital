@@ -1,0 +1,6 @@
+# Repo internals must not be served by the static deployment (2026-09-19:
+# scripts/*.py and seo-audit-report.* were publicly downloadable).
+scripts/
+*.py
+*.md
+seo-audit-report.*
