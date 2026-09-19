@@ -4,7 +4,8 @@
 
 Counts, per rule, the published claims that break the registry: mustNotPublish
 items, delivery-time promises without the written-confirmation qualifier,
-non-canonical prices, unverified counts and unverified instalment terms.
+non-canonical prices, unverified counts and unverified instalment terms, the
+government-emblem and AI 'Free Installation' images, and full rent-to-own credit.
 
     python scripts/audit_claims.py            # summary
     python scripts/audit_claims.py -v         # every hit with its sentence
@@ -60,6 +61,19 @@ def is_unqualified_delivery(seg: str) -> bool:
 COUNTS = r"\b\d{2,3}[,.]?\d{0,3}\s*\+\s*(?:keluarga|families|family|pelanggan|customers|ulasan|reviews|Malaysian families)|\d+\+\s*(?:家庭|马来西亚家庭|评论)|\d[\d,]*\+\s*(?:குடும்ப|மதிப்புரை|திருப்தியான)|10\+\s*(?:Tahun|Years|年|ஆண்டு)|\b\d{2}%\s*(?:pelanggan|of customers|客户|வாடிக்கையாளர)"
 INSTAL = r"0\s*%\s*(?:faedah|interest|instal|分期|利息|தவணை|வட்டி)|ansuran\s*0\s*%|0\s*%\s*(?:sehingga|up to)|tanpa faedah|interest[- ]free|RM\s?(?:33|158|159|249|259)\b"
 
+# Checked against raw HTML: these live in src attributes, which published_text() drops.
+RAW_RULES = {
+    # Jata Negara + MDA logo reads as government endorsement; state the registration as text instead.
+    "government emblem image": r"KKM (?:&|&amp;|%26) ?MDA Icon|KKM%20%26%20MDA",
+    # AI-generated picture (Gemini watermark) whose filename advertised free installation.
+    "AI 'Free Installation' image": r"Free(?: |%20)Installation\.(?:webp|png)",
+}
+# Rent-to-own is partial and case by case (owner, 2026-09-19): any rental-credit promise must say "part of".
+RENT_CREDIT = (r"(?:bayaran sewa|rental payments?|rent paid|租金|வாடகை கொடுப்பனவ)[^.|]{0,60}"
+               r"(?:ditolak|deducted|go(?:es)? toward|credited|扣除|抵扣|கழிக்க)|rent[- ]to[- ]own (?:plan|program|option)")
+# "Rent first, buy later" (Sewa Dulu / 先租后买) is not a credit promise and stays allowed.
+RENT_CREDIT_PARTIAL = r"sebahagian|part of|部分|ஒரு பகுதி"
+
 RENT = [150, 250, 450]
 BUY = [799, 1349, 2799, 5500]
 ALLOWED = set(RENT + BUY + [199, 399, 280, 50000])
@@ -92,8 +106,12 @@ def audit(verbose=False):
     files = sorted(p for p in ROOT.rglob("*.html") if ".git" not in p.parts and "TEMPLATE" not in p.name)
     hits = collections.defaultdict(list)
     for f in files:
-        text = published_text(f.read_text(encoding="utf-8", errors="ignore"))
+        raw = f.read_text(encoding="utf-8", errors="ignore")
+        text = published_text(raw)
         rel = f.relative_to(ROOT).as_posix()
+        for name, rx in RAW_RULES.items():
+            for m in re.finditer(rx, raw, I):
+                hits[name].append((rel, raw[max(0, m.start()-60):m.end()+20]))
         for name, rx in MUST_NOT.items():
             for m in re.finditer(rx, text, I):
                 hits["mustNotPublish: " + name].append((rel, text[max(0, m.start()-60):m.end()+60]))
@@ -103,6 +121,8 @@ def audit(verbose=False):
             if re.search(SUB3, seg, I) and re.search(DELIVERY_CTX, seg, I) and not re.search(SUB3_EXEMPT, seg, I) \
                and not any(t in seg for t in TESTIMONIALS):
                 hits["sub-3-hour delivery promise"].append((rel, seg[:220]))
+            if re.search(RENT_CREDIT, seg, I) and not re.search(RENT_CREDIT_PARTIAL, seg, I):
+                hits["unqualified rent-to-own credit"].append((rel, seg[:220]))
         for m in re.finditer(COUNTS, text, I):
             hits["unverified count"].append((rel, text[max(0, m.start()-50):m.end()+50]))
         for m in re.finditer(INSTAL, text, I):
