@@ -102,8 +102,8 @@ def update_location_page(file_path):
     delivery_time = get_delivery_time(slug)
 
     # New SEO content
-    new_title = f"Sewa Katil Hospital {location_name} | Penghantaran {delivery_time}, Tanpa Deposit (2026)"
-    new_description = f"Jaga pesakit di rumah di {location_name} jadi lebih mudah. Sewa katil hospital dari RM150/bulan. Penghantaran {delivery_time}, tanpa deposit, servis percuma. Hubungi 011-2868 6592."
+    new_title = f"Sewa Katil Hospital {location_name} | RM150/Bulan, Tanpa Deposit (2026)"
+    new_description = f"Jaga pesakit di rumah di {location_name} jadi lebih mudah. Sewa katil hospital dari RM150/bulan. Tanpa deposit. Slot penghantaran & pemasangan disahkan secara bertulis. Hubungi 011-2879 9609."
 
     # Read file content
     with open(file_path, 'r', encoding='utf-8') as f:
